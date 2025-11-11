@@ -1,0 +1,13 @@
+<svg width="120" height="90" viewBox="0 0 120 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="hullMini" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#184d8a"/>
+      <stop offset="100%" stop-color="#2a6fb8"/>
+    </linearGradient>
+  </defs>
+  <path d="M8 78 C32 73, 88 73, 112 78" stroke="#b9d8fb" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M22 68 L98 68 L86 82 C78 88 42 88 34 82 L22 68 Z" fill="url(#hullMini)"/>
+  <rect x="58" y="32" width="4" height="36" rx="2" fill="#225a94"/>
+  <path d="M62 34 L62 68 L102 62 Z" fill="#ffffff" stroke="#d9e9ff"/>
+  <path d="M58 34 L20 62 L58 68 Z" fill="#ffffff" stroke="#d9e9ff"/>
+</svg>

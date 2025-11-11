@@ -1,0 +1,70 @@
+<ion-header translucent="true">
+  <ion-toolbar>
+    <ion-title>Literature</ion-title>
+    <ion-buttons slot="end">
+      <ion-chip>
+        <ion-label>10 words</ion-label>
+      </ion-chip>
+      <ion-button>Resume</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <ion-toolbar class="progress-bar">
+    <div class="progress-wrap">
+      <ion-label>Unit progress</ion-label>
+      <ion-progress-bar [value]="progress()"></ion-progress-bar>
+      <span class="progress-num">{{ mastered() }}/{{ totalWords }}</span>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="voyage">
+    <!-- Wavy vertical path -->
+    <svg class="path" viewBox="0 0 320 1600" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M160,0 C80,120 240,240 160,360
+               C80,480 240,600 160,720
+               C80,840 240,960 160,1080
+               C80,1200 240,1320 160,1440"
+            class="wave"></path>
+    </svg>
+
+    <!-- Boat marker (simple dot for now) -->
+    <div class="boat" [style.transform]="'translateY(' + (steps()[1].y) + 'px)'"></div>
+
+    <!-- Buoy ‘cards’ -->
+    <div
+      class="buoy"
+      *ngFor="let s of steps(); let i = index"
+      [class.locked]="s.status === 'locked'"
+      [class.done]="s.status === 'done'"
+      [style.top.px]="s.y">
+
+      <div class="pill" [class.pill-next]="s.status === 'next'" [class.pill-locked]="s.status === 'locked'">
+        {{ s.status === 'done' ? 'Done' : s.status | titlecase }}
+      </div>
+
+      <div class="text">
+        <div class="title">{{ s.label }}</div>
+        <div class="subtitle">{{ s.subtitle }}</div>
+      </div>
+
+      <ion-button size="small" (click)="start(s)" [disabled]="s.status === 'locked'">
+        {{ s.status === 'done' ? 'Review' : 'Start' }}
+      </ion-button>
+    </div>
+
+    <!-- Harbor (final card) -->
+    <ion-card class="harbor">
+      <ion-card-header>
+        <ion-card-title>Harbor: Final revision</ion-card-title>
+        <ion-card-subtitle>Complete the voyage and review all 10 words.</ion-card-subtitle>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-button expand="block">Begin</ion-button>
+      </ion-card-content>
+    </ion-card>
+  </div>
+
+  <div class="bottom-space"></div>
+</ion-content>

@@ -1,0 +1,46 @@
+ion-content {
+    --background: #FFFFE0; /* Your desired color */
+  }
+  
+
+.word-container {
+    text-align: left;
+    padding: 10px 20px;
+  
+  }
+  
+  .word-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 3rem;
+    color:rgb(255, 81, 0);
+  }
+  
+  h2 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #cd3636;
+  }
+  
+  h3 {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    color: #890808;
+  }
+  
+  p {
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+    color: #111cbd;
+  }
+  
+  ul {
+    font-size: 1.3rem;
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #2f06d5;
+  }
+  
+  li {
+    margin-bottom: 0.5rem;
+  }

@@ -1,0 +1,23 @@
+<swiper-container #swiper (afterinit)="onSwiperInit()" [modules]="swiperModules">
+  <swiper-slide>
+<div class="slide">
+  <!-- central content card -->
+  <div class="card">
+    <div class="pill">{{ index }} / {{ total }}</div>
+    <h1 class="word">{{ word }}</h1>
+    <div class="ipa">{{ ipa }}</div>
+    <p class="def">n. {{ def }}</p>
+    <p class="ex">Ex: {{ ex }}</p>
+
+    <div class="actions">
+      <ion-button size="default" (click)="speak()">Listen</ion-button>
+      <ion-button size="default" fill="outline" color="primary" (click)="record()">Repeat</ion-button>
+      <ion-button size="default" color="secondary" (click)="next()">Next</ion-button>
+    </div>
+  </div>
+
+  
+</div>
+</swiper-slide>
+</swiper-container>
+

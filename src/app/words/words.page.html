@@ -1,0 +1,94 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Learn English words</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!--<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="word-container">
+    <h1 class="word-title">{{ word.word }}</h1>
+    <div *ngFor="let partOfSpeech of word.partsOfSpeech">
+      <h2>Part of speech: {{ partOfSpeech.partOfSpeech | titlecase }}</h2>
+      <div *ngFor="let definition of partOfSpeech.definitions; let i = index">
+        <h3>
+          Definition
+          <span *ngIf="partOfSpeech.definitions.length > 1">
+            {{ i + 1 }}
+          </span>
+        </h3>
+        <p>{{ definition.definition }}</p>
+        <ul>
+          <li *ngFor="let example of definition.examples">{{ example }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</ion-content>-->
+<ion-content [fullscreen]="true" class="ion-padding">
+<!--  <swiper-container 
+  navigation="false"
+   pagination="false" 
+   scrollbar="false" 
+   effect="fade" 
+   [slidesPerView]="1"
+   (swiperslidechange)="onSlideChange($event)"
+   #swiper>
+
+    <swiper-slide *ngFor="let word of subsetWords; let i=index">
+      <div class="word-container" *ngIf="currentIndex===i"> <!--this line is needed , so the old content will not be seen 
+        <h1 class="word-title" *ngIf="currentIndex===i">{{ word.word }}</h1>
+        
+        <div *ngFor="let partOfSpeech of word.partsOfSpeech">
+          <h2>{{ partOfSpeech.partOfSpeech | titlecase }}</h2>
+          <div *ngFor="let definition of partOfSpeech.definitions; let i = index">
+            <h3>
+              Definition
+              <span *ngIf="partOfSpeech.definitions.length > 1">
+                {{ i + 1 }}
+              </span>
+            </h3>
+            <p>{{ definition.definition }}</p>
+            <ul>
+              <li *ngFor="let example of definition.examples">{{ example }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </swiper-slide>
+  </swiper-container>
+-->
+    <swiper-container 
+      navigation="false"
+      pagination="false"
+      scrollbar="false"
+      effect="fade"
+      [slidesPerView]="1"
+      (swiperslidechange)="onSlideChange($event)"
+      #swiper>
+      
+      <swiper-slide *ngFor="let word of sliderItems; let i = index">
+        <div class="word-container" *ngIf="currentIndex === i"> <!--this line is needed , so the old content will not be seen -->
+          <h1 class="word-title" (click)="indexIs(i)">{{ word.word }}</h1>
+          
+          <div *ngFor="let partOfSpeech of word.partsOfSpeech">
+            <h2>{{ partOfSpeech.partOfSpeech | titlecase }}</h2>
+            <div *ngFor="let definition of partOfSpeech.definitions; let j = index">
+              <h3>
+                Definition
+                <span *ngIf="partOfSpeech.definitions.length > 1">
+                  {{ j + 1 }}
+                </span>
+              </h3>
+              <p>{{ definition.definition }}</p>
+              <ul>
+                <li *ngFor="let example of definition.examples">{{ example }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+  
+  
+</ion-content>
+

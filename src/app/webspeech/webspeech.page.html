@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>webspeech</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button  defaultHref="home"></ion-back-button>
+     </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-item>
+    <ion-label position="stacked">Enter Text</ion-label>
+    <ion-textarea [(ngModel)]="textToSpeak"></ion-textarea>
+  </ion-item>
+  <ion-button expand="full" (click)="speakText()">Speak</ion-button>
+
+  <ion-item>
+    <ion-label position="stacked">Select Voice (Optional)</ion-label>
+    <ion-select [(ngModel)]="selectedVoice">
+      <ion-select-option *ngFor="let voice of voices" [value]="voice">{{ voice.name }} ({{ voice.lang }})</ion-select-option>
+    </ion-select>
+  </ion-item>
+</ion-content>

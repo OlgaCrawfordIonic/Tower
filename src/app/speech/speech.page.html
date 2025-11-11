@@ -1,0 +1,14 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>speech</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button  defaultHref="home"></ion-back-button>
+     </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button (click)="speakTest()"></ion-button>
+ <p *ngFor="let voice of supportedVoices; let i = index"> {{ voice.name }}{{i}}></p>
+             
+</ion-content>

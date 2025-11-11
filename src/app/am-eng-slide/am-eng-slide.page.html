@@ -1,0 +1,246 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Lessons Slides</ion-title>
+  </ion-toolbar>
+
+  <!-- British / American switch -->
+  <ion-toolbar>
+    <ion-segment [value]="variety()" (ionChange)="onVarietyChange($event)">
+      <ion-segment-button value="british">
+        <ion-label>British</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="american">
+        <ion-label>American</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <swiper-container #swiper
+                    [slidesPerView]="1"
+                    [allowTouchMove]="true"
+                    [speed]="300"
+                    [modules]="swiperModules"
+                    (afterinit)="onSwiperInit()">
+
+    <!-- INTRO SLIDE: Lesson 1, Part 1 (variety-dependent) -->
+    <swiper-slide>
+      <div class="slide">
+        <div class="card intro-card">
+          <div class="pill">1 / 1</div>
+
+          <!-- description bubble -->
+          <div class="desc-container" *ngIf="activeWord" aria-live="polite">
+            <div class="desc-bubble">
+              <strong>{{ activeWord }}</strong> — {{ activeShortDesc }}
+            </div>
+          </div>
+
+          <!-- text + dynamically injected active words -->
+          <p class="intro-text">
+            <ng-container *ngFor="let seg of introSegmentsLesson1Part1()">
+              <!-- keyword button -->
+              <ng-container *ngIf="seg.type === 'kw'; else plainText">
+                <button
+                  class="kw"
+                  [class.active]="activeWord === seg.lemma"
+                  (click)="showDesc(seg.lemma!)">
+                  {{ seg.label }}
+                </button>
+              </ng-container>
+
+              <!-- normal text -->
+              <ng-template #plainText>
+                {{ seg.text }}
+              </ng-template>
+            </ng-container>
+          </p>
+
+          <div class="actions">
+            <ion-button size="default" fill="clear" (click)="clearDesc()">Clear</ion-button>
+          </div>
+        </div>
+      </div>
+    </swiper-slide>
+    <!-- WORD SLIDES for Lesson 1 Part 1 (from lemmas.part1, split into 2 groups) -->
+<!-- WORD SLIDES for Lesson 1 Part 1 (from lemmas.part1, split into groups) -->
+<!-- ONE WORD PER SLIDE: Lesson 1 Part 1 -->
+<!-- Slides for FIRST group of Lesson 1 Part 1 (first 3 lemmas) -->
+<swiper-slide *ngFor="let item of lesson1Part1SlidesFirst(); let i = index">
+  <div class="slide">
+    <div class="card">
+      <!-- intro slide is 1, so these start at 2 -->
+      <div class="pill">
+        {{ i + 2 }} / {{ 1 + lesson1Part1SlidesFirst().length }}
+      </div>
+
+      <h1 class="word">{{ item.display }}</h1>
+      <div class="ipa">{{ item.ipa }}</div>
+
+      <ng-container *ngFor="let p of item.parts">
+        <p class="def">
+          <strong>{{ p.partOfSpeech }}</strong>
+        </p>
+
+        <ng-container *ngFor="let s of p.senses">
+          <p class="def">
+            <span *ngIf="s.senseId">({{ s.senseId }}) </span>{{ s.definition }}
+          </p>
+
+          <ul class="ex-list" *ngIf="s.examples.length">
+            <li class="ex" *ngFor="let ex of s.examples">
+              Ex: {{ ex }}
+            </li>
+          </ul>
+        </ng-container>
+      </ng-container>
+    </div>
+  </div>
+</swiper-slide>
+
+<!-- QUIZ SLIDES for first 3 words of Lesson 1 Part 1 -->
+<swiper-slide *ngFor="let q of quizQuestionsFirst(); let qi = index">
+  <div class="slide">
+    <div class="card quiz-card">
+      <!-- Adjust pill math to fit your total slide count.
+           Example: intro(1) + 3 word slides + these 3 quiz slides -->
+      <div class="pill">
+        {{ 1 + lesson1Part1SlidesFirst().length + qi + 1 }}
+        /
+        {{ 1 + lesson1Part1SlidesFirst().length + quizQuestionsFirst().length }}
+      </div>
+
+      <!-- Short description prompt -->
+      <p class="quiz-desc">
+        {{ q.shortDescription }}
+      </p>
+
+      <!-- Two options: one correct, one wrong -->
+      <div class="quiz-option"
+           *ngFor="let opt of q.options; let oi = index"
+           (click)="onQuizAnswer(q, oi)">
+
+        <span class="icon"
+              [ngClass]="{
+                'pre': !quizState()[q.id],
+                'correct': quizState()[q.id]?.isCorrect
+                           && quizState()[q.id]?.selectedIndex === oi,
+                'wrong': !quizState()[q.id]?.isCorrect
+                          && quizState()[q.id]?.selectedIndex === oi
+              }">
+          <!-- Before answer: neutral tick -->
+          <ng-container *ngIf="!quizState()[q.id]">
+            ✓
+          </ng-container>
+
+          <!-- After answer: only on selected option -->
+          <ng-container *ngIf="quizState()[q.id]
+                               && quizState()[q.id]?.selectedIndex === oi">
+            <ng-container *ngIf="quizState()[q.id]?.isCorrect; else wrongIcon">
+              ✓
+            </ng-container>
+            <ng-template #wrongIcon>✗</ng-template>
+          </ng-container>
+        </span>
+
+        <span class="label">
+          {{ opt.label }}
+        </span>
+      </div>
+    </div>
+  </div>
+</swiper-slide>
+
+   <!-- 4) REST GROUP WORD SLIDES -->
+    <swiper-slide *ngFor="let item of lesson1Part1SlidesRest(); let ri = index">
+      <div class="slide">
+        <div class="card">
+          <div class="pill">
+            {{
+              1
+              + lesson1Part1SlidesFirst().length
+              + quizQuestionsFirst().length
+              + (ri + 1)
+            }}
+            / {{ totalSlides() }}
+          </div>
+
+          <h1 class="word">{{ item.display }}</h1>
+          <div class="ipa">{{ item.ipa }}</div>
+
+          <ng-container *ngFor="let p of item.parts">
+            <p class="def"><strong>{{ p.partOfSpeech }}</strong></p>
+
+            <ng-container *ngFor="let s of p.senses">
+              <p class="def">
+                <span *ngIf="s.senseId">({{ s.senseId }}) </span>{{ s.definition }}
+              </p>
+              <ul class="ex-list" *ngIf="s.examples.length">
+                <li class="ex" *ngFor="let ex of s.examples">Ex: {{ ex }}</li>
+              </ul>
+            </ng-container>
+          </ng-container>
+        </div>
+      </div>
+    </swiper-slide>
+
+    <!-- 5) REST GROUP QUIZ SLIDES -->
+    <swiper-slide *ngFor="let q of quizQuestionsRest(); let qi = index">
+      <div class="slide">
+        <div class="card quiz-card">
+          <div class="pill">
+            {{
+              1
+              + lesson1Part1SlidesFirst().length
+              + quizQuestionsFirst().length
+              + lesson1Part1SlidesRest().length
+              + (qi + 1)
+            }}
+            / {{ totalSlides() }}
+          </div>
+
+          <p class="quiz-desc">{{ q.shortDescription }}</p>
+
+          <div class="quiz-option"
+               *ngFor="let opt of q.options; let oi = index"
+               (click)="onQuizAnswer(q, oi)">
+            <span class="icon"
+                  [ngClass]="{
+                    'pre': !quizState()[q.id],
+                    'correct': quizState()[q.id]?.isCorrect
+                               && quizState()[q.id]?.selectedIndex === oi,
+                    'wrong': !quizState()[q.id]?.isCorrect
+                             && quizState()[q.id]?.selectedIndex === oi
+                  }">
+              <ng-container *ngIf="!quizState()[q.id]">✓</ng-container>
+              <ng-container *ngIf="quizState()[q.id]
+                                   && quizState()[q.id]?.selectedIndex === oi">
+                <ng-container *ngIf="quizState()[q.id]?.isCorrect; else wrongIcon2">
+                  ✓
+                </ng-container>
+                <ng-template #wrongIcon2>✗</ng-template>
+              </ng-container>
+            </span>
+            <span class="label">{{ opt.label }}</span>
+          </div>
+        </div>
+      </div>
+    </swiper-slide>
+
+
+
+  </swiper-container>
+
+  <!-- watercolor sea at the very bottom -->
+  <div class="sea" aria-hidden="true">
+    <img class="waves" [src]="waveUrl" alt="" />
+    <div class="boat">
+      <img [src]="boatUrl" alt="">
+      <span class="ripple r1"></span>
+      <span class="ripple r2"></span>
+      <span class="ripple r3"></span>
+    </div>
+  </div>
+</ion-content>
+x

@@ -1,0 +1,164 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Lessons Slides</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!-- Swiper Container for slides -->
+  <swiper-container #swiper 
+                    [slidesPerView]="1" 
+                    [allowTouchMove]="true" 
+                    [speed]="300"
+                    [modules]="swiperModules" 
+                    (afterinit)="onSwiperInit()" 
+                    (swiperslidechange)="onSlideDidChange($event)">
+
+    <!-- INTRO SLIDE with interactive paragraph -->
+    <swiper-slide>
+      <div class="slide">
+        <div class="card intro-card">
+          <div class="pill">1 / {{ total }}</div>
+
+          <!-- bubble with short description -->
+          <div class="desc-container" *ngIf="activeWord">
+            <div class="desc-bubble">
+              <strong>{{ activeWord }}</strong> — {{ activeShortDesc }}
+            </div>
+          </div>
+
+          <p class="intro-text">
+            Maria loves books. She likes to 
+            <button class="kw"
+                    [class.active]="activeWord === 'compose'"
+                    (click)="showDesc('compose')">compose</button>
+            short poems in her notebook.
+            She wants to 
+            <button class="kw"
+                    [class.active]="activeWord === 'dedicate'"
+                    (click)="showDesc('dedicate')">dedicate</button>
+            her first poem to her teacher, who helps her read every day.
+            In class, she and her friend have a 
+            <button class="kw"
+                    [class.active]="activeWord === 'dialog'"
+                    (click)="showDesc('dialog')">dialog</button>
+            about their favorite stories.
+            They talk about the writers who 
+            <button class="kw"
+                    [class.active]="activeWord === 'inscribe'"
+                    (click)="showDesc('inscribe')">inscribe</button>
+            kind words at the front of their books.
+            After school, Maria begins to 
+            <button class="kw"
+                    [class.active]="activeWord === 'narrate'"
+                    (click)="showDesc('narrate')">narrate</button>
+            a little story about a girl who finds a magic library.
+            Her teacher reads it aloud to the class.
+            Everyone claps, and Maria smiles. She thinks maybe one day she will write a real book.
+          </p>
+
+          <div class="actions">
+         
+            <ion-button size="default" fill="clear" (click)="clearDesc()">Clear</ion-button>
+               <ion-button size="default" color="secondary" (click)="onNextSlide()">Next</ion-button>
+          </div>
+        </div>
+      </div>
+    </swiper-slide>
+
+    <!-- Repeat slides using swiper-slide elements -->
+    <swiper-slide *ngFor="let item of items(); let i = index">
+      <div class="slide">
+        <!-- central content card -->
+        <div class="card">
+          <div class="pill">{{ i + 2 }} / {{ total }}</div>
+          <h1 class="word">{{ item.word }}</h1>
+          <div class="ipa">{{ item.ipa }}</div>
+          <p class="def">n. {{ item.def }}</p>
+          <p class="ex">Ex: {{ item.ex }}</p>
+
+          <div class="actions">
+            <ion-button size="default">Listen</ion-button>
+            <ion-button size="default" fill="outline" color="primary">Repeat</ion-button>
+            <ion-button size="default" color="secondary" (click)="onNextSlide()">Next</ion-button>
+          </div>
+        </div>
+      </div>
+    </swiper-slide>
+  </swiper-container>
+
+  <!-- watercolor sea at the very bottom -->
+  <div class="sea" aria-hidden="true">
+    <img class="waves" [src]="waveUrl" alt="" />
+    <div class="boat">
+      <img [src]="boatUrl" alt="">
+      <span class="ripple r1"></span>
+      <span class="ripple r2"></span>
+      <span class="ripple r3"></span>
+    </div>
+  </div>
+</ion-content>
+
+<!-- kept your previous component block commented out -->
+
+
+<!--<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Lessons Slides</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+   Swiper Container for slides 
+  <swiper-container #swiper 
+                    [slidesPerView]="1" 
+                    [allowTouchMove]="true" 
+                    [speed]="300"
+                    [modules]="swiperModules" 
+                    (afterinit)="onSwiperInit()" 
+                    (swiperslidechange)="onSlideDidChange($event)">
+     Repeat slides using swiper-slide elements 
+    <swiper-slide *ngFor="let item of items(); let i = index">
+      <div class="slide">
+  central content card 
+  <div class="card">
+    <div class="pill">{{ index }} / {{ total }}</div>
+    <h1 class="word">{{ item.word }}</h1>
+    <div class="ipa">{{ item.ipa }}</div>
+    <p class="def">n. {{ item.def }}</p>
+    <p class="ex">Ex: {{item.ex }}</p>
+
+    <div class="actions">
+      <ion-button size="default">Listen</ion-button>
+      <ion-button size="default" fill="outline" color="primary" >Repeat</ion-button>
+      <ion-button size="default" color="secondary" (click)="onNextSlide()">Next</ion-button>
+    </div>
+  </div>
+
+  
+</div>
+   
+    </swiper-slide>
+  </swiper-container>
+   watercolor sea at the very bottom 
+  <div class="sea" aria-hidden="true">
+    <img class="waves" [src]="waveUrl" alt="" />
+    <div class="boat">
+      <img [src]="boatUrl" alt="">
+      <span class="ripple r1"></span>
+      <span class="ripple r2"></span>
+      <span class="ripple r3"></span>
+    </div>
+  </div>
+</ion-content>
+
+
+ <app-lesson-slide 
+        [word]="item.word"
+        [ipa]="item.ipa"
+        [def]="item.def"
+        [ex]="item.ex"
+        [index]="i + 1"
+        [total]="items().length"
+        (nextSlide)="onNextSlide()">
+      </app-lesson-slide>-->

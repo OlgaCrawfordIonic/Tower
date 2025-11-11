@@ -1,0 +1,94 @@
+:host {
+  --sea-line: #cfe3f7;
+  --buoy-shadow: 0 8px 18px rgba(0,0,0,0.05);
+}
+
+.progress-bar .progress-wrap {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+  align-items: center;
+  padding: 8px 12px;
+}
+.progress-bar ion-progress-bar {
+  grid-column: 1 / span 2;
+}
+.progress-bar .progress-num {
+  justify-self: end;
+  font-weight: 600;
+  color: var(--ion-color-primary);
+}
+
+.voyage {
+  position: relative;
+  min-height: 1600px;
+  padding: 16px;
+  background: #F6FAFF;
+}
+
+.path {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  width: 100%;
+  height: 1600px;
+  pointer-events: none;
+}
+.wave {
+  fill: none;
+  stroke: var(--sea-line);
+  stroke-width: 6;
+}
+
+.boat {
+  position: absolute;
+  left: 50%;
+  width: 14px; height: 14px;
+  transform: translate(-50%, 180px);
+  border-radius: 50%;
+  background: var(--ion-color-primary);
+  box-shadow: 0 0 0 6px rgba(10, 76, 138, 0.12);
+}
+
+.buoy {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(92vw, 740px);
+  background: white;
+  border-radius: 18px;
+  padding: 16px 16px 16px 20px;
+  box-shadow: var(--buoy-shadow);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: center;
+}
+
+.buoy .text .title { font-weight: 800; font-size: 18px; }
+.buoy .text .subtitle { color: #5a6b7b; font-size: 14px; margin-top: 2px; }
+
+.pill {
+  position: absolute;
+  right: auto;
+  left: 18px;
+  top: -12px;
+  font-size: 12px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #eef1f4;
+  color: #304a63;
+}
+.pill-next { background: #eef6ff; color: #0a4c8a; }
+.pill-locked { background: #f3f4f6; color: #8a9aa7; }
+
+.buoy.locked { opacity: .7; }
+.buoy.done { outline: 2px solid rgba(10,76,138,.18); }
+
+.harbor {
+  margin: 24px 8px 8px;
+  border-radius: 18px;
+  background: #e9f6ff;
+}
+
+.bottom-space { height: 96px; }
