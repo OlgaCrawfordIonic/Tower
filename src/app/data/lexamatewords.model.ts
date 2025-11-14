@@ -58,7 +58,10 @@ export interface WordDoc {
   // Word may appear in many lessons overall
   lessons: number[];
 
-  shortDescription: string;
+  shortDescription: {
+    'en-GB': string[];
+    'en-US': string[];
+  };
   levels?: CEFR[];
 
   /**

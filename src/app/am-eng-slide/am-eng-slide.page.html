@@ -227,10 +227,54 @@
         </div>
       </div>
     </swiper-slide>
+  <!-- 6) EXTRA QUIZ SLIDES FOR MISTAKES -->
+<swiper-slide *ngFor="let q of extraQuizQuestions(); let ei = index">
+  <div class="slide">
+    <div class="card quiz-card">
+      <div class="pill">
+        {{
+          1
+          + lesson1Part1SlidesFirst().length
+          + quizQuestionsFirst().length
+          + lesson1Part1SlidesRest().length
+          + quizQuestionsRest().length
+          + (ei + 1)
+        }}
+        / {{ totalSlides() }}
+      </div>
 
+      <p class="quiz-desc">
+        {{ q.shortDescription }}
+      </p>
 
-
-  </swiper-container>
+      <div class="quiz-option"
+           *ngFor="let opt of q.options; let oi = index"
+           (click)="onQuizAnswer(q, oi)">
+        <span class="icon"
+              [ngClass]="{
+                'pre': !quizState()[q.id],
+                'correct': quizState()[q.id]?.isCorrect
+                           && quizState()[q.id]?.selectedIndex === oi,
+                'wrong': !quizState()[q.id]?.isCorrect
+                         && quizState()[q.id]?.selectedIndex === oi
+              }">
+          <ng-container *ngIf="!quizState()[q.id]">✓</ng-container>
+          <ng-container *ngIf="quizState()[q.id]
+                               && quizState()[q.id]?.selectedIndex === oi">
+            <ng-container *ngIf="quizState()[q.id]?.isCorrect; else wrongIconExtra">
+              ✓
+            </ng-container>
+            <ng-template #wrongIconExtra>✗</ng-template>
+          </ng-container>
+        </span>
+        <span class="label">
+          {{ opt.label }}
+        </span>
+      </div>
+    </div>
+  </div>
+</swiper-slide>
+</swiper-container>
 
   <!-- watercolor sea at the very bottom -->
   <div class="sea" aria-hidden="true">

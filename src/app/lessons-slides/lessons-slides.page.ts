@@ -105,7 +105,10 @@ export class LessonsSlidesPage {
     american: "compose",
     language: "en",
     lessons: [12, 18, 29],
-    shortDescription: "create music or writing",
+    shortDescription: {
+      "en-GB": ["create music or writing"],
+      "en-US": ["create music or writing"]
+    },
     levels: ["B1"],
     partsOfSpeech: [
       {
@@ -167,7 +170,10 @@ export class LessonsSlidesPage {
     american: "dedicate",
     language: "en",
     lessons: [13, 21],
-    shortDescription: "devote time or effort",
+    shortDescription: {
+      "en-GB": ["devote time or effort"],
+      "en-US": ["devote time or effort"]
+    },
     levels: ["B1"],
     partsOfSpeech: [
       {
@@ -223,11 +229,14 @@ export class LessonsSlidesPage {
   },
   {
     lemma: "dialog",
-    english: "dialogue", // UK display
-    american: "dialog",  // US display
+    english: "dialogue",
+    american: "dialog",
     language: "en",
     lessons: [10, 24],
-    shortDescription: "conversation between characters",
+    shortDescription: {
+      "en-GB": ["conversation between characters"],
+      "en-US": ["conversation between characters"]
+    },
     levels: ["B1"],
     partsOfSpeech: [
       {
@@ -273,7 +282,10 @@ export class LessonsSlidesPage {
     american: "inscribe",
     language: "en",
     lessons: [19, 32],
-    shortDescription: "write words on a surface",
+    shortDescription: {
+      "en-GB": ["write words on a surface"],
+      "en-US": ["write words on a surface"]
+    },
     levels: ["B1"],
     partsOfSpeech: [
       {
@@ -325,7 +337,10 @@ export class LessonsSlidesPage {
     american: "narrate",
     language: "en",
     lessons: [11, 28],
-    shortDescription: "tell a story formally",
+    shortDescription: {
+      "en-GB": ["tell a story formally"],
+      "en-US": ["tell a story formally"]
+    },
     levels: ["B1"],
     partsOfSpeech: [
       {
@@ -371,7 +386,10 @@ export class LessonsSlidesPage {
     american: "narrative",
     language: "en",
     lessons: [14, 30],
-    shortDescription: "story or account of events",
+    shortDescription: {
+      "en-GB": ["story or account of events"],
+      "en-US": ["story or account of events"]
+    },
     levels: ["B1"],
     partsOfSpeech: [
       {
@@ -417,7 +435,10 @@ export class LessonsSlidesPage {
     american: "recite",
     language: "en",
     lessons: [9, 23],
-    shortDescription: "say aloud from memory",
+    shortDescription: {
+      "en-GB": ["say aloud from memory"],
+      "en-US": ["say aloud from memory"]
+    },
     levels: ["B1"],
     partsOfSpeech: [
       {
@@ -463,7 +484,10 @@ export class LessonsSlidesPage {
     american: "retell",
     language: "en",
     lessons: [16, 31],
-    shortDescription: "tell again in new way",
+    shortDescription: {
+      "en-GB": ["tell again in new way"],
+      "en-US": ["tell again in new way"]
+    },
     levels: ["B1"],
     partsOfSpeech: [
       {
@@ -509,7 +533,10 @@ export class LessonsSlidesPage {
     american: "rewrite",
     language: "en",
     lessons: [20, 33],
-    shortDescription: "write again to improve",
+    shortDescription: {
+      "en-GB": ["write again to improve"],
+      "en-US": ["write again to improve"]
+    },
     levels: ["B1"],
     partsOfSpeech: [
       {
@@ -561,7 +588,10 @@ export class LessonsSlidesPage {
     american: "setting",
     language: "en",
     lessons: [8, 26],
-    shortDescription: "place and time of story",
+    shortDescription: {
+      "en-GB": ["place and time of story"],
+      "en-US": ["place and time of story"]
+    },
     levels: ["B1"],
     partsOfSpeech: [
       {
@@ -615,7 +645,10 @@ export class LessonsSlidesPage {
     american: "sorrow",
     language: "en",
     lessons: [22, 34],
-    shortDescription: "deep sadness or regret",
+    shortDescription: {
+      "en-GB": ["deep sadness or regret"],
+      "en-US": ["deep sadness or regret"]
+    },
     levels: ["B1"],
     partsOfSpeech: [
       {
@@ -656,6 +689,7 @@ export class LessonsSlidesPage {
     }
   }
 ]);
+
 
 
   // Swiper modules

@@ -90,7 +90,7 @@ quizState = signal<Record<string, QuizSelection | undefined>>({});
 
 // BehaviorSubject to collect *shortDescriptions* where the user made an error
 quizMistakes$ = new BehaviorSubject<string[]>([]);
-
+quizMistakes = signal<string[]>([]);
   // your existing data:
    readonly lessons = signal<Lessons[]>([
         {
@@ -123,14 +123,17 @@ quizMistakes$ = new BehaviorSubject<string[]>([]);
       ]);
     
       
-    readonly words = signal<WordDoc[]>([
+   readonly words = signal<WordDoc[]>([
   {
     lemma: "compose",
     english: "compose",
     american: "compose",
     language: "en",
     lessons: [12, 18, 29],
-    shortDescription: "create music or writing",
+    shortDescription: {
+      "en-GB": ["create music or writing"],
+      "en-US": ["create music or writing Am"]
+    },
     levels: ["B1"],
     partsOfSpeech: [
       {
@@ -192,7 +195,10 @@ quizMistakes$ = new BehaviorSubject<string[]>([]);
     american: "dedicate",
     language: "en",
     lessons: [13, 21],
-    shortDescription: "devote time or effort",
+    shortDescription: {
+      "en-GB": ["devote time or effort"],
+      "en-US": ["devote time or effort"]
+    },
     levels: ["B1"],
     partsOfSpeech: [
       {
@@ -248,11 +254,14 @@ quizMistakes$ = new BehaviorSubject<string[]>([]);
   },
   {
     lemma: "dialog",
-    english: "dialogue", // UK display
-    american: "dialog",  // US display
+    english: "dialogue",
+    american: "dialog",
     language: "en",
     lessons: [10, 24],
-    shortDescription: "conversation between characters",
+    shortDescription: {
+      "en-GB": ["conversation between characters"],
+      "en-US": ["conversation between characters"]
+    },
     levels: ["B1"],
     partsOfSpeech: [
       {
@@ -298,7 +307,10 @@ quizMistakes$ = new BehaviorSubject<string[]>([]);
     american: "inscribe",
     language: "en",
     lessons: [19, 32],
-    shortDescription: "write words on a surface",
+    shortDescription: {
+      "en-GB": ["write words on a surface"],
+      "en-US": ["write words on a surface"]
+    },
     levels: ["B1"],
     partsOfSpeech: [
       {
@@ -350,7 +362,10 @@ quizMistakes$ = new BehaviorSubject<string[]>([]);
     american: "narrate",
     language: "en",
     lessons: [11, 28],
-    shortDescription: "tell a story formally",
+    shortDescription: {
+      "en-GB": ["tell a story formally"],
+      "en-US": ["tell a story formally"]
+    },
     levels: ["B1"],
     partsOfSpeech: [
       {
@@ -396,7 +411,10 @@ quizMistakes$ = new BehaviorSubject<string[]>([]);
     american: "narrative",
     language: "en",
     lessons: [14, 30],
-    shortDescription: "story or account of events",
+    shortDescription: {
+      "en-GB": ["story or account of events"],
+      "en-US": ["story or account of events"]
+    },
     levels: ["B1"],
     partsOfSpeech: [
       {
@@ -442,7 +460,10 @@ quizMistakes$ = new BehaviorSubject<string[]>([]);
     american: "recite",
     language: "en",
     lessons: [9, 23],
-    shortDescription: "say aloud from memory",
+    shortDescription: {
+      "en-GB": ["say aloud from memory"],
+      "en-US": ["say aloud from memory"]
+    },
     levels: ["B1"],
     partsOfSpeech: [
       {
@@ -488,7 +509,10 @@ quizMistakes$ = new BehaviorSubject<string[]>([]);
     american: "retell",
     language: "en",
     lessons: [16, 31],
-    shortDescription: "tell again in new way",
+    shortDescription: {
+      "en-GB": ["tell again in new way"],
+      "en-US": ["tell again in new way"]
+    },
     levels: ["B1"],
     partsOfSpeech: [
       {
@@ -534,7 +558,10 @@ quizMistakes$ = new BehaviorSubject<string[]>([]);
     american: "rewrite",
     language: "en",
     lessons: [20, 33],
-    shortDescription: "write again to improve",
+    shortDescription: {
+      "en-GB": ["write again to improve"],
+      "en-US": ["write again to improve"]
+    },
     levels: ["B1"],
     partsOfSpeech: [
       {
@@ -586,7 +613,10 @@ quizMistakes$ = new BehaviorSubject<string[]>([]);
     american: "setting",
     language: "en",
     lessons: [8, 26],
-    shortDescription: "place and time of story",
+    shortDescription: {
+      "en-GB": ["place and time of story"],
+      "en-US": ["place and time of story"]
+    },
     levels: ["B1"],
     partsOfSpeech: [
       {
@@ -640,7 +670,10 @@ quizMistakes$ = new BehaviorSubject<string[]>([]);
     american: "sorrow",
     language: "en",
     lessons: [22, 34],
-    shortDescription: "deep sadness or regret",
+    shortDescription: {
+      "en-GB": ["deep sadness or regret"],
+      "en-US": ["deep sadness or regret"]
+    },
     levels: ["B1"],
     partsOfSpeech: [
       {
@@ -683,6 +716,8 @@ quizMistakes$ = new BehaviorSubject<string[]>([]);
 ]);
 
 
+
+
   // variety toggle: 'british' or 'american'
   variety = signal<'british' | 'american'>('british');
 
@@ -697,19 +732,43 @@ quizMistakes$ = new BehaviorSubject<string[]>([]);
     if (this.variety() !== v) {
       this.variety.set(v);
       this.clearDesc();
+      // optional reset
+    // this.quizMistakes$.next([]);
+    // this.quizMistakes.set([]);
+    // this.quizState.set({});
     }
   }
 
-  // lemma -> shortDescription
-  descByLemma = computed<Record<string, string>>(() => {
-    const out: Record<string, string> = {};
-    for (const w of this.words()) {
-      if (w.lemma && w.shortDescription) {
-        out[w.lemma] = w.shortDescription;
-      }
-    }
-    return out;
-  });
+ 
+
+// lemma -> first short description string for the active variety
+descByLemma = computed<Record<string, string>>(() => {
+  const out: Record<string, string> = {};
+  const locale = this.getVariantCode();
+
+  for (const w of this.words()) {
+    const list = (w.shortDescription as any)?.[locale] as string[] | undefined;
+    out[w.lemma] = (Array.isArray(list) && list.length ? list[0] : '') ?? '';
+  }
+  return out;
+});
+
+// (optional) reverse lookup: shortDesc string -> lemma (for extra tests)
+descToLemma = computed<Record<string, string>>(() => {
+  const m: Record<string, string> = {};
+  const map = this.descByLemma();
+  for (const lemma of Object.keys(map)) {
+    const d = map[lemma];
+    if (d) m[d] = lemma;  // assumes descriptions are unique per variety
+  }
+  return m;
+});
+
+showDesc(lemma: string) {
+  this.activeWord = lemma;
+  this.activeShortDesc = this.descByLemma()[lemma] ?? '';
+}
+
 
   // Build segments for Lesson 1 Part 1 based on current variety
   introSegmentsLesson1Part1 = computed<Segment[]>(() => {
@@ -775,11 +834,7 @@ quizMistakes$ = new BehaviorSubject<string[]>([]);
   activeWord: string | null = null;
   activeShortDesc = '';
 
-  showDesc(lemma: string) {
-    const desc = this.descByLemma()[lemma] ?? '';
-    this.activeWord = lemma;
-    this.activeShortDesc = desc;
-  }
+  
 
   clearDesc() {
     this.activeWord = null;
@@ -946,6 +1001,7 @@ private getDisplayWord(doc: WordDoc): string {
 quizQuestionsFirst = computed<QuizQuestion[]>(() => {
   const { first } = this.lesson1Part1Groups();
   const docs = this.words();
+  const descMap = this.descByLemma();
 
   const candidates = first
     .map(lemma => docs.find(w => w.lemma === lemma))
@@ -964,23 +1020,22 @@ quizQuestionsFirst = computed<QuizQuestion[]>(() => {
 
     return {
       id,
-      shortDescription: doc.shortDescription,
+      shortDescription: descMap[doc.lemma] ?? '',
       options: this.shuffleOptions(id, rawOptions),
     };
   });
 });
+
 
 // ---------- 3. Track answers + mistakes ----------
 
 
 onQuizAnswer(q: QuizQuestion, optIndex: number) {
   const state = this.quizState();
-
-  // prevent changing answer once chosen
-  if (state[q.id]) return;
+  if (state[q.id]) return; // lock after first answer
 
   const chosen = q.options[optIndex];
-  const newState: Record<string, QuizSelection | undefined> = {
+  const newState = {
     ...state,
     [q.id]: {
       selectedIndex: optIndex,
@@ -989,19 +1044,22 @@ onQuizAnswer(q: QuizQuestion, optIndex: number) {
   };
   this.quizState.set(newState);
 
-  // if wrong → store shortDescription in BehaviorSubject
   if (!chosen.isCorrect) {
     const current = this.quizMistakes$.value;
     if (!current.includes(q.shortDescription)) {
-      this.quizMistakes$.next([...current, q.shortDescription]);
+      const updated = [...current, q.shortDescription];
+      this.quizMistakes$.next(updated);
+      this.quizMistakes.set(updated); // keep signal in sync
     }
   }
 }
+
 
 // ---------- REST group quiz (NEW) ----------
 quizQuestionsRest = computed<QuizQuestion[]>(() => {
   const { rest } = this.lesson1Part1Groups();
   const docs = this.words();
+  const descMap = this.descByLemma();
 
   const candidates = rest
     .map(lemma => docs.find(w => w.lemma === lemma))
@@ -1009,18 +1067,13 @@ quizQuestionsRest = computed<QuizQuestion[]>(() => {
 
   if (!candidates.length) return [];
 
-  // if only one word in rest, pick a distractor from anywhere reasonable
   const pool = docs;
 
   return candidates.map((doc, idx, arr) => {
     const correct = this.getDisplayWord(doc);
-
-    let wrongDoc: WordDoc | undefined;
-    if (arr.length > 1) {
-      wrongDoc = arr[(idx + 1) % arr.length];
-    } else {
-      wrongDoc = pool.find(d => d.lemma !== doc.lemma) || doc;
-    }
+    const wrongDoc = arr.length > 1
+      ? arr[(idx + 1) % arr.length]
+      : (pool.find(d => d.lemma !== doc.lemma) || doc);
     const wrong = this.getDisplayWord(wrongDoc);
 
     const id = `l1p1-rest-${doc.lemma}`;
@@ -1031,11 +1084,12 @@ quizQuestionsRest = computed<QuizQuestion[]>(() => {
 
     return {
       id,
-      shortDescription: doc.shortDescription,
+      shortDescription: descMap[doc.lemma] ?? '',
       options: this.shuffleOptions(id, rawOptions),
     };
   });
 });
+
 
 
 private shuffleOptions(id: string, options: QuizOption[]): QuizOption[] {
@@ -1064,6 +1118,43 @@ private shuffleOptions(id: string, options: QuizOption[]): QuizOption[] {
   return arr;
 }
 
+extraQuizQuestions = computed<QuizQuestion[]>(() => {
+  const mistakes = Array.from(new Set(this.quizMistakes())); // strings
+  if (!mistakes.length) return [];
+
+  const desc2lemma = this.descToLemma();
+  const docs = this.words();
+
+  const mistakeDocs = mistakes
+    .map(d => desc2lemma[d])
+    .filter((lem): lem is string => !!lem)
+    .map(lem => docs.find(w => w.lemma === lem))
+    .filter((d): d is WordDoc => !!d);
+
+  if (!mistakeDocs.length) return [];
+
+  return mistakeDocs.map((doc, idx) => {
+    const correct = this.getDisplayWord(doc);
+    const pool = docs;
+    const wrongDoc = pool.find(w => w.lemma !== doc.lemma) || doc;
+    const wrong = this.getDisplayWord(wrongDoc);
+
+    const id = `l1p1-extra-${doc.lemma}-${idx}`;
+    const rawOptions: QuizOption[] = [
+      { label: correct, isCorrect: true },
+      { label: wrong,   isCorrect: false },
+    ];
+
+    return {
+      id,
+      shortDescription: this.descByLemma()[doc.lemma] ?? '',
+      options: this.shuffleOptions(id, rawOptions),
+    };
+  });
+});
+
+
+
 
 // ---------- total slide count helper ----------
 totalSlides = computed(() => {
@@ -1074,5 +1165,7 @@ totalSlides = computed(() => {
   const restQuiz = this.quizQuestionsRest().length;
   return intro + firstWords + firstQuiz + restWords + restQuiz;
 });
+
+
 
 }
