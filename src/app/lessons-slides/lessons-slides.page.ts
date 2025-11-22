@@ -1,4 +1,4 @@
-// lesson-slides.page.ts (Ionic Angular using IonSlides)
+/*
 import { Component, ViewChild, signal ,ElementRef, computed } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { IonContent, IonicSlides } from '@ionic/angular/standalone';

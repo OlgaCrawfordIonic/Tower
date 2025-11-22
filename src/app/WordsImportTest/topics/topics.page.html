@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Topics</ion-title>
+     <ion-buttons slot="end">
+      <ion-button (click)="downloadTopicsJson()">
+        Download JSON
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+   
+  <ion-list *ngFor="let group of topicGroups">
+    <ion-item-divider color="light">
+      <ion-label>
+        <strong>{{ group.topic }}</strong>
+      </ion-label>
+    </ion-item-divider>
+
+    <ion-item *ngFor="let word of group.words">
+      <ion-label>{{ word }}</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
+

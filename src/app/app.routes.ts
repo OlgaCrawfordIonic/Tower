@@ -42,7 +42,7 @@ export const routes: Routes = [
     path: 'unit-voyage1',
     loadComponent: () => import('./unit-voyage1/unit-voyage1.page').then( m => m.UnitVoyage1Page)
   },
-  {
+ /* {
     path: 'lessons-slides',
     loadComponent: () => import('./lessons-slides/lessons-slides.page').then( m => m.LessonsSlidesPage)
   },
@@ -53,10 +53,19 @@ export const routes: Routes = [
   {
     path: 'lessons-slides1',
     loadComponent: () => import('./lessons-slides1/lessons-slides1.page').then( m => m.LessonsSlides1Page)
-  },
+  },*/
   {
     path: 'am-eng-slide',
     loadComponent: () => import('./am-eng-slide/am-eng-slide.page').then( m => m.AmEngSlidePage)
+  },
+  
+{
+    path: 'topics',
+    loadComponent: () => import('./WordsImportTest/topics/topics.page').then( m => m.TopicsPage)
+  },
+  {
+    path: 'lessons',
+    loadComponent: () => import('./LessonMaker/lessons/lessons.page').then( m => m.LessonsPage)
   },
   
 ];

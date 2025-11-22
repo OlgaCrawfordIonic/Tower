@@ -1,0 +1,8366 @@
+[
+  {
+    "lesson": 1,
+    "topic": "House",
+    "lemmas": {
+      "part1": [
+        "damp",
+        "vacancy",
+        "hut",
+        "upstairs",
+        "restore"
+      ],
+      "part2": [
+        "flat",
+        "nap",
+        "fold",
+        "uncover",
+        "first-floor"
+      ]
+    }
+  },
+  {
+    "lesson": 2,
+    "topic": "Employment",
+    "lemmas": {
+      "part1": [
+        "full-time",
+        "status",
+        "extend",
+        "tourism"
+      ],
+      "part2": [
+        "department",
+        "leave",
+        "proposal",
+        "patrol",
+        "estimate"
+      ]
+    }
+  },
+  {
+    "lesson": 3,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "opposite",
+        "useless",
+        "eager",
+        "southeast",
+        "southern"
+      ],
+      "part2": [
+        "tropical",
+        "paid",
+        "human",
+        "festive",
+        "vast",
+        "sacred"
+      ]
+    }
+  },
+  {
+    "lesson": 4,
+    "topic": "Expressing Feelings",
+    "lemmas": {
+      "part1": [
+        "stress",
+        "fond",
+        "calm",
+        "calmness",
+        "boast"
+      ],
+      "part2": [
+        "unfortunate",
+        "crush",
+        "like",
+        "sigh",
+        "stressed"
+      ]
+    }
+  },
+  {
+    "lesson": 5,
+    "topic": "Expressing Ideas",
+    "lemmas": {
+      "part1": [
+        "comment",
+        "demonstrate",
+        "narrate",
+        "persuasive",
+        "inform"
+      ],
+      "part2": [
+        "conclude",
+        "surely",
+        "insist",
+        "assume",
+        "complement"
+      ]
+    }
+  },
+  {
+    "lesson": 6,
+    "topic": "Common verbs",
+    "lemmas": {
+      "part1": [
+        "tighten",
+        "live",
+        "smile",
+        "unfold",
+        "extend"
+      ],
+      "part2": [
+        "dare",
+        "tease",
+        "arise",
+        "knit",
+        "stir"
+      ]
+    }
+  },
+  {
+    "lesson": 7,
+    "topic": "Expressing Ideas",
+    "lemmas": {
+      "part1": [
+        "gesture",
+        "request",
+        "reasonable",
+        "demonstration",
+        "dialog"
+      ],
+      "part2": [
+        "illuminate",
+        "highlight",
+        "gossip",
+        "confirm",
+        "pardon"
+      ]
+    }
+  },
+  {
+    "lesson": 8,
+    "topic": "Employment",
+    "lemmas": {
+      "part1": [
+        "investigation",
+        "hire",
+        "lead",
+        "unemployed"
+      ],
+      "part2": [
+        "distribute",
+        "self-service",
+        "negotiation",
+        "mechanic",
+        "stressed"
+      ]
+    }
+  },
+  {
+    "lesson": 9,
+    "topic": "Physical Qualities of Objects",
+    "lemmas": {
+      "part1": [
+        "edge",
+        "furthest",
+        "fade",
+        "narrow",
+        "spectacular"
+      ],
+      "part2": [
+        "sphere",
+        "burst",
+        "shadow",
+        "level",
+        "farthest"
+      ]
+    }
+  },
+  {
+    "lesson": 10,
+    "topic": "Formal Institutions",
+    "lemmas": {
+      "part1": [
+        "constitution",
+        "reunification",
+        "proclaim",
+        "investigation",
+        "nationalist"
+      ],
+      "part2": [
+        "prison",
+        "vice president",
+        "security",
+        "republic",
+        "mayor"
+      ]
+    }
+  },
+  {
+    "lesson": 11,
+    "topic": "Technology",
+    "lemmas": {
+      "part1": [
+        "monitor",
+        "operation",
+        "virtual",
+        "motor",
+        "engine"
+      ],
+      "part2": [
+        "tape",
+        "modem",
+        "development",
+        "mechanical",
+        "graphics",
+        "graph"
+      ]
+    }
+  },
+  {
+    "lesson": 12,
+    "topic": "Animals",
+    "lemmas": {
+      "part1": [
+        "cage",
+        "cattle",
+        "ape",
+        "vet"
+      ],
+      "part2": [
+        "puppy",
+        "beaver",
+        "lamb",
+        "fetch",
+        "herd"
+      ]
+    }
+  },
+  {
+    "lesson": 13,
+    "topic": "Expressing Feelings",
+    "lemmas": {
+      "part1": [
+        "curiosity",
+        "soul",
+        "sensation",
+        "boredom"
+      ],
+      "part2": [
+        "helpless",
+        "horrify",
+        "anger",
+        "rage",
+        "smile"
+      ]
+    }
+  },
+  {
+    "lesson": 14,
+    "topic": "Sport and fitness",
+    "lemmas": {
+      "part1": [
+        "defender",
+        "active",
+        "slope",
+        "snowboard",
+        "participant"
+      ],
+      "part2": [
+        "diving",
+        "race",
+        "hit",
+        "compete",
+        "gymnastics"
+      ]
+    }
+  },
+  {
+    "lesson": 15,
+    "topic": "Common verbs",
+    "lemmas": {
+      "part1": [
+        "kid",
+        "prove",
+        "deny",
+        "ignore",
+        "rush"
+      ],
+      "part2": [
+        "deprive",
+        "launch",
+        "illuminate",
+        "permit",
+        "require"
+      ]
+    }
+  },
+  {
+    "lesson": 16,
+    "topic": "House",
+    "lemmas": {
+      "part1": [
+        "mend",
+        "curtain",
+        "carpet",
+        "rebuild",
+        "dustbin"
+      ],
+      "part2": [
+        "indoors",
+        "lodge",
+        "pillow",
+        "household",
+        "switch"
+      ]
+    }
+  },
+  {
+    "lesson": 17,
+    "topic": "Expressing Feelings",
+    "lemmas": {
+      "part1": [
+        "compliment",
+        "encouraging",
+        "tragedy",
+        "anxiety",
+        "ashamed"
+      ],
+      "part2": [
+        "politely",
+        "shiver",
+        "tension",
+        "hurt",
+        "unlucky"
+      ]
+    }
+  },
+  {
+    "lesson": 18,
+    "topic": "History",
+    "lemmas": {
+      "part1": [
+        "violence",
+        "settler",
+        "historic",
+        "bomb",
+        "inscription"
+      ],
+      "part2": [
+        "ruin",
+        "exploration",
+        "dynasty",
+        "movement",
+        "former"
+      ]
+    }
+  },
+  {
+    "lesson": 19,
+    "topic": "Technology",
+    "lemmas": {
+      "part1": [
+        "connect",
+        "pipe",
+        "lock",
+        "visual",
+        "access"
+      ],
+      "part2": [
+        "pause",
+        "diagram",
+        "password",
+        "electronic",
+        "video clip",
+        "up-to-date"
+      ]
+    }
+  },
+  {
+    "lesson": 20,
+    "topic": "Describing Society",
+    "lemmas": {
+      "part1": [
+        "discrimination",
+        "global",
+        "shortage",
+        "neighborhood",
+        "democracy"
+      ],
+      "part2": [
+        "motherland",
+        "disability",
+        "politics",
+        "prejudice",
+        "internationally",
+        "reunification"
+      ]
+    }
+  },
+  {
+    "lesson": 21,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "definite",
+        "qualified",
+        "criminal",
+        "endless",
+        "fallen"
+      ],
+      "part2": [
+        "generous",
+        "impressive",
+        "delightful",
+        "giant",
+        "frozen"
+      ]
+    }
+  },
+  {
+    "lesson": 22,
+    "topic": "Expressing Feelings",
+    "lemmas": {
+      "part1": [
+        "kiss",
+        "embarrass",
+        "motivate",
+        "suffer",
+        "amazing"
+      ],
+      "part2": [
+        "overcome",
+        "enthusiasm",
+        "threat",
+        "surprisingly",
+        "shocking"
+      ]
+    }
+  },
+  {
+    "lesson": 23,
+    "topic": "Linguistics",
+    "lemmas": {
+      "part1": [
+        "alphabet",
+        "antonym",
+        "dot",
+        "modal verb"
+      ],
+      "part2": [
+        "full stop",
+        "define",
+        "translate",
+        "infinitive",
+        "spelling"
+      ]
+    }
+  },
+  {
+    "lesson": 24,
+    "topic": "Food and Drink",
+    "lemmas": {
+      "part1": [
+        "liver",
+        "tasteless",
+        "nutrient",
+        "cucumber",
+        "filling"
+      ],
+      "part2": [
+        "cabbage",
+        "hunger",
+        "broccoli",
+        "pineapple",
+        "straw"
+      ]
+    }
+  },
+  {
+    "lesson": 25,
+    "topic": "Linguistics",
+    "lemmas": {
+      "part1": [
+        "phrase",
+        "irregular",
+        "definition",
+        "suffix"
+      ],
+      "part2": [
+        "possessive",
+        "ought to",
+        "idiom",
+        "auxiliary",
+        "prefix"
+      ]
+    }
+  },
+  {
+    "lesson": 26,
+    "topic": "Education",
+    "lemmas": {
+      "part1": [
+        "measurement",
+        "instructor",
+        "insight",
+        "select",
+        "object"
+      ],
+      "part2": [
+        "gifted",
+        "laboratory",
+        "composition",
+        "moral",
+        "preschool"
+      ]
+    }
+  },
+  {
+    "lesson": 27,
+    "topic": "Expressing Feelings",
+    "lemmas": {
+      "part1": [
+        "comfort",
+        "tease",
+        "terror",
+        "amazed",
+        "concerned"
+      ],
+      "part2": [
+        "miserable",
+        "overjoyed",
+        "uncontrollable",
+        "reject",
+        "scary"
+      ]
+    }
+  },
+  {
+    "lesson": 28,
+    "topic": "Education",
+    "lemmas": {
+      "part1": [
+        "calculator",
+        "participle",
+        "grouping",
+        "determine",
+        "puzzle"
+      ],
+      "part2": [
+        "standard",
+        "foundation",
+        "educate",
+        "teaching",
+        "curve"
+      ]
+    }
+  },
+  {
+    "lesson": 29,
+    "topic": "Employment",
+    "lemmas": {
+      "part1": [
+        "steel",
+        "maintenance",
+        "craft",
+        "session",
+        "presentation"
+      ],
+      "part2": [
+        "urgent",
+        "strain",
+        "union",
+        "retain",
+        "firm"
+      ]
+    }
+  },
+  {
+    "lesson": 30,
+    "topic": "Entertainment",
+    "lemmas": {
+      "part1": [
+        "magician",
+        "phantom",
+        "compose",
+        "joke",
+        "applause"
+      ],
+      "part2": [
+        "circus",
+        "guitarist",
+        "organ",
+        "spectacular",
+        "storyteller"
+      ]
+    }
+  },
+  {
+    "lesson": 31,
+    "topic": "Prepositions",
+    "lemmas": {
+      "part1": [
+        "off",
+        "like",
+        "after",
+        "via",
+        "including"
+      ],
+      "part2": [
+        "aside",
+        "opposite",
+        "above",
+        "onto",
+        "unless"
+      ]
+    }
+  },
+  {
+    "lesson": 32,
+    "topic": "Medicine",
+    "lemmas": {
+      "part1": [
+        "tablet",
+        "poison",
+        "patient",
+        "illness",
+        "eyesight"
+      ],
+      "part2": [
+        "examine",
+        "operation",
+        "muscle",
+        "stricken",
+        "severe"
+      ]
+    }
+  },
+  {
+    "lesson": 33,
+    "topic": "House",
+    "lemmas": {
+      "part1": [
+        "toothpaste",
+        "chest of drawers",
+        "freezer",
+        "rubber",
+        "next door"
+      ],
+      "part2": [
+        "basin",
+        "hang",
+        "match",
+        "log",
+        "top"
+      ]
+    }
+  },
+  {
+    "lesson": 34,
+    "topic": "Education",
+    "lemmas": {
+      "part1": [
+        "genetics",
+        "form",
+        "ness",
+        "program"
+      ],
+      "part2": [
+        "participant",
+        "phenomenon",
+        "circle",
+        "introduction",
+        "imitate"
+      ]
+    }
+  },
+  {
+    "lesson": 35,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "rare",
+        "stylish",
+        "indirect",
+        "various",
+        "stressed"
+      ],
+      "part2": [
+        "residential",
+        "exhausted",
+        "environmental",
+        "entire",
+        "proud"
+      ]
+    }
+  },
+  {
+    "lesson": 36,
+    "topic": "Expressing Feelings",
+    "lemmas": {
+      "part1": [
+        "giggle",
+        "laugh",
+        "enthusiastic",
+        "unwanted",
+        "depressing"
+      ],
+      "part2": [
+        "tiring",
+        "fancy",
+        "hopeful",
+        "uplifted",
+        "tempt"
+      ]
+    }
+  },
+  {
+    "lesson": 37,
+    "topic": "Sport and fitness",
+    "lemmas": {
+      "part1": [
+        "swimmer",
+        "sports",
+        "competitor",
+        "lifeguard",
+        "beat"
+      ],
+      "part2": [
+        "ice hockey",
+        "dive",
+        "bounce",
+        "victory",
+        "fitness",
+        "equipment"
+      ]
+    }
+  },
+  {
+    "lesson": 38,
+    "topic": "Common verbs",
+    "lemmas": {
+      "part1": [
+        "glimpse",
+        "proceed",
+        "kiss",
+        "soothe",
+        "seize"
+      ],
+      "part2": [
+        "hunt",
+        "ship",
+        "disappoint",
+        "overwork",
+        "ensure"
+      ]
+    }
+  },
+  {
+    "lesson": 39,
+    "topic": "Adverbs",
+    "lemmas": {
+      "part1": [
+        "generally",
+        "brightly",
+        "after",
+        "furthest",
+        "simultaneously"
+      ],
+      "part2": [
+        "publicly",
+        "slightly",
+        "closely",
+        "frequently",
+        "afterwards"
+      ]
+    }
+  },
+  {
+    "lesson": 40,
+    "topic": "Education",
+    "lemmas": {
+      "part1": [
+        "latecomer",
+        "category",
+        "usage",
+        "primary school",
+        "prove"
+      ],
+      "part2": [
+        "fluent",
+        "categorise",
+        "encyclopedia",
+        "reception",
+        "mathematician"
+      ]
+    }
+  },
+  {
+    "lesson": 41,
+    "topic": "Formal Institutions",
+    "lemmas": {
+      "part1": [
+        "principle",
+        "firefighter",
+        "department",
+        "strategic",
+        "register"
+      ],
+      "part2": [
+        "enemy",
+        "organization",
+        "air force",
+        "establishment",
+        "management"
+      ]
+    }
+  },
+  {
+    "lesson": 42,
+    "topic": "Science",
+    "lemmas": {
+      "part1": [
+        "trace",
+        "absorb",
+        "graph",
+        "geology",
+        "calculate"
+      ],
+      "part2": [
+        "derive",
+        "rubber",
+        "mathematics",
+        "gene",
+        "genetics"
+      ]
+    }
+  },
+  {
+    "lesson": 43,
+    "topic": "Technology",
+    "lemmas": {
+      "part1": [
+        "account",
+        "model",
+        "capsule",
+        "hand-held",
+        "digital"
+      ],
+      "part2": [
+        "loudspeaker",
+        "telecommunications",
+        "format",
+        "platform",
+        "maintenance",
+        "search"
+      ]
+    }
+  },
+  {
+    "lesson": 44,
+    "topic": "History",
+    "lemmas": {
+      "part1": [
+        "disaster",
+        "origin",
+        "settlement",
+        "explosion",
+        "democracy"
+      ],
+      "part2": [
+        "monument",
+        "empire",
+        "arrow",
+        "conflict",
+        "myth"
+      ]
+    }
+  },
+  {
+    "lesson": 45,
+    "topic": "Expressing Ideas",
+    "lemmas": {
+      "part1": [
+        "likeness",
+        "realistic",
+        "ought to",
+        "logic"
+      ],
+      "part2": [
+        "confusing",
+        "supposedly",
+        "convince",
+        "outline",
+        "convey"
+      ]
+    }
+  },
+  {
+    "lesson": 46,
+    "topic": "House",
+    "lemmas": {
+      "part1": [
+        "enclose",
+        "fix",
+        "maintenance",
+        "extend",
+        "noticeboard"
+      ],
+      "part2": [
+        "maintain",
+        "cage",
+        "construction",
+        "bowl",
+        "plug"
+      ]
+    }
+  },
+  {
+    "lesson": 47,
+    "topic": "Geographical Features",
+    "lemmas": {
+      "part1": [
+        "geographical",
+        "isle",
+        "stream",
+        "habitat"
+      ],
+      "part2": [
+        "channel",
+        "pond",
+        "tropical",
+        "northeastern",
+        "slope"
+      ]
+    }
+  },
+  {
+    "lesson": 48,
+    "topic": "Entertainment",
+    "lemmas": {
+      "part1": [
+        "bang",
+        "orchestra",
+        "humor",
+        "craft",
+        "animation"
+      ],
+      "part2": [
+        "performer",
+        "jazz",
+        "bar",
+        "firework",
+        "video clip"
+      ]
+    }
+  },
+  {
+    "lesson": 49,
+    "topic": "Expressing Feelings",
+    "lemmas": {
+      "part1": [
+        "emotionally",
+        "relaxing",
+        "disappoint",
+        "treat",
+        "satisfied"
+      ],
+      "part2": [
+        "goodness",
+        "bore",
+        "chuckle",
+        "pleasantly",
+        "regain"
+      ]
+    }
+  },
+  {
+    "lesson": 50,
+    "topic": "Essential words",
+    "lemmas": {
+      "part1": [
+        "breath",
+        "element",
+        "revision",
+        "oneself",
+        "construct"
+      ],
+      "part2": [
+        "relative",
+        "disagreement",
+        "used to",
+        "tendency",
+        "haven"
+      ]
+    }
+  },
+  {
+    "lesson": 51,
+    "topic": "Religion and Spirituality",
+    "lemmas": {
+      "part1": [
+        "monk",
+        "meditate",
+        "prayer",
+        "universe",
+        "remembrance"
+      ],
+      "part2": [
+        "moral",
+        "sacred",
+        "piety",
+        "mission",
+        "paradise"
+      ]
+    }
+  },
+  {
+    "lesson": 52,
+    "topic": "Finances",
+    "lemmas": {
+      "part1": [
+        "forecast",
+        "amount",
+        "economy",
+        "tax",
+        "rise"
+      ],
+      "part2": [
+        "deal",
+        "fund",
+        "demand",
+        "decrease",
+        "consumption"
+      ]
+    }
+  },
+  {
+    "lesson": 53,
+    "topic": "Relationships and Family",
+    "lemmas": {
+      "part1": [
+        "buddy",
+        "single",
+        "spoil",
+        "engaged"
+      ],
+      "part2": [
+        "brotherhood",
+        "funeral",
+        "niece",
+        "babysitter",
+        "dependent"
+      ]
+    }
+  },
+  {
+    "lesson": 54,
+    "topic": "History",
+    "lemmas": {
+      "part1": [
+        "reunification",
+        "restore",
+        "discovery",
+        "terrorist",
+        "fight"
+      ],
+      "part2": [
+        "terror",
+        "bullet",
+        "crisis",
+        "liberation",
+        "republic"
+      ]
+    }
+  },
+  {
+    "lesson": 55,
+    "topic": "Essential words",
+    "lemmas": {
+      "part1": [
+        "confirmation",
+        "variety",
+        "aspect",
+        "instance"
+      ],
+      "part2": [
+        "responsibility",
+        "exchange",
+        "sometimes",
+        "comparison",
+        "trouble"
+      ]
+    }
+  },
+  {
+    "lesson": 56,
+    "topic": "Education",
+    "lemmas": {
+      "part1": [
+        "sphere",
+        "finding",
+        "conclusion",
+        "instruction",
+        "discovery"
+      ],
+      "part2": [
+        "experiment",
+        "plus",
+        "arithmetic",
+        "simplify",
+        "calculate"
+      ]
+    }
+  },
+  {
+    "lesson": 57,
+    "topic": "Law",
+    "lemmas": {
+      "part1": [
+        "mislead",
+        "visa",
+        "proof",
+        "equal",
+        "duty"
+      ],
+      "part2": [
+        "invasion",
+        "defend",
+        "prejudice",
+        "prohibition",
+        "battle"
+      ]
+    }
+  },
+  {
+    "lesson": 58,
+    "topic": "Technology",
+    "lemmas": {
+      "part1": [
+        "generate",
+        "drag",
+        "attachment",
+        "robot",
+        "keyboard"
+      ],
+      "part2": [
+        "record",
+        "function",
+        "filter",
+        "fix",
+        "net",
+        "crash"
+      ]
+    }
+  },
+  {
+    "lesson": 59,
+    "topic": "Geographical Features",
+    "lemmas": {
+      "part1": [
+        "coastal",
+        "horizon",
+        "quake",
+        "jungle",
+        "harbor"
+      ],
+      "part2": [
+        "tide",
+        "cave",
+        "ocean",
+        "land",
+        "cliff"
+      ]
+    }
+  },
+  {
+    "lesson": 60,
+    "topic": "Weather",
+    "lemmas": {
+      "part1": [
+        "forecast",
+        "stormy",
+        "clear",
+        "tropical",
+        "frost"
+      ],
+      "part2": [
+        "severe",
+        "thunderous",
+        "freezing",
+        "sunset",
+        "heat"
+      ]
+    }
+  },
+  {
+    "lesson": 61,
+    "topic": "House",
+    "lemmas": {
+      "part1": [
+        "shave",
+        "pin",
+        "light",
+        "alarm"
+      ],
+      "part2": [
+        "facility",
+        "hairdryer",
+        "straw",
+        "hanging",
+        "entry"
+      ]
+    }
+  },
+  {
+    "lesson": 62,
+    "topic": "Expressing Feelings",
+    "lemmas": {
+      "part1": [
+        "excitement",
+        "affection",
+        "dislike",
+        "gesture",
+        "desperate"
+      ],
+      "part2": [
+        "strain",
+        "lovingly",
+        "intense",
+        "courage",
+        "gee"
+      ]
+    }
+  },
+  {
+    "lesson": 63,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "holy",
+        "inconvenient",
+        "guilty",
+        "marine",
+        "farthest"
+      ],
+      "part2": [
+        "deadly",
+        "lifelong",
+        "typical",
+        "occasional",
+        "lighter"
+      ]
+    }
+  },
+  {
+    "lesson": 64,
+    "topic": "Body Parts",
+    "lemmas": {
+      "part1": [
+        "arm",
+        "palm",
+        "eyesight",
+        "calf"
+      ],
+      "part2": [
+        "elbow",
+        "organ",
+        "tongue",
+        "upper",
+        "nail"
+      ]
+    }
+  },
+  {
+    "lesson": 65,
+    "topic": "Medicine",
+    "lemmas": {
+      "part1": [
+        "strain",
+        "gene",
+        "injury",
+        "counseling",
+        "examination"
+      ],
+      "part2": [
+        "recovery",
+        "deficiency",
+        "strengthen",
+        "choke",
+        "aid"
+      ]
+    }
+  },
+  {
+    "lesson": 66,
+    "topic": "Education",
+    "lemmas": {
+      "part1": [
+        "probability",
+        "encouragement",
+        "sufficient",
+        "inspire",
+        "specialize"
+      ],
+      "part2": [
+        "definition",
+        "examine",
+        "qualify",
+        "principle",
+        "notion"
+      ]
+    }
+  },
+  {
+    "lesson": 67,
+    "topic": "Professions",
+    "lemmas": {
+      "part1": [
+        "teller",
+        "environmentalist",
+        "hairdresser",
+        "librarian",
+        "postman"
+      ],
+      "part2": [
+        "guitarist",
+        "film-maker",
+        "architect",
+        "diver",
+        "referee"
+      ]
+    }
+  },
+  {
+    "lesson": 68,
+    "topic": "Transport",
+    "lemmas": {
+      "part1": [
+        "signal",
+        "check-in",
+        "crossroads",
+        "luggage",
+        "parachute"
+      ],
+      "part2": [
+        "railroad",
+        "depart",
+        "booking",
+        "transport",
+        "runway",
+        "signpost"
+      ]
+    }
+  },
+  {
+    "lesson": 69,
+    "topic": "Finances",
+    "lemmas": {
+      "part1": [
+        "benefit",
+        "increase",
+        "firm",
+        "deposit",
+        "sponsor"
+      ],
+      "part2": [
+        "industry",
+        "bond",
+        "cashpoint",
+        "advance",
+        "account"
+      ]
+    }
+  },
+  {
+    "lesson": 70,
+    "topic": "Expressing Feelings",
+    "lemmas": {
+      "part1": [
+        "stunning",
+        "stricken",
+        "hate",
+        "positively",
+        "frustration"
+      ],
+      "part2": [
+        "forgive",
+        "excitedly",
+        "scream",
+        "sadness",
+        "loss"
+      ]
+    }
+  },
+  {
+    "lesson": 71,
+    "topic": "Animals",
+    "lemmas": {
+      "part1": [
+        "hunt",
+        "feed",
+        "shrimp",
+        "bark",
+        "tick"
+      ],
+      "part2": [
+        "bull",
+        "beast",
+        "parrot",
+        "calf",
+        "turtle"
+      ]
+    }
+  },
+  {
+    "lesson": 72,
+    "topic": "Professions",
+    "lemmas": {
+      "part1": [
+        "performer",
+        "judge",
+        "profession",
+        "firefighter",
+        "lifeguard"
+      ],
+      "part2": [
+        "babysitter",
+        "creator",
+        "detective",
+        "philosopher",
+        "designer"
+      ]
+    }
+  },
+  {
+    "lesson": 73,
+    "topic": "Expressing Feelings",
+    "lemmas": {
+      "part1": [
+        "delight",
+        "behave",
+        "stuck",
+        "proud",
+        "confusion"
+      ],
+      "part2": [
+        "disturbance",
+        "stun",
+        "soothe",
+        "sorrow",
+        "emotional"
+      ]
+    }
+  },
+  {
+    "lesson": 74,
+    "topic": "Science",
+    "lemmas": {
+      "part1": [
+        "analysis",
+        "dissolve",
+        "atomic",
+        "affect",
+        "genetic"
+      ],
+      "part2": [
+        "nucleus",
+        "heat",
+        "process",
+        "solid",
+        "mineral"
+      ]
+    }
+  },
+  {
+    "lesson": 75,
+    "topic": "Law",
+    "lemmas": {
+      "part1": [
+        "strike",
+        "restrict",
+        "inspection",
+        "tax",
+        "copyright"
+      ],
+      "part2": [
+        "property",
+        "charge",
+        "settlement",
+        "compromise",
+        "ration"
+      ]
+    }
+  },
+  {
+    "lesson": 76,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "distant",
+        "penniless",
+        "freezing",
+        "unclear",
+        "northeastern"
+      ],
+      "part2": [
+        "spicy",
+        "magnificent",
+        "clear",
+        "stable",
+        "extraordinary"
+      ]
+    }
+  },
+  {
+    "lesson": 77,
+    "topic": "Law",
+    "lemmas": {
+      "part1": [
+        "election",
+        "terrorism",
+        "disabled",
+        "safeguard",
+        "terrorist"
+      ],
+      "part2": [
+        "immigration",
+        "suspect",
+        "escape",
+        "legal",
+        "murderer"
+      ]
+    }
+  },
+  {
+    "lesson": 78,
+    "topic": "Common verbs",
+    "lemmas": {
+      "part1": [
+        "distinguish",
+        "safeguard",
+        "talk",
+        "suffer",
+        "protect"
+      ],
+      "part2": [
+        "remove",
+        "surround",
+        "flunk",
+        "defeat",
+        "report"
+      ]
+    }
+  },
+  {
+    "lesson": 79,
+    "topic": "Medicine",
+    "lemmas": {
+      "part1": [
+        "nurse",
+        "aspirin",
+        "chemist",
+        "painful",
+        "deaf"
+      ],
+      "part2": [
+        "oral",
+        "treatment",
+        "needle",
+        "protective",
+        "healing"
+      ]
+    }
+  },
+  {
+    "lesson": 80,
+    "topic": "Law",
+    "lemmas": {
+      "part1": [
+        "suspicion",
+        "fine",
+        "violently",
+        "forbidden",
+        "lodge"
+      ],
+      "part2": [
+        "minor",
+        "safety",
+        "lawful",
+        "appeal",
+        "marriage"
+      ]
+    }
+  },
+  {
+    "lesson": 81,
+    "topic": "Common verbs",
+    "lemmas": {
+      "part1": [
+        "request",
+        "hesitate",
+        "melt",
+        "scratch",
+        "rewrite"
+      ],
+      "part2": [
+        "underline",
+        "emphasize",
+        "expand",
+        "reproduce",
+        "land"
+      ]
+    }
+  },
+  {
+    "lesson": 82,
+    "topic": "Expressing Ideas",
+    "lemmas": {
+      "part1": [
+        "impression",
+        "vivid",
+        "evident",
+        "mention"
+      ],
+      "part2": [
+        "summarize",
+        "misunderstanding",
+        "excuse",
+        "face to face",
+        "disagreement"
+      ]
+    }
+  },
+  {
+    "lesson": 83,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "brief",
+        "stupid",
+        "fond",
+        "drunk",
+        "reliable"
+      ],
+      "part2": [
+        "rapid",
+        "out-of-date",
+        "complete",
+        "abundant",
+        "neutral",
+        "secure"
+      ]
+    }
+  },
+  {
+    "lesson": 84,
+    "topic": "Common verbs",
+    "lemmas": {
+      "part1": [
+        "rebuild",
+        "leap",
+        "lessen",
+        "repay",
+        "please"
+      ],
+      "part2": [
+        "decrease",
+        "stretch",
+        "flow",
+        "decline",
+        "memorize"
+      ]
+    }
+  },
+  {
+    "lesson": 85,
+    "topic": "Religion and Spirituality",
+    "lemmas": {
+      "part1": [
+        "miracle",
+        "belief",
+        "holy",
+        "myth",
+        "priest"
+      ],
+      "part2": [
+        "religious",
+        "superstition",
+        "divine",
+        "forgive",
+        "mass"
+      ]
+    }
+  },
+  {
+    "lesson": 86,
+    "topic": "Common verbs",
+    "lemmas": {
+      "part1": [
+        "assist",
+        "stumble",
+        "accustom",
+        "slow",
+        "giggle"
+      ],
+      "part2": [
+        "hate",
+        "strike",
+        "supply",
+        "delete",
+        "affect"
+      ]
+    }
+  },
+  {
+    "lesson": 87,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "unfit",
+        "damp",
+        "equal",
+        "second-hand",
+        "horrible"
+      ],
+      "part2": [
+        "disastrous",
+        "lawful",
+        "trim",
+        "stuffed",
+        "uplifted"
+      ]
+    }
+  },
+  {
+    "lesson": 88,
+    "topic": "Adverbs",
+    "lemmas": {
+      "part1": [
+        "supposedly",
+        "newly",
+        "equally",
+        "consequently",
+        "altogether"
+      ],
+      "part2": [
+        "pleasantly",
+        "near",
+        "shortly",
+        "lightly",
+        "hurriedly"
+      ]
+    }
+  },
+  {
+    "lesson": 89,
+    "topic": "Education",
+    "lemmas": {
+      "part1": [
+        "graph",
+        "fluently",
+        "systematic",
+        "schoolteacher",
+        "divide"
+      ],
+      "part2": [
+        "distinction",
+        "measure",
+        "motivate",
+        "scholar",
+        "derive"
+      ]
+    }
+  },
+  {
+    "lesson": 90,
+    "topic": "Food and Drink",
+    "lemmas": {
+      "part1": [
+        "loaf",
+        "consumption",
+        "sour",
+        "ingredient",
+        "pot"
+      ],
+      "part2": [
+        "hearty",
+        "consume",
+        "takeaway",
+        "pie",
+        "baker"
+      ]
+    }
+  },
+  {
+    "lesson": 91,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "prepared",
+        "ridiculous",
+        "destructive",
+        "talkative",
+        "ecological"
+      ],
+      "part2": [
+        "passive",
+        "intensive",
+        "overjoyed",
+        "earnest",
+        "motionless"
+      ]
+    }
+  },
+  {
+    "lesson": 92,
+    "topic": "Prepositions",
+    "lemmas": {
+      "part1": [
+        "despite",
+        "throughout",
+        "instead of",
+        "back",
+        "since"
+      ],
+      "part2": [
+        "besides",
+        "per",
+        "preposition",
+        "regarding",
+        "provided",
+        "according to"
+      ]
+    }
+  },
+  {
+    "lesson": 93,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "dull",
+        "miserable",
+        "ripe",
+        "unlikely",
+        "formal"
+      ],
+      "part2": [
+        "uninterested",
+        "delicate",
+        "heavenly",
+        "foolish",
+        "inevitable"
+      ]
+    }
+  },
+  {
+    "lesson": 94,
+    "topic": "City",
+    "lemmas": {
+      "part1": [
+        "block",
+        "lodge",
+        "nightlife",
+        "stall",
+        "runway"
+      ],
+      "part2": [
+        "rail",
+        "crossroads",
+        "brick",
+        "avenue",
+        "public transport"
+      ]
+    }
+  },
+  {
+    "lesson": 95,
+    "topic": "Common verbs",
+    "lemmas": {
+      "part1": [
+        "approach",
+        "hit",
+        "uncover",
+        "shift",
+        "unite"
+      ],
+      "part2": [
+        "scan",
+        "rescue",
+        "possess",
+        "surprise",
+        "insist"
+      ]
+    }
+  },
+  {
+    "lesson": 96,
+    "topic": "Finances",
+    "lemmas": {
+      "part1": [
+        "charge",
+        "calculation",
+        "boom",
+        "outstanding",
+        "retail"
+      ],
+      "part2": [
+        "teller",
+        "crisis",
+        "commercial",
+        "discount",
+        "scholarship"
+      ]
+    }
+  },
+  {
+    "lesson": 97,
+    "topic": "Common verbs",
+    "lemmas": {
+      "part1": [
+        "obtain",
+        "settle",
+        "reclaim",
+        "gain",
+        "paralyze"
+      ],
+      "part2": [
+        "haunt",
+        "vary",
+        "define",
+        "intend",
+        "observe"
+      ]
+    }
+  },
+  {
+    "lesson": 98,
+    "topic": "Adverbs",
+    "lemmas": {
+      "part1": [
+        "highly",
+        "anxiously",
+        "even",
+        "personally",
+        "particularly"
+      ],
+      "part2": [
+        "outward",
+        "dangerously",
+        "repeatedly",
+        "freely",
+        "totally"
+      ]
+    }
+  },
+  {
+    "lesson": 99,
+    "topic": "Transport",
+    "lemmas": {
+      "part1": [
+        "foot",
+        "transfer",
+        "destination",
+        "delay",
+        "speed"
+      ],
+      "part2": [
+        "van",
+        "express",
+        "vehicle",
+        "cycle",
+        "ship"
+      ]
+    }
+  },
+  {
+    "lesson": 100,
+    "topic": "Ecology",
+    "lemmas": {
+      "part1": [
+        "greenhouse",
+        "endanger",
+        "rainforest",
+        "reproduce",
+        "disturbance"
+      ],
+      "part2": [
+        "moss",
+        "extinction",
+        "shelter",
+        "environmentalist",
+        "fuel"
+      ]
+    }
+  },
+  {
+    "lesson": 101,
+    "topic": "City",
+    "lemmas": {
+      "part1": [
+        "parking",
+        "fire station",
+        "district",
+        "next door"
+      ],
+      "part2": [
+        "exit",
+        "takeaway",
+        "harbor",
+        "market",
+        "council"
+      ]
+    }
+  },
+  {
+    "lesson": 102,
+    "topic": "Relationships",
+    "lemmas": {
+      "part1": [
+        "misunderstanding",
+        "split",
+        "mutual",
+        "negotiation",
+        "psychological"
+      ],
+      "part2": [
+        "recognize",
+        "forgive",
+        "greeting",
+        "supportive",
+        "blame"
+      ]
+    }
+  },
+  {
+    "lesson": 103,
+    "topic": "Common verbs",
+    "lemmas": {
+      "part1": [
+        "overcome",
+        "overwhelm",
+        "take",
+        "behave",
+        "respond"
+      ],
+      "part2": [
+        "chase",
+        "reach",
+        "recognize",
+        "occupy",
+        "guide"
+      ]
+    }
+  },
+  {
+    "lesson": 104,
+    "topic": "City",
+    "lemmas": {
+      "part1": [
+        "neighborhood",
+        "port",
+        "facility",
+        "crossing",
+        "skyscraper"
+      ],
+      "part2": [
+        "first floor",
+        "queue",
+        "hostel",
+        "monument",
+        "ground floor"
+      ]
+    }
+  },
+  {
+    "lesson": 105,
+    "topic": "Plants",
+    "lemmas": {
+      "part1": [
+        "cotton",
+        "nectar",
+        "maple",
+        "cucumber",
+        "pineapple"
+      ],
+      "part2": [
+        "strawberry",
+        "soil",
+        "cabbage",
+        "tobacco",
+        "broccoli"
+      ]
+    }
+  },
+  {
+    "lesson": 106,
+    "topic": "Holidays",
+    "lemmas": {
+      "part1": [
+        "reserve",
+        "reservation",
+        "barbecue",
+        "tourism"
+      ],
+      "part2": [
+        "festive",
+        "occasion",
+        "safari",
+        "unpack",
+        "attraction"
+      ]
+    }
+  },
+  {
+    "lesson": 107,
+    "topic": "Immigration and Customs",
+    "lemmas": {
+      "part1": [
+        "immigration",
+        "immigrate",
+        "entry",
+        "passport",
+        "border"
+      ],
+      "part2": [
+        "identity card",
+        "customs",
+        "duty-free",
+        "citizenship",
+        "visa"
+      ]
+    }
+  },
+  {
+    "lesson": 108,
+    "topic": "Shopping",
+    "lemmas": {
+      "part1": [
+        "pick",
+        "dealer",
+        "salesman",
+        "duty-free",
+        "deal"
+      ],
+      "part2": [
+        "buyer",
+        "checkout",
+        "delivery",
+        "display",
+        "merchant",
+        "distribution"
+      ]
+    }
+  },
+  {
+    "lesson": 109,
+    "topic": "Technology",
+    "lemmas": {
+      "part1": [
+        "switch",
+        "undo",
+        "mail",
+        "pump",
+        "design"
+      ],
+      "part2": [
+        "social networking",
+        "chat",
+        "server",
+        "satellite",
+        "charge"
+      ]
+    }
+  },
+  {
+    "lesson": 110,
+    "topic": "Employment",
+    "lemmas": {
+      "part1": [
+        "hazard",
+        "responsible",
+        "duty",
+        "standard",
+        "unemployment"
+      ],
+      "part2": [
+        "teamwork",
+        "improvement",
+        "organization",
+        "progress",
+        "stress"
+      ]
+    }
+  },
+  {
+    "lesson": 111,
+    "topic": "Finances",
+    "lemmas": {
+      "part1": [
+        "debt",
+        "accountant",
+        "paid",
+        "supply",
+        "duty-free"
+      ],
+      "part2": [
+        "repay",
+        "percent",
+        "fine",
+        "bubble",
+        "afford"
+      ]
+    }
+  },
+  {
+    "lesson": 112,
+    "topic": "Technology",
+    "lemmas": {
+      "part1": [
+        "click",
+        "recording",
+        "checkout",
+        "heater",
+        "dial"
+      ],
+      "part2": [
+        "message board",
+        "accessible",
+        "electricity",
+        "install",
+        "handle"
+      ]
+    }
+  },
+  {
+    "lesson": 113,
+    "topic": "Adverbs",
+    "lemmas": {
+      "part1": [
+        "unexpectedly",
+        "afterward",
+        "excitedly",
+        "safely",
+        "carelessly"
+      ],
+      "part2": [
+        "secretly",
+        "officially",
+        "unfairly",
+        "nonetheless",
+        "severely",
+        "beautifully"
+      ]
+    }
+  },
+  {
+    "lesson": 114,
+    "topic": "History",
+    "lemmas": {
+      "part1": [
+        "glory",
+        "nationalist",
+        "antique",
+        "civilisation",
+        "fallen"
+      ],
+      "part2": [
+        "sword",
+        "mankind",
+        "victory",
+        "incident",
+        "motherland",
+        "historical"
+      ]
+    }
+  },
+  {
+    "lesson": 115,
+    "topic": "Essential words",
+    "lemmas": {
+      "part1": [
+        "scope",
+        "misunderstanding",
+        "interest",
+        "membership"
+      ],
+      "part2": [
+        "decision",
+        "rest",
+        "identity",
+        "origin",
+        "unfold"
+      ]
+    }
+  },
+  {
+    "lesson": 116,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "first-floor",
+        "lean",
+        "sufficient",
+        "offensive",
+        "absolute"
+      ],
+      "part2": [
+        "mental",
+        "pale",
+        "religious",
+        "easygoing",
+        "steady"
+      ]
+    }
+  },
+  {
+    "lesson": 117,
+    "topic": "Shopping",
+    "lemmas": {
+      "part1": [
+        "luxury",
+        "packing",
+        "shopper",
+        "silk",
+        "bakery"
+      ],
+      "part2": [
+        "pharmacy",
+        "furnish",
+        "backpack",
+        "self-service",
+        "fake",
+        "till"
+      ]
+    }
+  },
+  {
+    "lesson": 118,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "sheer",
+        "diligent",
+        "bitter",
+        "gifted",
+        "unable"
+      ],
+      "part2": [
+        "depressed",
+        "tasty",
+        "circular",
+        "loud",
+        "past"
+      ]
+    }
+  },
+  {
+    "lesson": 119,
+    "topic": "Technology",
+    "lemmas": {
+      "part1": [
+        "innovator",
+        "application",
+        "dot",
+        "tablet",
+        "electrical"
+      ],
+      "part2": [
+        "delete",
+        "clip",
+        "virus",
+        "signal",
+        "frequency"
+      ]
+    }
+  },
+  {
+    "lesson": 120,
+    "topic": "Common verbs",
+    "lemmas": {
+      "part1": [
+        "mislead",
+        "struggle",
+        "govern",
+        "contribute",
+        "distribute"
+      ],
+      "part2": [
+        "spoil",
+        "acquire",
+        "suppose",
+        "locate",
+        "negotiate"
+      ]
+    }
+  },
+  {
+    "lesson": 121,
+    "topic": "Employment",
+    "lemmas": {
+      "part1": [
+        "deadline",
+        "producer",
+        "management",
+        "requirement",
+        "hardship"
+      ],
+      "part2": [
+        "negotiate",
+        "participant",
+        "interviewee",
+        "sufficient",
+        "reward"
+      ]
+    }
+  },
+  {
+    "lesson": 122,
+    "topic": "Media",
+    "lemmas": {
+      "part1": [
+        "clip",
+        "print",
+        "unheard",
+        "journal",
+        "critic"
+      ],
+      "part2": [
+        "report",
+        "graphic",
+        "video clip",
+        "blog",
+        "announce"
+      ]
+    }
+  },
+  {
+    "lesson": 123,
+    "topic": "Common verbs",
+    "lemmas": {
+      "part1": [
+        "adapt",
+        "mend",
+        "scold",
+        "murder"
+      ],
+      "part2": [
+        "flood",
+        "mention",
+        "increase",
+        "treat",
+        "toss"
+      ]
+    }
+  },
+  {
+    "lesson": 124,
+    "topic": "Education",
+    "lemmas": {
+      "part1": [
+        "shift",
+        "minus",
+        "oral",
+        "intensive",
+        "report"
+      ],
+      "part2": [
+        "theory",
+        "deadline",
+        "improvement",
+        "differ",
+        "transformation"
+      ]
+    }
+  },
+  {
+    "lesson": 125,
+    "topic": "Clothes",
+    "lemmas": {
+      "part1": [
+        "knit",
+        "collar",
+        "top",
+        "sweatshirt",
+        "old-fashioned"
+      ],
+      "part2": [
+        "fashionable",
+        "pullover",
+        "ironing",
+        "necklace",
+        "formal",
+        "stylish"
+      ]
+    }
+  },
+  {
+    "lesson": 126,
+    "topic": "Food and Drink",
+    "lemmas": {
+      "part1": [
+        "ginger",
+        "mixing bowl",
+        "stir",
+        "popcorn",
+        "courgette"
+      ],
+      "part2": [
+        "blend",
+        "raspberry",
+        "alcoholic",
+        "sticky",
+        "spoil"
+      ]
+    }
+  },
+  {
+    "lesson": 127,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "sour",
+        "deaf",
+        "intermediate",
+        "broad",
+        "uncontrollable"
+      ],
+      "part2": [
+        "juicy",
+        "stunning",
+        "former",
+        "delighted",
+        "graceful"
+      ]
+    }
+  },
+  {
+    "lesson": 128,
+    "topic": "Describing Society",
+    "lemmas": {
+      "part1": [
+        "unemployment",
+        "race",
+        "unite",
+        "equality",
+        "status"
+      ],
+      "part2": [
+        "minority",
+        "majority",
+        "protest",
+        "oppression",
+        "identity"
+      ]
+    }
+  },
+  {
+    "lesson": 129,
+    "topic": "Food and Drink",
+    "lemmas": {
+      "part1": [
+        "smell",
+        "taste",
+        "frying pan",
+        "oily",
+        "tuna"
+      ],
+      "part2": [
+        "appetite",
+        "tasty",
+        "mash",
+        "flavor",
+        "salmon"
+      ]
+    }
+  },
+  {
+    "lesson": 130,
+    "topic": "Law",
+    "lemmas": {
+      "part1": [
+        "refuse",
+        "detective",
+        "sword",
+        "protect",
+        "insurance"
+      ],
+      "part2": [
+        "underage",
+        "hearing",
+        "poison",
+        "justice",
+        "intentionally"
+      ]
+    }
+  },
+  {
+    "lesson": 131,
+    "topic": "Describing Society",
+    "lemmas": {
+      "part1": [
+        "liberation",
+        "individual",
+        "unify",
+        "inhabitant",
+        "transitional"
+      ],
+      "part2": [
+        "typical",
+        "brotherhood",
+        "superstition",
+        "underage",
+        "public"
+      ]
+    }
+  },
+  {
+    "lesson": 132,
+    "topic": "Food and Drink",
+    "lemmas": {
+      "part1": [
+        "melt",
+        "grill",
+        "pork",
+        "vegetarian",
+        "alcohol"
+      ],
+      "part2": [
+        "stuffed",
+        "feed",
+        "lettuce",
+        "nutrition",
+        "spicy"
+      ]
+    }
+  },
+  {
+    "lesson": 133,
+    "topic": "Medicine",
+    "lemmas": {
+      "part1": [
+        "hurt",
+        "heal",
+        "disabled",
+        "disable",
+        "filling"
+      ],
+      "part2": [
+        "soothe",
+        "surgery",
+        "ecstasy",
+        "ache",
+        "toothpaste"
+      ]
+    }
+  },
+  {
+    "lesson": 134,
+    "topic": "Technology",
+    "lemmas": {
+      "part1": [
+        "connection",
+        "document",
+        "disable",
+        "harness",
+        "flash"
+      ],
+      "part2": [
+        "scan",
+        "remote control",
+        "disc",
+        "link",
+        "launch"
+      ]
+    }
+  },
+  {
+    "lesson": 135,
+    "topic": "Transport",
+    "lemmas": {
+      "part1": [
+        "airline",
+        "ferry",
+        "launch",
+        "patrol",
+        "turbulence"
+      ],
+      "part2": [
+        "mile",
+        "queue",
+        "sidewalk",
+        "terminal",
+        "safely",
+        "crash"
+      ]
+    }
+  },
+  {
+    "lesson": 136,
+    "topic": "Education",
+    "lemmas": {
+      "part1": [
+        "participate",
+        "underline",
+        "diagram",
+        "define"
+      ],
+      "part2": [
+        "viewpoint",
+        "preparation",
+        "demonstration",
+        "function",
+        "idiom"
+      ]
+    }
+  },
+  {
+    "lesson": 137,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "terrified",
+        "threatening",
+        "valuable",
+        "global",
+        "unheard"
+      ],
+      "part2": [
+        "thankful",
+        "evident",
+        "unafraid",
+        "legal",
+        "minimum"
+      ]
+    }
+  },
+  {
+    "lesson": 138,
+    "topic": "Theatre and Cinema",
+    "lemmas": {
+      "part1": [
+        "actress",
+        "thriller",
+        "film-maker",
+        "documentary",
+        "tragedy",
+        "onstage"
+      ],
+      "part2": [
+        "opening",
+        "dramatic",
+        "act",
+        "studio",
+        "interval",
+        "film",
+        "intermission"
+      ]
+    }
+  },
+  {
+    "lesson": 139,
+    "topic": "Education",
+    "lemmas": {
+      "part1": [
+        "scope",
+        "physics",
+        "specialist",
+        "philosophy",
+        "sophomore"
+      ],
+      "part2": [
+        "face to face",
+        "examiner",
+        "visual",
+        "mathematics",
+        "comparison"
+      ]
+    }
+  },
+  {
+    "lesson": 140,
+    "topic": "Law",
+    "lemmas": {
+      "part1": [
+        "guilt",
+        "illegally",
+        "bust",
+        "threat",
+        "trace"
+      ],
+      "part2": [
+        "fake",
+        "claim",
+        "involuntarily",
+        "runaway",
+        "governor"
+      ]
+    }
+  },
+  {
+    "lesson": 141,
+    "topic": "History",
+    "lemmas": {
+      "part1": [
+        "survivor",
+        "battle",
+        "aborigine",
+        "past",
+        "liberate"
+      ],
+      "part2": [
+        "emperor",
+        "destruction",
+        "grave",
+        "oppression",
+        "conquer"
+      ]
+    }
+  },
+  {
+    "lesson": 142,
+    "topic": "Holidays",
+    "lemmas": {
+      "part1": [
+        "honeymoon",
+        "souvenir",
+        "travel agent",
+        "paradise"
+      ],
+      "part2": [
+        "sunbathe",
+        "present",
+        "campsite",
+        "greeting",
+        "resort"
+      ]
+    }
+  },
+  {
+    "lesson": 143,
+    "topic": "Education",
+    "lemmas": {
+      "part1": [
+        "modal verb",
+        "series",
+        "journal",
+        "interaction",
+        "classify"
+      ],
+      "part2": [
+        "fellow",
+        "revision",
+        "noticeboard",
+        "phrase",
+        "translate"
+      ]
+    }
+  },
+  {
+    "lesson": 144,
+    "topic": "Common verbs",
+    "lemmas": {
+      "part1": [
+        "hop",
+        "devastate",
+        "select",
+        "cure",
+        "shiver"
+      ],
+      "part2": [
+        "grab",
+        "shout",
+        "qualify",
+        "cut",
+        "entertain"
+      ]
+    }
+  },
+  {
+    "lesson": 145,
+    "topic": "Relationships",
+    "lemmas": {
+      "part1": [
+        "encounter",
+        "gratitude",
+        "gossip",
+        "pardon",
+        "kindness"
+      ],
+      "part2": [
+        "companion",
+        "relation",
+        "secret",
+        "propose",
+        "disagreement"
+      ]
+    }
+  },
+  {
+    "lesson": 146,
+    "topic": "Education",
+    "lemmas": {
+      "part1": [
+        "excellence",
+        "result",
+        "academy",
+        "admission"
+      ],
+      "part2": [
+        "objective",
+        "schoolmate",
+        "model",
+        "visually",
+        "cultural"
+      ]
+    }
+  },
+  {
+    "lesson": 147,
+    "topic": "Linguistics",
+    "lemmas": {
+      "part1": [
+        "name",
+        "initial",
+        "passive",
+        "comma"
+      ],
+      "part2": [
+        "adverbial",
+        "participle",
+        "ness",
+        "tongue",
+        "preposition"
+      ]
+    }
+  },
+  {
+    "lesson": 148,
+    "topic": "Food and Drink",
+    "lemmas": {
+      "part1": [
+        "bitter",
+        "mustard",
+        "freezer",
+        "refreshments",
+        "saucepan"
+      ],
+      "part2": [
+        "bacon",
+        "spinach",
+        "juicy",
+        "ration",
+        "frozen"
+      ]
+    }
+  },
+  {
+    "lesson": 149,
+    "topic": "Expressing Feelings",
+    "lemmas": {
+      "part1": [
+        "stumble",
+        "thankful",
+        "victim",
+        "sympathy",
+        "uninteresting"
+      ],
+      "part2": [
+        "unexpected",
+        "discourage",
+        "overwhelm",
+        "devotion",
+        "stare"
+      ]
+    }
+  },
+  {
+    "lesson": 150,
+    "topic": "Finances",
+    "lemmas": {
+      "part1": [
+        "dealer",
+        "bank account",
+        "valuable",
+        "management",
+        "branch"
+      ],
+      "part2": [
+        "economics",
+        "currency",
+        "annual",
+        "economic",
+        "gain",
+        "financial"
+      ]
+    }
+  },
+  {
+    "lesson": 151,
+    "topic": "Formal Institutions",
+    "lemmas": {
+      "part1": [
+        "council",
+        "democratic",
+        "bulletin",
+        "decision",
+        "chief"
+      ],
+      "part2": [
+        "demonstration",
+        "command",
+        "mission",
+        "declaration",
+        "ceremony"
+      ]
+    }
+  },
+  {
+    "lesson": 152,
+    "topic": "Essential words",
+    "lemmas": {
+      "part1": [
+        "object",
+        "standard",
+        "function",
+        "complicate",
+        "miracle"
+      ],
+      "part2": [
+        "plan",
+        "possibility",
+        "fifth",
+        "excess",
+        "form"
+      ]
+    }
+  },
+  {
+    "lesson": 153,
+    "topic": "Food and Drink",
+    "lemmas": {
+      "part1": [
+        "barman",
+        "jug",
+        "nutritious",
+        "fish",
+        "fry"
+      ],
+      "part2": [
+        "saucer",
+        "thirst",
+        "spice",
+        "canned",
+        "strawberry"
+      ]
+    }
+  },
+  {
+    "lesson": 154,
+    "topic": "Expressing Feelings",
+    "lemmas": {
+      "part1": [
+        "overwhelming",
+        "dedicate",
+        "trouble",
+        "uninterested",
+        "jealous"
+      ],
+      "part2": [
+        "fondness",
+        "attract",
+        "mourn",
+        "promise",
+        "frustrated"
+      ]
+    }
+  },
+  {
+    "lesson": 155,
+    "topic": "Law",
+    "lemmas": {
+      "part1": [
+        "negotiation",
+        "racial",
+        "refusal",
+        "judge",
+        "prisoner"
+      ],
+      "part2": [
+        "reclaim",
+        "regulation",
+        "innocent",
+        "judgment",
+        "theft"
+      ]
+    }
+  },
+  {
+    "lesson": 156,
+    "topic": "Formal Institutions",
+    "lemmas": {
+      "part1": [
+        "county",
+        "control",
+        "signature",
+        "conservative",
+        "declare"
+      ],
+      "part2": [
+        "approval",
+        "justice",
+        "defense",
+        "region",
+        "inspection"
+      ]
+    }
+  },
+  {
+    "lesson": 157,
+    "topic": "Essential words",
+    "lemmas": {
+      "part1": [
+        "distinction",
+        "incident",
+        "arrangement",
+        "rank",
+        "occasion"
+      ],
+      "part2": [
+        "least",
+        "board",
+        "excuse",
+        "speed",
+        "contrary"
+      ]
+    }
+  },
+  {
+    "lesson": 158,
+    "topic": "Ecology",
+    "lemmas": {
+      "part1": [
+        "jungle",
+        "safeguard",
+        "conservation",
+        "flood",
+        "destructive"
+      ],
+      "part2": [
+        "preservation",
+        "devastating",
+        "atmosphere",
+        "habitat",
+        "organic"
+      ]
+    }
+  },
+  {
+    "lesson": 159,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "responsible",
+        "reasonable",
+        "thorough",
+        "noticeable",
+        "fluent"
+      ],
+      "part2": [
+        "magical",
+        "economic",
+        "exclusive",
+        "light",
+        "precious"
+      ]
+    }
+  },
+  {
+    "lesson": 160,
+    "topic": "Expressing Ideas",
+    "lemmas": {
+      "part1": [
+        "respond",
+        "intend",
+        "viewpoint",
+        "notion",
+        "sign"
+      ],
+      "part2": [
+        "interrupt",
+        "critical",
+        "joke",
+        "talk",
+        "unclear"
+      ]
+    }
+  },
+  {
+    "lesson": 161,
+    "topic": "House",
+    "lemmas": {
+      "part1": [
+        "jug",
+        "remote control",
+        "shut",
+        "bedside",
+        "surround"
+      ],
+      "part2": [
+        "exit",
+        "nail",
+        "place",
+        "install",
+        "ground floor"
+      ]
+    }
+  },
+  {
+    "lesson": 162,
+    "topic": "Common verbs",
+    "lemmas": {
+      "part1": [
+        "heal",
+        "acknowledge",
+        "estimate",
+        "slip",
+        "characterise"
+      ],
+      "part2": [
+        "generate",
+        "urge",
+        "strengthen",
+        "combine",
+        "notice"
+      ]
+    }
+  },
+  {
+    "lesson": 163,
+    "topic": "Media",
+    "lemmas": {
+      "part1": [
+        "logo",
+        "documentary",
+        "disc jockey",
+        "chat show",
+        "program"
+      ],
+      "part2": [
+        "inform",
+        "channel",
+        "series",
+        "network",
+        "producer",
+        "film"
+      ]
+    }
+  },
+  {
+    "lesson": 164,
+    "topic": "Religion and Spirituality",
+    "lemmas": {
+      "part1": [
+        "funeral",
+        "hope",
+        "praise",
+        "purify",
+        "bishop"
+      ],
+      "part2": [
+        "blessing",
+        "spiritual",
+        "devotion",
+        "goddess",
+        "marriage"
+      ]
+    }
+  },
+  {
+    "lesson": 165,
+    "topic": "Plants",
+    "lemmas": {
+      "part1": [
+        "raspberry",
+        "courgette",
+        "ripe",
+        "spinach"
+      ],
+      "part2": [
+        "seaweed",
+        "stem",
+        "mustard",
+        "plant",
+        "moss"
+      ]
+    }
+  },
+  {
+    "lesson": 166,
+    "topic": "Shopping",
+    "lemmas": {
+      "part1": [
+        "option",
+        "accessory",
+        "package",
+        "reservation",
+        "department"
+      ],
+      "part2": [
+        "distribute",
+        "marble",
+        "trend",
+        "discount",
+        "refund",
+        "service"
+      ]
+    }
+  },
+  {
+    "lesson": 167,
+    "topic": "Agriculture",
+    "lemmas": {
+      "part1": [
+        "straw",
+        "agricultural",
+        "breeding",
+        "cultivate",
+        "breed",
+        "cattle",
+        "conservation",
+        "farmland"
+      ],
+      "part2": [
+        "farming",
+        "dig",
+        "pick",
+        "cotton",
+        "agriculture",
+        "soil",
+        "scatter",
+        "crop"
+      ]
+    }
+  },
+  {
+    "lesson": 168,
+    "topic": "Ecology",
+    "lemmas": {
+      "part1": [
+        "extinct",
+        "preserve",
+        "pollutant",
+        "ocean"
+      ],
+      "part2": [
+        "debris",
+        "ecological",
+        "ecology",
+        "climate",
+        "hazard"
+      ]
+    }
+  },
+  {
+    "lesson": 169,
+    "topic": "Physical Qualities of Objects",
+    "lemmas": {
+      "part1": [
+        "light",
+        "spiral",
+        "round",
+        "shape",
+        "curve"
+      ],
+      "part2": [
+        "glint",
+        "depth",
+        "length",
+        "stretch",
+        "bent"
+      ]
+    }
+  },
+  {
+    "lesson": 170,
+    "topic": "Law",
+    "lemmas": {
+      "part1": [
+        "secure",
+        "finding",
+        "identity",
+        "punish"
+      ],
+      "part2": [
+        "settle",
+        "fair",
+        "protection",
+        "separation",
+        "declare"
+      ]
+    }
+  },
+  {
+    "lesson": 171,
+    "topic": "Physical Qualities of Objects",
+    "lemmas": {
+      "part1": [
+        "tighten",
+        "shallow",
+        "farther",
+        "height",
+        "gap"
+      ],
+      "part2": [
+        "rough",
+        "downward",
+        "stunning",
+        "sharp",
+        "distant"
+      ]
+    }
+  },
+  {
+    "lesson": 172,
+    "topic": "City",
+    "lemmas": {
+      "part1": [
+        "variety",
+        "residential",
+        "signpost",
+        "fountain"
+      ],
+      "part2": [
+        "resort",
+        "traffic jam",
+        "railway",
+        "resident",
+        "sidewalk"
+      ]
+    }
+  },
+  {
+    "lesson": 173,
+    "topic": "Finances",
+    "lemmas": {
+      "part1": [
+        "total",
+        "claim",
+        "shortage",
+        "exchange",
+        "pound"
+      ],
+      "part2": [
+        "goods",
+        "penny",
+        "contribution",
+        "contribute",
+        "loss"
+      ]
+    }
+  },
+  {
+    "lesson": 174,
+    "topic": "Qualities of People and Events",
+    "lemmas": {
+      "part1": [
+        "honesty",
+        "independent",
+        "aggressive",
+        "loyalty",
+        "unpredictable"
+      ],
+      "part2": [
+        "challenging",
+        "rudely",
+        "dare",
+        "glory",
+        "leadership"
+      ]
+    }
+  },
+  {
+    "lesson": 175,
+    "topic": "Professions",
+    "lemmas": {
+      "part1": [
+        "comedian",
+        "poet",
+        "instructor",
+        "chemist",
+        "blogger"
+      ],
+      "part2": [
+        "model",
+        "historian",
+        "publisher",
+        "salesman",
+        "professor",
+        "mathematician"
+      ]
+    }
+  },
+  {
+    "lesson": 176,
+    "topic": "Education",
+    "lemmas": {
+      "part1": [
+        "guide",
+        "technique",
+        "interval",
+        "strengthen"
+      ],
+      "part2": [
+        "registration",
+        "revise",
+        "resource",
+        "diameter",
+        "significance"
+      ]
+    }
+  },
+  {
+    "lesson": 177,
+    "topic": "Animals",
+    "lemmas": {
+      "part1": [
+        "mosquito",
+        "hatch",
+        "groom",
+        "flock"
+      ],
+      "part2": [
+        "jungle",
+        "breeding",
+        "crow",
+        "giraffe",
+        "harness"
+      ]
+    }
+  },
+  {
+    "lesson": 178,
+    "topic": "Common verbs",
+    "lemmas": {
+      "part1": [
+        "march",
+        "fade",
+        "display",
+        "own",
+        "fit"
+      ],
+      "part2": [
+        "update",
+        "arrange",
+        "engage",
+        "release",
+        "owe"
+      ]
+    }
+  },
+  {
+    "lesson": 179,
+    "topic": "Adverbs",
+    "lemmas": {
+      "part1": [
+        "mentally",
+        "briefly",
+        "accidentally",
+        "surely",
+        "rudely"
+      ],
+      "part2": [
+        "farther",
+        "meanwhile",
+        "nowhere",
+        "extensively",
+        "evenly",
+        "aloud"
+      ]
+    }
+  },
+  {
+    "lesson": 180,
+    "topic": "Sport and fitness",
+    "lemmas": {
+      "part1": [
+        "participate",
+        "boxing",
+        "muscle",
+        "paddle",
+        "athletic"
+      ],
+      "part2": [
+        "sweat",
+        "extreme sports",
+        "spectator",
+        "skate",
+        "movement"
+      ]
+    }
+  },
+  {
+    "lesson": 181,
+    "topic": "Shopping",
+    "lemmas": {
+      "part1": [
+        "deliver",
+        "purse",
+        "retail",
+        "stall",
+        "jewel"
+      ],
+      "part2": [
+        "designer",
+        "logo",
+        "penny",
+        "shop",
+        "counter"
+      ]
+    }
+  },
+  {
+    "lesson": 182,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "temporary",
+        "fashionable",
+        "part-time",
+        "vivid",
+        "tasteless"
+      ],
+      "part2": [
+        "peculiar",
+        "scenic",
+        "extreme",
+        "joint",
+        "stricken"
+      ]
+    }
+  },
+  {
+    "lesson": 183,
+    "topic": "Entertainment",
+    "lemmas": {
+      "part1": [
+        "classical",
+        "amusing",
+        "entertain",
+        "entertainer",
+        "lottery"
+      ],
+      "part2": [
+        "riddle",
+        "sculpture",
+        "choir",
+        "star",
+        "composition"
+      ]
+    }
+  },
+  {
+    "lesson": 184,
+    "topic": "Law",
+    "lemmas": {
+      "part1": [
+        "partial",
+        "rescue",
+        "slavery",
+        "document",
+        "authority"
+      ],
+      "part2": [
+        "arrest",
+        "victim",
+        "terror",
+        "deed",
+        "violence"
+      ]
+    }
+  },
+  {
+    "lesson": 185,
+    "topic": "Essential words",
+    "lemmas": {
+      "part1": [
+        "blame",
+        "conduct",
+        "fortnight",
+        "extent",
+        "room"
+      ],
+      "part2": [
+        "option",
+        "compromise",
+        "place",
+        "belief",
+        "somehow"
+      ]
+    }
+  },
+  {
+    "lesson": 186,
+    "topic": "Common verbs",
+    "lemmas": {
+      "part1": [
+        "emerge",
+        "swell",
+        "like",
+        "trigger",
+        "pick"
+      ],
+      "part2": [
+        "stay",
+        "switch",
+        "handle",
+        "scatter",
+        "faint"
+      ]
+    }
+  },
+  {
+    "lesson": 187,
+    "topic": "Expressing Ideas",
+    "lemmas": {
+      "part1": [
+        "concept",
+        "remark",
+        "motto",
+        "greeting",
+        "proclaim"
+      ],
+      "part2": [
+        "talkative",
+        "farewell",
+        "vague",
+        "reflection",
+        "reply"
+      ]
+    }
+  },
+  {
+    "lesson": 188,
+    "topic": "Education",
+    "lemmas": {
+      "part1": [
+        "graduate",
+        "librarian",
+        "phrasal verb",
+        "accuracy",
+        "presentation"
+      ],
+      "part2": [
+        "memorize",
+        "guidance",
+        "mile",
+        "rewrite",
+        "register"
+      ]
+    }
+  },
+  {
+    "lesson": 189,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "racial",
+        "literary",
+        "countless",
+        "direct",
+        "innermost"
+      ],
+      "part2": [
+        "shadowy",
+        "terrific",
+        "least",
+        "faint",
+        "unfortunate"
+      ]
+    }
+  },
+  {
+    "lesson": 190,
+    "topic": "Common verbs",
+    "lemmas": {
+      "part1": [
+        "enclose",
+        "revise",
+        "sparkle",
+        "unpack",
+        "maintain"
+      ],
+      "part2": [
+        "fetch",
+        "push",
+        "differ",
+        "imitate",
+        "promise"
+      ]
+    }
+  },
+  {
+    "lesson": 191,
+    "topic": "Relationships and Family",
+    "lemmas": {
+      "part1": [
+        "preschool",
+        "parental",
+        "newborn",
+        "mourn"
+      ],
+      "part2": [
+        "puppy",
+        "separation",
+        "tie",
+        "kid",
+        "teen"
+      ]
+    }
+  },
+  {
+    "lesson": 192,
+    "topic": "Science",
+    "lemmas": {
+      "part1": [
+        "increase",
+        "turbulence",
+        "biochemistry",
+        "compound"
+      ],
+      "part2": [
+        "reduction",
+        "observe",
+        "proof",
+        "nutrient",
+        "fuel"
+      ]
+    }
+  },
+  {
+    "lesson": 193,
+    "topic": "Relationships",
+    "lemmas": {
+      "part1": [
+        "interact",
+        "support",
+        "mischief",
+        "kiss",
+        "dump"
+      ],
+      "part2": [
+        "face to face",
+        "proposal",
+        "enemy",
+        "loyalty",
+        "desire"
+      ]
+    }
+  },
+  {
+    "lesson": 194,
+    "topic": "Animals",
+    "lemmas": {
+      "part1": [
+        "kitten",
+        "salmon",
+        "fish",
+        "mule"
+      ],
+      "part2": [
+        "bat",
+        "swarm",
+        "safari",
+        "habitat",
+        "camel"
+      ]
+    }
+  },
+  {
+    "lesson": 195,
+    "topic": "Sport and fitness",
+    "lemmas": {
+      "part1": [
+        "handball",
+        "ski",
+        "bow",
+        "teamwork",
+        "obstacle"
+      ],
+      "part2": [
+        "climber",
+        "fight",
+        "diver",
+        "defense",
+        "champion"
+      ]
+    }
+  },
+  {
+    "lesson": 196,
+    "topic": "Common verbs",
+    "lemmas": {
+      "part1": [
+        "confirm",
+        "reduce",
+        "embarrass",
+        "determine",
+        "tear"
+      ],
+      "part2": [
+        "cultivate",
+        "compete",
+        "modify",
+        "fry",
+        "laugh"
+      ]
+    }
+  },
+  {
+    "lesson": 197,
+    "topic": "Describing Society",
+    "lemmas": {
+      "part1": [
+        "racial",
+        "settlement",
+        "homeless",
+        "terrorism",
+        "poverty"
+      ],
+      "part2": [
+        "establishment",
+        "economy",
+        "traditionally",
+        "sophomore",
+        "mankind"
+      ]
+    }
+  },
+  {
+    "lesson": 198,
+    "topic": "Qualities of People and Events",
+    "lemmas": {
+      "part1": [
+        "talented",
+        "foolish",
+        "hasty",
+        "stupid"
+      ],
+      "part2": [
+        "kindness",
+        "offensive",
+        "notorious",
+        "fortunate",
+        "useless"
+      ]
+    }
+  },
+  {
+    "lesson": 199,
+    "topic": "Essential words",
+    "lemmas": {
+      "part1": [
+        "transformation",
+        "motive",
+        "routine",
+        "emerge",
+        "few"
+      ],
+      "part2": [
+        "pound",
+        "interval",
+        "majority",
+        "conflict",
+        "pace"
+      ]
+    }
+  },
+  {
+    "lesson": 200,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "upward",
+        "full-time",
+        "slight",
+        "industrial",
+        "graphic"
+      ],
+      "part2": [
+        "virtual",
+        "continuous",
+        "handy",
+        "accurate",
+        "initial"
+      ]
+    }
+  },
+  {
+    "lesson": 201,
+    "topic": "House",
+    "lemmas": {
+      "part1": [
+        "mailbox",
+        "occupy",
+        "untidy",
+        "greenhouse",
+        "surrounding"
+      ],
+      "part2": [
+        "unpack",
+        "cushion",
+        "kettle",
+        "address",
+        "handkerchief"
+      ]
+    }
+  },
+  {
+    "lesson": 202,
+    "topic": "Adverbs",
+    "lemmas": {
+      "part1": [
+        "annually",
+        "absolutely",
+        "traditionally",
+        "steadily",
+        "largely"
+      ],
+      "part2": [
+        "illegally",
+        "rapidly",
+        "permanently",
+        "obviously",
+        "eventually"
+      ]
+    }
+  },
+  {
+    "lesson": 203,
+    "topic": "Transport",
+    "lemmas": {
+      "part1": [
+        "chariot",
+        "baggage",
+        "railway",
+        "arrival",
+        "horn"
+      ],
+      "part2": [
+        "submarine",
+        "distance",
+        "motor",
+        "rail",
+        "mule"
+      ]
+    }
+  },
+  {
+    "lesson": 204,
+    "topic": "Essential words",
+    "lemmas": {
+      "part1": [
+        "experience",
+        "threat",
+        "block",
+        "preparation",
+        "half"
+      ],
+      "part2": [
+        "similarity",
+        "sequence",
+        "transform",
+        "damage",
+        "assistance"
+      ]
+    }
+  },
+  {
+    "lesson": 205,
+    "topic": "Ecology",
+    "lemmas": {
+      "part1": [
+        "disaster",
+        "environmental",
+        "reclaim",
+        "survivor",
+        "dioxide"
+      ],
+      "part2": [
+        "seawater",
+        "protection",
+        "reduce",
+        "protect",
+        "survival"
+      ]
+    }
+  },
+  {
+    "lesson": 206,
+    "topic": "Qualities of People and Events",
+    "lemmas": {
+      "part1": [
+        "bold",
+        "faithful",
+        "vice",
+        "determination"
+      ],
+      "part2": [
+        "unfairly",
+        "reputation",
+        "reliable",
+        "honest",
+        "stubborn"
+      ]
+    }
+  },
+  {
+    "lesson": 207,
+    "topic": "Medicine",
+    "lemmas": {
+      "part1": [
+        "specialist",
+        "treat",
+        "cough",
+        "sweat",
+        "severely"
+      ],
+      "part2": [
+        "ambulance",
+        "sneeze",
+        "vision",
+        "oxygen",
+        "irritate"
+      ]
+    }
+  },
+  {
+    "lesson": 208,
+    "topic": "Common verbs",
+    "lemmas": {
+      "part1": [
+        "unify",
+        "absorb",
+        "fight",
+        "choke",
+        "participate"
+      ],
+      "part2": [
+        "object",
+        "resist",
+        "rise",
+        "judge",
+        "turning"
+      ]
+    }
+  },
+  {
+    "lesson": 209,
+    "topic": "City",
+    "lemmas": {
+      "part1": [
+        "county",
+        "location",
+        "development",
+        "place"
+      ],
+      "part2": [
+        "railroad",
+        "inhabitant",
+        "pub",
+        "mayor",
+        "shop"
+      ]
+    }
+  },
+  {
+    "lesson": 210,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "rolling",
+        "flat",
+        "independent",
+        "damaged",
+        "bare"
+      ],
+      "part2": [
+        "shocked",
+        "electronic",
+        "surrounding",
+        "nuclear",
+        "jealous"
+      ]
+    }
+  },
+  {
+    "lesson": 211,
+    "topic": "Describing Society",
+    "lemmas": {
+      "part1": [
+        "trend",
+        "hardship",
+        "union",
+        "hunger",
+        "slavery"
+      ],
+      "part2": [
+        "nationalist",
+        "prosperity",
+        "cultural",
+        "humanity",
+        "newcomer",
+        "human"
+      ]
+    }
+  },
+  {
+    "lesson": 212,
+    "topic": "Literature",
+    "lemmas": {
+      "part1": [
+        "compose",
+        "composition",
+        "philosophy",
+        "phantom",
+        "rewrite"
+      ],
+      "part2": [
+        "proverb",
+        "thriller",
+        "storyteller",
+        "inscribe",
+        "imaginary",
+        "philosopher"
+      ]
+    }
+  },
+  {
+    "lesson": 213,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "extra",
+        "historic",
+        "tragic",
+        "continual",
+        "geographical"
+      ],
+      "part2": [
+        "brand-new",
+        "rotten",
+        "essential",
+        "engaged",
+        "shallow"
+      ]
+    }
+  },
+  {
+    "lesson": 214,
+    "topic": "Education",
+    "lemmas": {
+      "part1": [
+        "secondary school",
+        "session",
+        "attend",
+        "type",
+        "philosopher"
+      ],
+      "part2": [
+        "assign",
+        "plan",
+        "level",
+        "observation",
+        "recognize"
+      ]
+    }
+  },
+  {
+    "lesson": 215,
+    "topic": "Science",
+    "lemmas": {
+      "part1": [
+        "surface",
+        "organic",
+        "formula",
+        "mathematician",
+        "theory"
+      ],
+      "part2": [
+        "proportion",
+        "analyze",
+        "breakthrough",
+        "accuracy",
+        "expand"
+      ]
+    }
+  },
+  {
+    "lesson": 216,
+    "topic": "Formal Institutions",
+    "lemmas": {
+      "part1": [
+        "conflict",
+        "president",
+        "proposal",
+        "fund",
+        "empire"
+      ],
+      "part2": [
+        "operation",
+        "first lady",
+        "governor",
+        "officially",
+        "district"
+      ]
+    }
+  },
+  {
+    "lesson": 217,
+    "topic": "House",
+    "lemmas": {
+      "part1": [
+        "air conditioning",
+        "mixing bowl",
+        "trim",
+        "rubbish",
+        "sticker"
+      ],
+      "part2": [
+        "construct",
+        "heater",
+        "landlord",
+        "stuffed",
+        "equipment"
+      ]
+    }
+  },
+  {
+    "lesson": 218,
+    "topic": "Formal Institutions",
+    "lemmas": {
+      "part1": [
+        "bureau",
+        "require",
+        "annual",
+        "jail"
+      ],
+      "part2": [
+        "appoint",
+        "press",
+        "emperor",
+        "charity",
+        "dynasty"
+      ]
+    }
+  },
+  {
+    "lesson": 219,
+    "topic": "Professions",
+    "lemmas": {
+      "part1": [
+        "landlord",
+        "disc jockey",
+        "examiner",
+        "astronomer",
+        "butcher"
+      ],
+      "part2": [
+        "builder",
+        "artist",
+        "baker",
+        "vet",
+        "priest",
+        "columnist"
+      ]
+    }
+  },
+  {
+    "lesson": 220,
+    "topic": "Education",
+    "lemmas": {
+      "part1": [
+        "rearrange",
+        "questionnaire",
+        "instance",
+        "geology",
+        "substitute"
+      ],
+      "part2": [
+        "emphasize",
+        "pupil",
+        "incorrect",
+        "brainstorming",
+        "academic"
+      ]
+    }
+  },
+  {
+    "lesson": 221,
+    "topic": "Shopping",
+    "lemmas": {
+      "part1": [
+        "souvenir",
+        "spice",
+        "commercial",
+        "guarantee",
+        "jade"
+      ],
+      "part2": [
+        "exclusive",
+        "goods",
+        "ivory",
+        "sandal",
+        "sweatshirt",
+        "advertise"
+      ]
+    }
+  },
+  {
+    "lesson": 222,
+    "topic": "Expressing Feelings",
+    "lemmas": {
+      "part1": [
+        "eagerness",
+        "daze",
+        "congratulate",
+        "humor",
+        "admiration"
+      ],
+      "part2": [
+        "terrific",
+        "fright",
+        "enthusiast",
+        "awkward",
+        "emotion"
+      ]
+    }
+  },
+  {
+    "lesson": 223,
+    "topic": "Medicine",
+    "lemmas": {
+      "part1": [
+        "symptom",
+        "bandage",
+        "breath",
+        "care",
+        "inject"
+      ],
+      "part2": [
+        "sensation",
+        "recover",
+        "gall",
+        "unwell",
+        "genetics"
+      ]
+    }
+  },
+  {
+    "lesson": 224,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "orderly",
+        "shiny",
+        "emotional",
+        "superior",
+        "burning"
+      ],
+      "part2": [
+        "medium",
+        "serious",
+        "financial",
+        "enthusiastic",
+        "middle-aged"
+      ]
+    }
+  },
+  {
+    "lesson": 225,
+    "topic": "Medicine",
+    "lemmas": {
+      "part1": [
+        "mental",
+        "depressed",
+        "pain",
+        "cancer",
+        "critical"
+      ],
+      "part2": [
+        "depression",
+        "syndrome",
+        "swollen",
+        "insane",
+        "bump",
+        "surgeon"
+      ]
+    }
+  },
+  {
+    "lesson": 226,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "massive",
+        "stormy",
+        "active",
+        "nearby",
+        "unbelievable"
+      ],
+      "part2": [
+        "fine",
+        "mere",
+        "hearty",
+        "transitional",
+        "incorrect"
+      ]
+    }
+  },
+  {
+    "lesson": 227,
+    "topic": "Describing Society",
+    "lemmas": {
+      "part1": [
+        "deprive",
+        "isolation",
+        "community",
+        "reputation",
+        "tendency"
+      ],
+      "part2": [
+        "settler",
+        "gentleman",
+        "pure",
+        "resident",
+        "socially"
+      ]
+    }
+  },
+  {
+    "lesson": 228,
+    "topic": "Employment",
+    "lemmas": {
+      "part1": [
+        "stressful",
+        "rebuild",
+        "tension",
+        "questionnaire",
+        "failure"
+      ],
+      "part2": [
+        "overwork",
+        "responsibility",
+        "maintain",
+        "construction",
+        "instruction"
+      ]
+    }
+  },
+  {
+    "lesson": 229,
+    "topic": "Postal Service",
+    "lemmas": {
+      "part1": [
+        "address",
+        "mailbox",
+        "postcard",
+        "express",
+        "parcel",
+        "packing"
+      ],
+      "part2": [
+        "enclose",
+        "mail",
+        "package",
+        "delivery",
+        "postman",
+        "addressee",
+        "deliver"
+      ]
+    }
+  },
+  {
+    "lesson": 230,
+    "topic": "Relationships",
+    "lemmas": {
+      "part1": [
+        "faithful",
+        "rely",
+        "relate",
+        "settle"
+      ],
+      "part2": [
+        "respect",
+        "involve",
+        "farewell",
+        "lovingly",
+        "fellow"
+      ]
+    }
+  },
+  {
+    "lesson": 231,
+    "topic": "Finances",
+    "lemmas": {
+      "part1": [
+        "luxury",
+        "consumer",
+        "till",
+        "transfer",
+        "insurance"
+      ],
+      "part2": [
+        "owing",
+        "refund",
+        "merchant",
+        "pocket money",
+        "prosperous"
+      ]
+    }
+  },
+  {
+    "lesson": 232,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "plain",
+        "informative",
+        "mild",
+        "protective",
+        "eastern"
+      ],
+      "part2": [
+        "hearted",
+        "stressful",
+        "outstanding",
+        "rough",
+        "round"
+      ]
+    }
+  },
+  {
+    "lesson": 233,
+    "topic": "Weather",
+    "lemmas": {
+      "part1": [
+        "severely",
+        "climate",
+        "season",
+        "moisture"
+      ],
+      "part2": [
+        "mild",
+        "misty",
+        "turbulence",
+        "unpredictable",
+        "thunder"
+      ]
+    }
+  },
+  {
+    "lesson": 234,
+    "topic": "Literature",
+    "lemmas": {
+      "part1": [
+        "biography",
+        "introduction",
+        "journal",
+        "dedicate",
+        "retell"
+      ],
+      "part2": [
+        "novelist",
+        "myth",
+        "poetry",
+        "poet",
+        "tale"
+      ]
+    }
+  },
+  {
+    "lesson": 235,
+    "topic": "Science",
+    "lemmas": {
+      "part1": [
+        "sphere",
+        "visible",
+        "existence",
+        "vessel"
+      ],
+      "part2": [
+        "growth",
+        "curve",
+        "ecology",
+        "radiation",
+        "coal"
+      ]
+    }
+  },
+  {
+    "lesson": 236,
+    "topic": "History",
+    "lemmas": {
+      "part1": [
+        "invasion",
+        "chronological",
+        "first lady",
+        "oppress",
+        "bronze"
+      ],
+      "part2": [
+        "era",
+        "historian",
+        "reunify",
+        "defeat",
+        "preservation"
+      ]
+    }
+  },
+  {
+    "lesson": 237,
+    "topic": "Science",
+    "lemmas": {
+      "part1": [
+        "diagram",
+        "concentration",
+        "skeleton",
+        "decrease",
+        "outer"
+      ],
+      "part2": [
+        "lightning",
+        "sponge",
+        "sundial",
+        "length",
+        "reproduce"
+      ]
+    }
+  },
+  {
+    "lesson": 238,
+    "topic": "Essential words",
+    "lemmas": {
+      "part1": [
+        "determination",
+        "pattern",
+        "quality",
+        "common sense"
+      ],
+      "part2": [
+        "abundance",
+        "name",
+        "burden",
+        "movement",
+        "growth"
+      ]
+    }
+  },
+  {
+    "lesson": 239,
+    "topic": "Medicine",
+    "lemmas": {
+      "part1": [
+        "lung",
+        "burning",
+        "radiation",
+        "burn",
+        "hunger"
+      ],
+      "part2": [
+        "doctor",
+        "nervousness",
+        "inhale",
+        "shiver",
+        "capsule"
+      ]
+    }
+  },
+  {
+    "lesson": 240,
+    "topic": "Education",
+    "lemmas": {
+      "part1": [
+        "spelling",
+        "photocopy",
+        "experience",
+        "calculation",
+        "logic"
+      ],
+      "part2": [
+        "scholarship",
+        "acquire",
+        "ink",
+        "term",
+        "recite"
+      ]
+    }
+  },
+  {
+    "lesson": 241,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "digital",
+        "urgent",
+        "untidy",
+        "southwest",
+        "total"
+      ],
+      "part2": [
+        "homeless",
+        "relaxing",
+        "fair",
+        "lasting",
+        "permanent"
+      ]
+    }
+  },
+  {
+    "lesson": 242,
+    "topic": "Essential words",
+    "lemmas": {
+      "part1": [
+        "progress",
+        "but",
+        "secret",
+        "safety",
+        "benefit"
+      ],
+      "part2": [
+        "top",
+        "essence",
+        "specially",
+        "demand",
+        "improvement"
+      ]
+    }
+  },
+  {
+    "lesson": 243,
+    "topic": "Shopping",
+    "lemmas": {
+      "part1": [
+        "plastic",
+        "market",
+        "extra",
+        "garment",
+        "fancy"
+      ],
+      "part2": [
+        "necklace",
+        "parcel",
+        "selection",
+        "consumer",
+        "second-hand"
+      ]
+    }
+  },
+  {
+    "lesson": 244,
+    "topic": "Sport and fitness",
+    "lemmas": {
+      "part1": [
+        "jog",
+        "match",
+        "breathless",
+        "leap",
+        "helmet"
+      ],
+      "part2": [
+        "cycle",
+        "defeat",
+        "bat",
+        "net",
+        "march"
+      ]
+    }
+  },
+  {
+    "lesson": 245,
+    "topic": "Adverbs",
+    "lemmas": {
+      "part1": [
+        "merely",
+        "intentionally",
+        "more",
+        "little",
+        "involuntarily"
+      ],
+      "part2": [
+        "nevertheless",
+        "definitely",
+        "approximately",
+        "fluently",
+        "entirely"
+      ]
+    }
+  },
+  {
+    "lesson": 246,
+    "topic": "Professions",
+    "lemmas": {
+      "part1": [
+        "vice president",
+        "travel agent",
+        "storyteller",
+        "novelist",
+        "nurse"
+      ],
+      "part2": [
+        "accountant",
+        "innovator",
+        "journalist",
+        "entertainer",
+        "magician",
+        "assistant"
+      ]
+    }
+  },
+  {
+    "lesson": 247,
+    "topic": "Clothes",
+    "lemmas": {
+      "part1": [
+        "boot",
+        "bow",
+        "fur",
+        "navy blue",
+        "fit"
+      ],
+      "part2": [
+        "fold",
+        "silk",
+        "pattern",
+        "tear",
+        "tie",
+        "hanging"
+      ]
+    }
+  },
+  {
+    "lesson": 248,
+    "topic": "Essential words",
+    "lemmas": {
+      "part1": [
+        "link",
+        "total",
+        "result",
+        "guarantee",
+        "limit"
+      ],
+      "part2": [
+        "entry",
+        "gallon",
+        "requirement",
+        "shortly",
+        "shortage"
+      ]
+    }
+  },
+  {
+    "lesson": 249,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "primitive",
+        "effective",
+        "underage",
+        "scared",
+        "incredible"
+      ],
+      "part2": [
+        "marked",
+        "available",
+        "efficient",
+        "courageous",
+        "eco"
+      ]
+    }
+  },
+  {
+    "lesson": 250,
+    "topic": "Animals",
+    "lemmas": {
+      "part1": [
+        "ant",
+        "horn",
+        "breed",
+        "cod"
+      ],
+      "part2": [
+        "gorilla",
+        "spider",
+        "bite",
+        "dolphin",
+        "fur"
+      ]
+    }
+  },
+  {
+    "lesson": 251,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "tiring",
+        "eternal",
+        "abnormal",
+        "minor",
+        "exact"
+      ],
+      "part2": [
+        "oily",
+        "liquid",
+        "pure",
+        "curious",
+        "limited"
+      ]
+    }
+  },
+  {
+    "lesson": 252,
+    "topic": "Countryside",
+    "lemmas": {
+      "part1": [
+        "swarm",
+        "trail",
+        "mud",
+        "swell",
+        "pond"
+      ],
+      "part2": [
+        "farmland",
+        "roadside",
+        "hut",
+        "scenic",
+        "tent"
+      ]
+    }
+  },
+  {
+    "lesson": 253,
+    "topic": "Food and Drink",
+    "lemmas": {
+      "part1": [
+        "barrel",
+        "seaweed",
+        "gravy",
+        "tobacco",
+        "peanut"
+      ],
+      "part2": [
+        "canteen",
+        "organic",
+        "chewing gum",
+        "butcher",
+        "cod"
+      ]
+    }
+  },
+  {
+    "lesson": 254,
+    "topic": "Expressing Feelings",
+    "lemmas": {
+      "part1": [
+        "delighted",
+        "threatening",
+        "hopeless",
+        "gratitude",
+        "blush"
+      ],
+      "part2": [
+        "depressed",
+        "impressive",
+        "content",
+        "encouragement",
+        "unafraid"
+      ]
+    }
+  },
+  {
+    "lesson": 255,
+    "topic": "Common verbs",
+    "lemmas": {
+      "part1": [
+        "resemble",
+        "ruin",
+        "drag",
+        "sort",
+        "mount"
+      ],
+      "part2": [
+        "preserve",
+        "impair",
+        "interrupt",
+        "examine",
+        "flock"
+      ]
+    }
+  },
+  {
+    "lesson": 256,
+    "topic": "Adverbs",
+    "lemmas": {
+      "part1": [
+        "currently",
+        "distinctly",
+        "positively",
+        "surprisingly",
+        "emotionally"
+      ],
+      "part2": [
+        "furthermore",
+        "increasingly",
+        "similarly",
+        "somehow",
+        "formally"
+      ]
+    }
+  },
+  {
+    "lesson": 257,
+    "topic": "Expressing Feelings",
+    "lemmas": {
+      "part1": [
+        "satisfaction",
+        "positive",
+        "eager",
+        "incredible",
+        "apology"
+      ],
+      "part2": [
+        "scared",
+        "hatred",
+        "enjoyment",
+        "pain",
+        "guilty"
+      ]
+    }
+  },
+  {
+    "lesson": 258,
+    "topic": "Medicine",
+    "lemmas": {
+      "part1": [
+        "cure",
+        "suffer",
+        "swell",
+        "clinic",
+        "paralyze"
+      ],
+      "part2": [
+        "limp",
+        "impair",
+        "infection",
+        "sore",
+        "hearing"
+      ]
+    }
+  },
+  {
+    "lesson": 259,
+    "topic": "Formal Institutions",
+    "lemmas": {
+      "part1": [
+        "representative",
+        "summit",
+        "registration",
+        "requirement"
+      ],
+      "part2": [
+        "service",
+        "army",
+        "union",
+        "agenda",
+        "authority"
+      ]
+    }
+  },
+  {
+    "lesson": 260,
+    "topic": "Ecology",
+    "lemmas": {
+      "part1": [
+        "ecosystem",
+        "coal",
+        "explosion",
+        "rainfall",
+        "destruction"
+      ],
+      "part2": [
+        "soil",
+        "reef",
+        "recycling",
+        "rubbish",
+        "reserve"
+      ]
+    }
+  },
+  {
+    "lesson": 261,
+    "topic": "Adverbs",
+    "lemmas": {
+      "part1": [
+        "typically",
+        "barely",
+        "normally",
+        "further",
+        "relatively"
+      ],
+      "part2": [
+        "legally",
+        "rarely",
+        "initially",
+        "honestly",
+        "visually"
+      ]
+    }
+  },
+  {
+    "lesson": 262,
+    "topic": "Relationships",
+    "lemmas": {
+      "part1": [
+        "social networking",
+        "bond",
+        "dating",
+        "preference",
+        "acquaintance"
+      ],
+      "part2": [
+        "gentleman",
+        "handshake",
+        "associate",
+        "date",
+        "group"
+      ]
+    }
+  },
+  {
+    "lesson": 263,
+    "topic": "Medicine",
+    "lemmas": {
+      "part1": [
+        "stress",
+        "nutrition",
+        "nutrient",
+        "disease",
+        "nap"
+      ],
+      "part2": [
+        "tissue",
+        "disability",
+        "flu",
+        "faint",
+        "heart attack"
+      ]
+    }
+  },
+  {
+    "lesson": 264,
+    "topic": "Adverbs",
+    "lemmas": {
+      "part1": [
+        "directly",
+        "terribly",
+        "accurately",
+        "downward",
+        "upward"
+      ],
+      "part2": [
+        "thus",
+        "firmly",
+        "moreover",
+        "monthly",
+        "immediately"
+      ]
+    }
+  },
+  {
+    "lesson": 265,
+    "topic": "Clothes",
+    "lemmas": {
+      "part1": [
+        "underpants",
+        "gown",
+        "sleeve",
+        "garment",
+        "heel"
+      ],
+      "part2": [
+        "mend",
+        "needle",
+        "iron",
+        "fasten",
+        "cotton",
+        "helmet"
+      ]
+    }
+  },
+  {
+    "lesson": 266,
+    "topic": "Literature",
+    "lemmas": {
+      "part1": [
+        "narrate",
+        "setting",
+        "classical",
+        "narrative",
+        "inscription"
+      ],
+      "part2": [
+        "phoenix",
+        "fantasy",
+        "tragedy",
+        "sorrow",
+        "edition",
+        "magical"
+      ]
+    }
+  },
+  {
+    "lesson": 267,
+    "topic": "House",
+    "lemmas": {
+      "part1": [
+        "saucepan",
+        "dusty",
+        "ladder",
+        "first floor",
+        "bin"
+      ],
+      "part2": [
+        "trash",
+        "residential",
+        "dishwasher",
+        "spider",
+        "tin"
+      ]
+    }
+  },
+  {
+    "lesson": 268,
+    "topic": "Common verbs",
+    "lemmas": {
+      "part1": [
+        "irritate",
+        "categorise",
+        "accuse",
+        "remark",
+        "chat"
+      ],
+      "part2": [
+        "last",
+        "lie",
+        "stare",
+        "leave",
+        "record"
+      ]
+    }
+  },
+  {
+    "lesson": 269,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "poisonous",
+        "helpless",
+        "visual",
+        "gorgeous",
+        "faraway"
+      ],
+      "part2": [
+        "overwhelming",
+        "spectacular",
+        "disgusting",
+        "shocking",
+        "outer"
+      ]
+    }
+  },
+  {
+    "lesson": 270,
+    "topic": "Law",
+    "lemmas": {
+      "part1": [
+        "objection",
+        "constitution",
+        "oppress",
+        "improper",
+        "trigger"
+      ],
+      "part2": [
+        "bomb",
+        "prison",
+        "pardon",
+        "border",
+        "equality"
+      ]
+    }
+  },
+  {
+    "lesson": 271,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "plastic",
+        "bound",
+        "conscious",
+        "diverse",
+        "unlucky"
+      ],
+      "part2": [
+        "painful",
+        "devastating",
+        "tense",
+        "frustrated",
+        "improper"
+      ]
+    }
+  },
+  {
+    "lesson": 272,
+    "topic": "Expressing Feelings",
+    "lemmas": {
+      "part1": [
+        "desire",
+        "disappointment",
+        "awesome",
+        "passion"
+      ],
+      "part2": [
+        "spirit",
+        "unbelievable",
+        "delightful",
+        "precious",
+        "shocked"
+      ]
+    }
+  },
+  {
+    "lesson": 273,
+    "topic": "Common verbs",
+    "lemmas": {
+      "part1": [
+        "abandon",
+        "sink",
+        "outweigh",
+        "attach",
+        "enrich"
+      ],
+      "part2": [
+        "support",
+        "minimize",
+        "recall",
+        "grant",
+        "fasten"
+      ]
+    }
+  },
+  {
+    "lesson": 274,
+    "topic": "Expressing Feelings",
+    "lemmas": {
+      "part1": [
+        "despair",
+        "appreciation",
+        "relationship",
+        "regard",
+        "shame"
+      ],
+      "part2": [
+        "temper",
+        "ecstasy",
+        "struggle",
+        "recall",
+        "interest"
+      ]
+    }
+  },
+  {
+    "lesson": 275,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "main",
+        "accidental",
+        "respectable",
+        "uninteresting",
+        "memorable"
+      ],
+      "part2": [
+        "substantial",
+        "genetic",
+        "unwanted",
+        "unwell",
+        "shameful"
+      ]
+    }
+  },
+  {
+    "lesson": 276,
+    "topic": "Body Parts",
+    "lemmas": {
+      "part1": [
+        "sweat",
+        "tissue",
+        "foot",
+        "skeleton",
+        "vein"
+      ],
+      "part2": [
+        "lung",
+        "hip",
+        "beard",
+        "muscle",
+        "thumb"
+      ]
+    }
+  },
+  {
+    "lesson": 277,
+    "topic": "House",
+    "lemmas": {
+      "part1": [
+        "powder",
+        "shelter",
+        "iron",
+        "hatch"
+      ],
+      "part2": [
+        "diaper",
+        "pipe",
+        "setting",
+        "handle",
+        "sleep"
+      ]
+    }
+  },
+  {
+    "lesson": 278,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "furthest",
+        "slow",
+        "unexpected",
+        "unpredictable",
+        "upper"
+      ],
+      "part2": [
+        "farther",
+        "mechanical",
+        "runaway",
+        "unrelated",
+        "desperate"
+      ]
+    }
+  },
+  {
+    "lesson": 279,
+    "topic": "House",
+    "lemmas": {
+      "part1": [
+        "downstairs",
+        "candle",
+        "tissue",
+        "remove",
+        "gardening"
+      ],
+      "part2": [
+        "lighter",
+        "cabin",
+        "brick",
+        "skyscraper",
+        "room"
+      ]
+    }
+  },
+  {
+    "lesson": 280,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "considerable",
+        "mutual",
+        "cautious",
+        "humid",
+        "old-fashioned"
+      ],
+      "part2": [
+        "honest",
+        "moderate",
+        "narrow",
+        "nutritious",
+        "fancy"
+      ]
+    }
+  },
+  {
+    "lesson": 281,
+    "topic": "Common verbs",
+    "lemmas": {
+      "part1": [
+        "complete",
+        "react",
+        "doze",
+        "liberate",
+        "shut"
+      ],
+      "part2": [
+        "demonstrate",
+        "suspect",
+        "hire",
+        "endure",
+        "accomplish"
+      ]
+    }
+  },
+  {
+    "lesson": 282,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "trustworthy",
+        "severe",
+        "outdoor",
+        "prominent",
+        "hand-held"
+      ],
+      "part2": [
+        "visible",
+        "notorious",
+        "dependent",
+        "even",
+        "psychological"
+      ]
+    }
+  },
+  {
+    "lesson": 283,
+    "topic": "Entertainment",
+    "lemmas": {
+      "part1": [
+        "comedian",
+        "science fiction",
+        "artist",
+        "animated",
+        "magical"
+      ],
+      "part2": [
+        "artistic",
+        "disc jockey",
+        "studio",
+        "flute",
+        "inspire"
+      ]
+    }
+  },
+  {
+    "lesson": 284,
+    "topic": "Technology",
+    "lemmas": {
+      "part1": [
+        "interaction",
+        "graphic",
+        "simplify",
+        "trigger",
+        "photocopy"
+      ],
+      "part2": [
+        "blog",
+        "interact",
+        "technological",
+        "upload",
+        "plastic"
+      ]
+    }
+  },
+  {
+    "lesson": 285,
+    "topic": "Religion and Spirituality",
+    "lemmas": {
+      "part1": [
+        "glory",
+        "meditation",
+        "existence",
+        "ceremony",
+        "faithful"
+      ],
+      "part2": [
+        "eternal",
+        "heaven",
+        "choir",
+        "idol",
+        "religion"
+      ]
+    }
+  },
+  {
+    "lesson": 286,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "apparent",
+        "messy",
+        "firm",
+        "glorious",
+        "current"
+      ],
+      "part2": [
+        "systematic",
+        "complex",
+        "humorous",
+        "supportive",
+        "vague",
+        "unemployed"
+      ]
+    }
+  },
+  {
+    "lesson": 287,
+    "topic": "Qualities of People and Events",
+    "lemmas": {
+      "part1": [
+        "ambitious",
+        "innocent",
+        "fool",
+        "superior",
+        "unique"
+      ],
+      "part2": [
+        "loyal",
+        "diligence",
+        "goodness",
+        "gall",
+        "charm"
+      ]
+    }
+  },
+  {
+    "lesson": 288,
+    "topic": "Science",
+    "lemmas": {
+      "part1": [
+        "spiral",
+        "moisture",
+        "organism",
+        "reflection"
+      ],
+      "part2": [
+        "cycle",
+        "neutral",
+        "shape",
+        "electron",
+        "physics"
+      ]
+    }
+  },
+  {
+    "lesson": 289,
+    "topic": "Qualities of People and Events",
+    "lemmas": {
+      "part1": [
+        "mischief",
+        "liar",
+        "trustworthy",
+        "respectable",
+        "generous"
+      ],
+      "part2": [
+        "glorious",
+        "cheerful",
+        "responsible",
+        "temper",
+        "favorable"
+      ]
+    }
+  },
+  {
+    "lesson": 290,
+    "topic": "Technology",
+    "lemmas": {
+      "part1": [
+        "modify",
+        "type",
+        "illuminate",
+        "program",
+        "technique"
+      ],
+      "part2": [
+        "caller",
+        "plug",
+        "industry",
+        "network",
+        "boot"
+      ]
+    }
+  },
+  {
+    "lesson": 291,
+    "topic": "Law",
+    "lemmas": {
+      "part1": [
+        "passport",
+        "permit",
+        "identity card",
+        "debt",
+        "agreement"
+      ],
+      "part2": [
+        "declaration",
+        "motive",
+        "discrimination",
+        "disability",
+        "threatening"
+      ]
+    }
+  },
+  {
+    "lesson": 292,
+    "topic": "Expressing Feelings",
+    "lemmas": {
+      "part1": [
+        "misery",
+        "fascinate",
+        "hopefully",
+        "shout",
+        "discomfort"
+      ],
+      "part2": [
+        "stressful",
+        "disgusting",
+        "terrified",
+        "please",
+        "charm"
+      ]
+    }
+  },
+  {
+    "lesson": 293,
+    "topic": "Transport",
+    "lemmas": {
+      "part1": [
+        "fuel",
+        "lift",
+        "public transport",
+        "tour",
+        "mechanic"
+      ],
+      "part2": [
+        "aboard",
+        "departure",
+        "port",
+        "take-off",
+        "exit"
+      ]
+    }
+  },
+  {
+    "lesson": 294,
+    "topic": "Medicine",
+    "lemmas": {
+      "part1": [
+        "doze",
+        "thirst",
+        "virus",
+        "backache",
+        "drunk"
+      ],
+      "part2": [
+        "discomfort",
+        "smoker",
+        "genetically",
+        "isolation",
+        "tobacco"
+      ]
+    }
+  },
+  {
+    "lesson": 295,
+    "topic": "Expressing Ideas",
+    "lemmas": {
+      "part1": [
+        "resolve",
+        "characterise",
+        "brainstorming",
+        "significance"
+      ],
+      "part2": [
+        "invitation",
+        "nod",
+        "nonetheless",
+        "ridiculous",
+        "appeal"
+      ]
+    }
+  },
+  {
+    "lesson": 296,
+    "topic": "Essential words",
+    "lemmas": {
+      "part1": [
+        "branch",
+        "failure",
+        "layer",
+        "own",
+        "encounter"
+      ],
+      "part2": [
+        "nonsense",
+        "certainty",
+        "correction",
+        "shape",
+        "basis"
+      ]
+    }
+  },
+  {
+    "lesson": 297,
+    "topic": "Food and Drink",
+    "lemmas": {
+      "part1": [
+        "carton",
+        "pub",
+        "bar",
+        "tin",
+        "bakery"
+      ],
+      "part2": [
+        "jar",
+        "feast",
+        "date",
+        "lamb",
+        "bite"
+      ]
+    }
+  },
+  {
+    "lesson": 298,
+    "topic": "Law",
+    "lemmas": {
+      "part1": [
+        "patrol",
+        "dissolve",
+        "remedy",
+        "accuse",
+        "chase"
+      ],
+      "part2": [
+        "killing",
+        "incident",
+        "resist",
+        "possession",
+        "seize"
+      ]
+    }
+  },
+  {
+    "lesson": 299,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "hopeful",
+        "historical",
+        "partial",
+        "swollen",
+        "able"
+      ],
+      "part2": [
+        "adorable",
+        "prosperous",
+        "solid",
+        "talented",
+        "vain"
+      ]
+    }
+  },
+  {
+    "lesson": 300,
+    "topic": "House",
+    "lemmas": {
+      "part1": [
+        "stick",
+        "rearrange",
+        "opening",
+        "saucer",
+        "duvet"
+      ],
+      "part2": [
+        "central heating",
+        "counter",
+        "rid",
+        "housework",
+        "foundation"
+      ]
+    }
+  },
+  {
+    "lesson": 301,
+    "topic": "Weather",
+    "lemmas": {
+      "part1": [
+        "snowstorm",
+        "flood",
+        "tornado",
+        "lightning"
+      ],
+      "part2": [
+        "sunrise",
+        "rainfall",
+        "humid",
+        "frozen",
+        "flash"
+      ]
+    }
+  },
+  {
+    "lesson": 302,
+    "topic": "Food and Drink",
+    "lemmas": {
+      "part1": [
+        "shake",
+        "variety",
+        "shrimp",
+        "kettle",
+        "rotten"
+      ],
+      "part2": [
+        "crop",
+        "ripe",
+        "bowl",
+        "barbecue",
+        "nectar"
+      ]
+    }
+  },
+  {
+    "lesson": 303,
+    "topic": "Plants",
+    "lemmas": {
+      "part1": [
+        "bunch",
+        "rainforest",
+        "gardening",
+        "branch",
+        "ginger"
+      ],
+      "part2": [
+        "greenhouse",
+        "peanut",
+        "crop",
+        "daisy",
+        "palm"
+      ]
+    }
+  },
+  {
+    "lesson": 304,
+    "topic": "House",
+    "lemmas": {
+      "part1": [
+        "burglar",
+        "pot",
+        "furnish",
+        "razor",
+        "basement"
+      ],
+      "part2": [
+        "marble",
+        "sheet",
+        "grill",
+        "dirt",
+        "mess"
+      ]
+    }
+  },
+  {
+    "lesson": 305,
+    "topic": "Hobbies",
+    "lemmas": {
+      "part1": [
+        "swimmer",
+        "sculpture",
+        "jogging",
+        "ski",
+        "backpacking"
+      ],
+      "part2": [
+        "diving",
+        "dive",
+        "climber",
+        "jazz",
+        "gardening",
+        "knit"
+      ]
+    }
+  },
+  {
+    "lesson": 306,
+    "topic": "Ecology",
+    "lemmas": {
+      "part1": [
+        "renew",
+        "marine",
+        "trash",
+        "dump",
+        "recycled"
+      ],
+      "part2": [
+        "eco",
+        "reduction",
+        "disastrous",
+        "dirt",
+        "devastate"
+      ]
+    }
+  },
+  {
+    "lesson": 307,
+    "topic": "Employment",
+    "lemmas": {
+      "part1": [
+        "specialize",
+        "leadership",
+        "slot",
+        "mission"
+      ],
+      "part2": [
+        "facility",
+        "expand",
+        "development",
+        "timely",
+        "profession"
+      ]
+    }
+  },
+  {
+    "lesson": 308,
+    "topic": "Science",
+    "lemmas": {
+      "part1": [
+        "poisonous",
+        "purify",
+        "virus",
+        "experiment"
+      ],
+      "part2": [
+        "mass",
+        "measure",
+        "minus",
+        "fragment",
+        "origin"
+      ]
+    }
+  },
+  {
+    "lesson": 309,
+    "topic": "Employment",
+    "lemmas": {
+      "part1": [
+        "guidance",
+        "employment",
+        "motivate",
+        "paid"
+      ],
+      "part2": [
+        "engaged",
+        "equipment",
+        "vacancy",
+        "hard-working",
+        "shift"
+      ]
+    }
+  },
+  {
+    "lesson": 310,
+    "topic": "Relationships and Family",
+    "lemmas": {
+      "part1": [
+        "divorced",
+        "unrelated",
+        "tend",
+        "schoolmate"
+      ],
+      "part2": [
+        "unfriendly",
+        "honeymoon",
+        "scold",
+        "smoker",
+        "diaper"
+      ]
+    }
+  },
+  {
+    "lesson": 311,
+    "topic": "Common verbs",
+    "lemmas": {
+      "part1": [
+        "hang",
+        "fix",
+        "plug",
+        "promote",
+        "mash"
+      ],
+      "part2": [
+        "contain",
+        "invest",
+        "purify",
+        "sigh",
+        "constitute"
+      ]
+    }
+  },
+  {
+    "lesson": 312,
+    "topic": "Essential words",
+    "lemmas": {
+      "part1": [
+        "combination",
+        "plenty",
+        "shadow",
+        "remainder",
+        "sign"
+      ],
+      "part2": [
+        "slight",
+        "present",
+        "hazard",
+        "second",
+        "pit"
+      ]
+    }
+  },
+  {
+    "lesson": 313,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "satisfied",
+        "forbidden",
+        "positive",
+        "potential",
+        "sore"
+      ],
+      "part2": [
+        "selfish",
+        "huge",
+        "rational",
+        "critical",
+        "complicated"
+      ]
+    }
+  },
+  {
+    "lesson": 314,
+    "topic": "Essential words",
+    "lemmas": {
+      "part1": [
+        "process",
+        "presence",
+        "trend",
+        "counter",
+        "existence"
+      ],
+      "part2": [
+        "category",
+        "hardship",
+        "none",
+        "count",
+        "view"
+      ]
+    }
+  },
+  {
+    "lesson": 315,
+    "topic": "Abilities",
+    "lemmas": {
+      "part1": [
+        "capable",
+        "tremendous",
+        "superior",
+        "unable",
+        "talented"
+      ],
+      "part2": [
+        "capacity",
+        "unique",
+        "magnificent",
+        "gifted",
+        "efficient"
+      ]
+    }
+  },
+  {
+    "lesson": 316,
+    "topic": "Prepositions",
+    "lemmas": {
+      "part1": [
+        "because of",
+        "beneath",
+        "aboard",
+        "underneath",
+        "minus"
+      ],
+      "part2": [
+        "past",
+        "plus",
+        "through",
+        "until",
+        "near"
+      ]
+    }
+  },
+  {
+    "lesson": 317,
+    "topic": "Expressing Ideas",
+    "lemmas": {
+      "part1": [
+        "approve",
+        "suppose",
+        "expose",
+        "nevertheless",
+        "alternative"
+      ],
+      "part2": [
+        "define",
+        "correction",
+        "otherwise",
+        "view",
+        "insight"
+      ]
+    }
+  },
+  {
+    "lesson": 318,
+    "topic": "Essential words",
+    "lemmas": {
+      "part1": [
+        "document",
+        "crisis",
+        "caution",
+        "type",
+        "obstacle"
+      ],
+      "part2": [
+        "characteristic",
+        "fuss",
+        "acceptance",
+        "contribution",
+        "risk"
+      ]
+    }
+  },
+  {
+    "lesson": 319,
+    "topic": "Linguistics",
+    "lemmas": {
+      "part1": [
+        "proverb",
+        "pronoun",
+        "consonant",
+        "question mark"
+      ],
+      "part2": [
+        "bilingual",
+        "indefinite article",
+        "definite article",
+        "derive",
+        "usage"
+      ]
+    }
+  },
+  {
+    "lesson": 320,
+    "topic": "Body Parts",
+    "lemmas": {
+      "part1": [
+        "heel",
+        "finger",
+        "breast",
+        "back"
+      ],
+      "part2": [
+        "forehead",
+        "vessel",
+        "liver",
+        "skin",
+        "joint"
+      ]
+    }
+  },
+  {
+    "lesson": 321,
+    "topic": "Education",
+    "lemmas": {
+      "part1": [
+        "freshman",
+        "score",
+        "outline",
+        "highlight",
+        "proportion"
+      ],
+      "part2": [
+        "engineering",
+        "formula",
+        "professor",
+        "dialog",
+        "selection"
+      ]
+    }
+  },
+  {
+    "lesson": 322,
+    "topic": "Common verbs",
+    "lemmas": {
+      "part1": [
+        "fall",
+        "lift",
+        "connect",
+        "glint",
+        "guess"
+      ],
+      "part2": [
+        "twist",
+        "dig",
+        "install",
+        "resolve",
+        "nod"
+      ]
+    }
+  },
+  {
+    "lesson": 323,
+    "topic": "Education",
+    "lemmas": {
+      "part1": [
+        "design",
+        "narrative",
+        "distinguish",
+        "motto"
+      ],
+      "part2": [
+        "modify",
+        "graduation",
+        "percent",
+        "achievement",
+        "curriculum"
+      ]
+    }
+  },
+  {
+    "lesson": 324,
+    "topic": "Common verbs",
+    "lemmas": {
+      "part1": [
+        "restrict",
+        "lock",
+        "tremble",
+        "expose",
+        "inject"
+      ],
+      "part2": [
+        "act",
+        "shake",
+        "clear",
+        "pause",
+        "tie"
+      ]
+    }
+  },
+  {
+    "lesson": 325,
+    "topic": "Science",
+    "lemmas": {
+      "part1": [
+        "extinction",
+        "steam",
+        "iron",
+        "quake",
+        "height"
+      ],
+      "part2": [
+        "researcher",
+        "angle",
+        "stem",
+        "measurement",
+        "disease"
+      ]
+    }
+  },
+  {
+    "lesson": 326,
+    "topic": "Law",
+    "lemmas": {
+      "part1": [
+        "jail",
+        "customs",
+        "limitation",
+        "defender",
+        "shelter"
+      ],
+      "part2": [
+        "guarantee",
+        "guilty",
+        "policy",
+        "unfairly",
+        "govern"
+      ]
+    }
+  },
+  {
+    "lesson": 327,
+    "topic": "Common verbs",
+    "lemmas": {
+      "part1": [
+        "cancel",
+        "groom",
+        "smell",
+        "collapse",
+        "dump"
+      ],
+      "part2": [
+        "occur",
+        "glance",
+        "lay",
+        "sleep",
+        "tumble"
+      ]
+    }
+  },
+  {
+    "lesson": 328,
+    "topic": "DIY Tools",
+    "lemmas": {
+      "part1": [
+        "tile",
+        "needle",
+        "ladder",
+        "pin"
+      ],
+      "part2": [
+        "restore",
+        "pipe",
+        "hammer",
+        "pump",
+        "nail"
+      ]
+    }
+  },
+  {
+    "lesson": 329,
+    "topic": "Common verbs",
+    "lemmas": {
+      "part1": [
+        "divide",
+        "reply",
+        "split",
+        "search",
+        "classify"
+      ],
+      "part2": [
+        "direct",
+        "deliver",
+        "inhale",
+        "inform",
+        "stick"
+      ]
+    }
+  },
+  {
+    "lesson": 330,
+    "topic": "Expressing Ideas",
+    "lemmas": {
+      "part1": [
+        "emphasize",
+        "introduction",
+        "subconscious",
+        "compliment",
+        "suddenly"
+      ],
+      "part2": [
+        "opposition",
+        "persuade",
+        "owing",
+        "strangely",
+        "controversial"
+      ]
+    }
+  },
+  {
+    "lesson": 331,
+    "topic": "Geographical Features",
+    "lemmas": {
+      "part1": [
+        "summit",
+        "view",
+        "rolling",
+        "northeast",
+        "northern"
+      ],
+      "part2": [
+        "pole",
+        "surface",
+        "canal",
+        "mountaintop",
+        "coast"
+      ]
+    }
+  },
+  {
+    "lesson": 332,
+    "topic": "Transport",
+    "lemmas": {
+      "part1": [
+        "packing",
+        "lorry",
+        "transportation",
+        "rush",
+        "parking"
+      ],
+      "part2": [
+        "cabin",
+        "turning",
+        "board",
+        "traffic jam",
+        "crossing",
+        "flow"
+      ]
+    }
+  },
+  {
+    "lesson": 333,
+    "topic": "Relationships and Family",
+    "lemmas": {
+      "part1": [
+        "twin",
+        "swear",
+        "contribute",
+        "nickname"
+      ],
+      "part2": [
+        "sympathy",
+        "tease",
+        "pregnant",
+        "engage",
+        "household"
+      ]
+    }
+  },
+  {
+    "lesson": 334,
+    "topic": "Expressing Feelings",
+    "lemmas": {
+      "part1": [
+        "laughter",
+        "tremendous",
+        "bother",
+        "triumph"
+      ],
+      "part2": [
+        "horrible",
+        "irritate",
+        "suspicion",
+        "annoyed",
+        "praise"
+      ]
+    }
+  },
+  {
+    "lesson": 335,
+    "topic": "Religion and Spirituality",
+    "lemmas": {
+      "part1": [
+        "eternity",
+        "creator",
+        "phoenix",
+        "bless"
+      ],
+      "part2": [
+        "heavenly",
+        "haunt",
+        "spirit",
+        "soul",
+        "grave"
+      ]
+    }
+  },
+  {
+    "lesson": 336,
+    "topic": "Finances",
+    "lemmas": {
+      "part1": [
+        "prosperity",
+        "penniless",
+        "ration",
+        "reward",
+        "lottery"
+      ],
+      "part2": [
+        "enrich",
+        "recover",
+        "decline",
+        "owe",
+        "finance"
+      ]
+    }
+  },
+  {
+    "lesson": 337,
+    "topic": "Achievements",
+    "lemmas": {
+      "part1": [
+        "triumph",
+        "award",
+        "reward",
+        "prize",
+        "attempt"
+      ],
+      "part2": [
+        "victory",
+        "attain",
+        "bronze",
+        "achievement",
+        "excellence",
+        "breakthrough"
+      ]
+    }
+  },
+  {
+    "lesson": 338,
+    "topic": "Common verbs",
+    "lemmas": {
+      "part1": [
+        "refuse",
+        "involve",
+        "furnish",
+        "monitor",
+        "accompany"
+      ],
+      "part2": [
+        "recommend",
+        "enable",
+        "glide",
+        "fool",
+        "fold"
+      ]
+    }
+  },
+  {
+    "lesson": 339,
+    "topic": "Medicine",
+    "lemmas": {
+      "part1": [
+        "pregnant",
+        "earache",
+        "bleed",
+        "prescription",
+        "scan"
+      ],
+      "part2": [
+        "breast",
+        "undergo",
+        "skin",
+        "exhausted",
+        "mild"
+      ]
+    }
+  },
+  {
+    "lesson": 340,
+    "topic": "Expressing Ideas",
+    "lemmas": {
+      "part1": [
+        "demand",
+        "rational",
+        "vision",
+        "notice",
+        "conclusion"
+      ],
+      "part2": [
+        "preference",
+        "nonsense",
+        "indirect",
+        "handshake",
+        "resemble"
+      ]
+    }
+  },
+  {
+    "lesson": 341,
+    "topic": "Linguistics",
+    "lemmas": {
+      "part1": [
+        "accent",
+        "tense",
+        "emphasis",
+        "fluent",
+        "oral"
+      ],
+      "part2": [
+        "complement",
+        "adverb",
+        "abstract",
+        "phrasal verb",
+        "handwriting"
+      ]
+    }
+  },
+  {
+    "lesson": 342,
+    "topic": "Adverbs",
+    "lemmas": {
+      "part1": [
+        "noisily",
+        "nearby",
+        "commonly",
+        "farthest",
+        "upstairs"
+      ],
+      "part2": [
+        "genetically",
+        "naturally",
+        "indoors",
+        "off",
+        "feverishly"
+      ]
+    }
+  },
+  {
+    "lesson": 343,
+    "topic": "Essential words",
+    "lemmas": {
+      "part1": [
+        "bunch",
+        "awareness",
+        "uncertainty",
+        "objective",
+        "likeness"
+      ],
+      "part2": [
+        "content",
+        "folk",
+        "loss",
+        "season",
+        "selection"
+      ]
+    }
+  },
+  {
+    "lesson": 344,
+    "topic": "Adverbs",
+    "lemmas": {
+      "part1": [
+        "violently",
+        "overnight",
+        "lately",
+        "indirectly",
+        "strangely"
+      ],
+      "part2": [
+        "kindly",
+        "anyhow",
+        "sometimes",
+        "internationally",
+        "completely"
+      ]
+    }
+  },
+  {
+    "lesson": 345,
+    "topic": "Science",
+    "lemmas": {
+      "part1": [
+        "discovery",
+        "star",
+        "current",
+        "result",
+        "chemistry"
+      ],
+      "part2": [
+        "float",
+        "oxygen",
+        "horizon",
+        "explosion",
+        "liquid"
+      ]
+    }
+  },
+  {
+    "lesson": 346,
+    "topic": "Education",
+    "lemmas": {
+      "part1": [
+        "pattern",
+        "examination",
+        "enrich",
+        "inquiry",
+        "concept"
+      ],
+      "part2": [
+        "intermediate",
+        "institute",
+        "geography",
+        "motivation",
+        "retell"
+      ]
+    }
+  },
+  {
+    "lesson": 347,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "male",
+        "objective",
+        "realistic",
+        "outward",
+        "cultural"
+      ],
+      "part2": [
+        "persuasive",
+        "nasty",
+        "aware",
+        "more",
+        "previous"
+      ]
+    }
+  },
+  {
+    "lesson": 348,
+    "topic": "Media",
+    "lemmas": {
+      "part1": [
+        "advert",
+        "hit",
+        "content",
+        "journalist",
+        "disc"
+      ],
+      "part2": [
+        "tape",
+        "headline",
+        "current",
+        "record",
+        "celebrity"
+      ]
+    }
+  },
+  {
+    "lesson": 349,
+    "topic": "House",
+    "lemmas": {
+      "part1": [
+        "stay",
+        "frying pan",
+        "pump",
+        "lift",
+        "sponge"
+      ],
+      "part2": [
+        "ironing",
+        "moisture",
+        "steam",
+        "jar",
+        "tile"
+      ]
+    }
+  },
+  {
+    "lesson": 350,
+    "topic": "Expressing Feelings",
+    "lemmas": {
+      "part1": [
+        "bitter",
+        "nervousness",
+        "respect",
+        "embarrassed",
+        "urge"
+      ],
+      "part2": [
+        "tense",
+        "cherish",
+        "hesitate",
+        "tragic",
+        "uncertainty"
+      ]
+    }
+  },
+  {
+    "lesson": 351,
+    "topic": "Common verbs",
+    "lemmas": {
+      "part1": [
+        "measure",
+        "deal",
+        "endanger",
+        "commit",
+        "transfer"
+      ],
+      "part2": [
+        "discourage",
+        "tick",
+        "aim",
+        "upload",
+        "touch"
+      ]
+    }
+  },
+  {
+    "lesson": 352,
+    "topic": "Employment",
+    "lemmas": {
+      "part1": [
+        "temporary",
+        "retail",
+        "opening",
+        "interview",
+        "design"
+      ],
+      "part2": [
+        "strategic",
+        "quality",
+        "plant",
+        "industrial",
+        "diligent"
+      ]
+    }
+  },
+  {
+    "lesson": 353,
+    "topic": "Common verbs",
+    "lemmas": {
+      "part1": [
+        "undergo",
+        "specialize",
+        "float",
+        "plant",
+        "delay"
+      ],
+      "part2": [
+        "scream",
+        "print",
+        "scare",
+        "stun",
+        "undo"
+      ]
+    }
+  },
+  {
+    "lesson": 354,
+    "topic": "Holidays",
+    "lemmas": {
+      "part1": [
+        "book",
+        "backpacking",
+        "backpacker",
+        "tour"
+      ],
+      "part2": [
+        "feast",
+        "tent",
+        "postcard",
+        "stay",
+        "firework"
+      ]
+    }
+  },
+  {
+    "lesson": 355,
+    "topic": "History",
+    "lemmas": {
+      "part1": [
+        "killing",
+        "chariot",
+        "occupy",
+        "outlaw",
+        "enemy"
+      ],
+      "part2": [
+        "primitive",
+        "murder",
+        "remembrance",
+        "sundial",
+        "slavery"
+      ]
+    }
+  },
+  {
+    "lesson": 356,
+    "topic": "Formal Institutions",
+    "lemmas": {
+      "part1": [
+        "restrict",
+        "election",
+        "institute",
+        "administration",
+        "politics"
+      ],
+      "part2": [
+        "govern",
+        "confirmation",
+        "prohibition",
+        "public",
+        "inquiry"
+      ]
+    }
+  },
+  {
+    "lesson": 357,
+    "topic": "Expressing Ideas",
+    "lemmas": {
+      "part1": [
+        "moreover",
+        "express",
+        "guess",
+        "objection"
+      ],
+      "part2": [
+        "distinguish",
+        "sheer",
+        "slogan",
+        "furthermore",
+        "recommend"
+      ]
+    }
+  },
+  {
+    "lesson": 358,
+    "topic": "Media",
+    "lemmas": {
+      "part1": [
+        "informative",
+        "telecommunications",
+        "medium",
+        "copyright",
+        "graphics"
+      ],
+      "part2": [
+        "recording",
+        "commercial",
+        "expose",
+        "interview",
+        "slogan",
+        "interviewee"
+      ]
+    }
+  },
+  {
+    "lesson": 359,
+    "topic": "House",
+    "lemmas": {
+      "part1": [
+        "messy",
+        "builder",
+        "sink",
+        "storage"
+      ],
+      "part2": [
+        "property",
+        "knock",
+        "hammer",
+        "rest",
+        "lock"
+      ]
+    }
+  },
+  {
+    "lesson": 360,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "absent",
+        "spiritual",
+        "silent",
+        "breathless",
+        "general"
+      ],
+      "part2": [
+        "stubborn",
+        "immediate",
+        "twin",
+        "internal",
+        "dusty"
+      ]
+    }
+  },
+  {
+    "lesson": 361,
+    "topic": "Relationships and Family",
+    "lemmas": {
+      "part1": [
+        "teammate",
+        "tension",
+        "adopt",
+        "relative"
+      ],
+      "part2": [
+        "babysit",
+        "groom",
+        "marriage",
+        "nephew",
+        "reception"
+      ]
+    }
+  },
+  {
+    "lesson": 362,
+    "topic": "Law",
+    "lemmas": {
+      "part1": [
+        "bullet",
+        "release",
+        "civil",
+        "punishment",
+        "swear"
+      ],
+      "part2": [
+        "vice",
+        "oppression",
+        "capture",
+        "investigation",
+        "possess"
+      ]
+    }
+  },
+  {
+    "lesson": 363,
+    "topic": "Describing People's Appearance",
+    "lemmas": {
+      "part1": [
+        "middle-aged",
+        "beard",
+        "slim",
+        "cute",
+        "curly"
+      ],
+      "part2": [
+        "bald",
+        "shave",
+        "adorable",
+        "curly",
+        "handsome",
+        "pale"
+      ]
+    }
+  },
+  {
+    "lesson": 364,
+    "topic": "Professions",
+    "lemmas": {
+      "part1": [
+        "president",
+        "surgeon",
+        "representative",
+        "adviser",
+        "barman"
+      ],
+      "part2": [
+        "producer",
+        "guide",
+        "merchant",
+        "schoolteacher",
+        "mechanic"
+      ]
+    }
+  },
+  {
+    "lesson": 365,
+    "topic": "Law",
+    "lemmas": {
+      "part1": [
+        "limit",
+        "outlaw",
+        "deny",
+        "murder",
+        "defense"
+      ],
+      "part2": [
+        "burglar",
+        "disturbance",
+        "divorced",
+        "security",
+        "deprive"
+      ]
+    }
+  },
+  {
+    "lesson": 366,
+    "topic": "Employment",
+    "lemmas": {
+      "part1": [
+        "engineering",
+        "experienced",
+        "engage",
+        "resource"
+      ],
+      "part2": [
+        "leading",
+        "plan",
+        "promotion",
+        "distribution",
+        "inspection"
+      ]
+    }
+  },
+  {
+    "lesson": 367,
+    "topic": "Common verbs",
+    "lemmas": {
+      "part1": [
+        "crash",
+        "rid",
+        "persuade",
+        "rely",
+        "swarm"
+      ],
+      "part2": [
+        "reject",
+        "horrify",
+        "tend",
+        "lead",
+        "lean"
+      ]
+    }
+  },
+  {
+    "lesson": 368,
+    "topic": "Geographical Features",
+    "lemmas": {
+      "part1": [
+        "location",
+        "mount",
+        "steep",
+        "geography"
+      ],
+      "part2": [
+        "rainforest",
+        "vast",
+        "sunrise",
+        "reef",
+        "surround"
+      ]
+    }
+  },
+  {
+    "lesson": 369,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "experienced",
+        "stuck",
+        "careless",
+        "hard-working",
+        "imaginary"
+      ],
+      "part2": [
+        "tiny",
+        "strategic",
+        "electrical",
+        "unique",
+        "leading",
+        "characteristic"
+      ]
+    }
+  },
+  {
+    "lesson": 370,
+    "topic": "Employment",
+    "lemmas": {
+      "part1": [
+        "support",
+        "skyscraper",
+        "rank",
+        "steady",
+        "routine"
+      ],
+      "part2": [
+        "photocopy",
+        "qualify",
+        "qualified",
+        "experience",
+        "discrimination"
+      ]
+    }
+  },
+  {
+    "lesson": 371,
+    "topic": "Relationships",
+    "lemmas": {
+      "part1": [
+        "interaction",
+        "relationship",
+        "involved",
+        "loyal"
+      ],
+      "part2": [
+        "invitation",
+        "friendliness",
+        "counseling",
+        "supporter",
+        "newcomer"
+      ]
+    }
+  },
+  {
+    "lesson": 372,
+    "topic": "Technology",
+    "lemmas": {
+      "part1": [
+        "log",
+        "register",
+        "slot",
+        "update",
+        "privacy"
+      ],
+      "part2": [
+        "terminal",
+        "storage",
+        "device",
+        "display",
+        "engineering"
+      ]
+    }
+  },
+  {
+    "lesson": 373,
+    "topic": "Hobbies",
+    "lemmas": {
+      "part1": [
+        "flute",
+        "outdoors",
+        "skate",
+        "snowboard",
+        "pottery"
+      ],
+      "part2": [
+        "craft",
+        "golfer",
+        "puzzle",
+        "enthusiast",
+        "trumpet",
+        "sports"
+      ]
+    }
+  },
+  {
+    "lesson": 374,
+    "topic": "Essential words",
+    "lemmas": {
+      "part1": [
+        "grouping",
+        "carelessness",
+        "session",
+        "control",
+        "match"
+      ],
+      "part2": [
+        "consideration",
+        "behalf",
+        "chaos",
+        "reality",
+        "efficiency"
+      ]
+    }
+  },
+  {
+    "lesson": 375,
+    "topic": "Medicine",
+    "lemmas": {
+      "part1": [
+        "mentally",
+        "remedy",
+        "genetic",
+        "scratch",
+        "sickness"
+      ],
+      "part2": [
+        "daze",
+        "newborn",
+        "allergic",
+        "blind",
+        "pharmacy"
+      ]
+    }
+  },
+  {
+    "lesson": 376,
+    "topic": "Expressing Feelings",
+    "lemmas": {
+      "part1": [
+        "surprise",
+        "beloved",
+        "motivation",
+        "hope",
+        "fuss"
+      ],
+      "part2": [
+        "guilt",
+        "annoyance",
+        "scare",
+        "meditate",
+        "embarrassment"
+      ]
+    }
+  },
+  {
+    "lesson": 377,
+    "topic": "Law",
+    "lemmas": {
+      "part1": [
+        "signature",
+        "commit",
+        "criminal",
+        "renew"
+      ],
+      "part2": [
+        "drunk",
+        "anti",
+        "negotiate",
+        "privacy",
+        "legally"
+      ]
+    }
+  },
+  {
+    "lesson": 378,
+    "topic": "Common verbs",
+    "lemmas": {
+      "part1": [
+        "hurt",
+        "relate",
+        "count",
+        "feed",
+        "deserve"
+      ],
+      "part2": [
+        "regain",
+        "defend",
+        "trace",
+        "escape",
+        "narrate"
+      ]
+    }
+  },
+  {
+    "lesson": 379,
+    "topic": "Expressing Ideas",
+    "lemmas": {
+      "part1": [
+        "retrospect",
+        "outweigh",
+        "personally",
+        "inspire"
+      ],
+      "part2": [
+        "claim",
+        "intention",
+        "acknowledge",
+        "emphasis",
+        "meaningful"
+      ]
+    }
+  },
+  {
+    "lesson": 380,
+    "topic": "Science",
+    "lemmas": {
+      "part1": [
+        "electricity",
+        "melt",
+        "element",
+        "layer"
+      ],
+      "part2": [
+        "satellite",
+        "steel",
+        "base",
+        "poison",
+        "flow"
+      ]
+    }
+  },
+  {
+    "lesson": 381,
+    "topic": "Finances",
+    "lemmas": {
+      "part1": [
+        "charity",
+        "estimate",
+        "exchange rate",
+        "excess",
+        "interest"
+      ],
+      "part2": [
+        "invest",
+        "bill",
+        "growth",
+        "bet",
+        "allowance",
+        "income"
+      ]
+    }
+  },
+  {
+    "lesson": 382,
+    "topic": "Sport and fitness",
+    "lemmas": {
+      "part1": [
+        "fit",
+        "competitive",
+        "speed",
+        "teammate",
+        "slip"
+      ],
+      "part2": [
+        "outdoor",
+        "tracksuit",
+        "trail",
+        "eliminate",
+        "league"
+      ]
+    }
+  },
+  {
+    "lesson": 383,
+    "topic": "Essential words",
+    "lemmas": {
+      "part1": [
+        "regard",
+        "mess",
+        "judgment",
+        "procrastination",
+        "command"
+      ],
+      "part2": [
+        "acknowledgment",
+        "relation",
+        "quantity",
+        "mankind",
+        "group"
+      ]
+    }
+  },
+  {
+    "lesson": 384,
+    "topic": "Sport and fitness",
+    "lemmas": {
+      "part1": [
+        "sportsmanship",
+        "parachute",
+        "score",
+        "supporter",
+        "bowl"
+      ],
+      "part2": [
+        "ice skating",
+        "gym",
+        "hop",
+        "tumble",
+        "aerobics"
+      ]
+    }
+  },
+  {
+    "lesson": 385,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "involved",
+        "practical",
+        "encouraging",
+        "hip",
+        "regional"
+      ],
+      "part2": [
+        "hasty",
+        "near",
+        "obvious",
+        "sharp",
+        "insane"
+      ]
+    }
+  },
+  {
+    "lesson": 386,
+    "topic": "Formal Institutions",
+    "lemmas": {
+      "part1": [
+        "fire station",
+        "regulation",
+        "membership",
+        "punishment"
+      ],
+      "part2": [
+        "grant",
+        "march",
+        "adviser",
+        "minority",
+        "politician"
+      ]
+    }
+  },
+  {
+    "lesson": 387,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "depressing",
+        "intense",
+        "last",
+        "unfriendly",
+        "hopeless"
+      ],
+      "part2": [
+        "vegetarian",
+        "fake",
+        "single",
+        "misty",
+        "numerous"
+      ]
+    }
+  },
+  {
+    "lesson": 388,
+    "topic": "Clothes",
+    "lemmas": {
+      "part1": [
+        "casual",
+        "purse",
+        "stripe",
+        "jumper",
+        "bracelet"
+      ],
+      "part2": [
+        "jewel",
+        "razor",
+        "pin",
+        "handkerchief",
+        "tracksuit",
+        "sandal"
+      ]
+    }
+  },
+  {
+    "lesson": 389,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "disabled",
+        "contrary",
+        "navy blue",
+        "timely",
+        "thunderous"
+      ],
+      "part2": [
+        "northwestern",
+        "favorable",
+        "remarkable",
+        "hidden",
+        "northern"
+      ]
+    }
+  },
+  {
+    "lesson": 390,
+    "topic": "Media",
+    "lemmas": {
+      "part1": [
+        "encyclopedia",
+        "comment",
+        "creator",
+        "advertise",
+        "publisher"
+      ],
+      "part2": [
+        "broadcast",
+        "setting",
+        "columnist",
+        "announcement",
+        "edition"
+      ]
+    }
+  },
+  {
+    "lesson": 391,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "parental",
+        "meaningful",
+        "steep",
+        "grave",
+        "accessible"
+      ],
+      "part2": [
+        "frequent",
+        "maximum",
+        "enjoyable",
+        "embarrassed",
+        "irregular"
+      ]
+    }
+  },
+  {
+    "lesson": 392,
+    "topic": "Education",
+    "lemmas": {
+      "part1": [
+        "handwriting",
+        "curiosity",
+        "documentary",
+        "researcher",
+        "lecture"
+      ],
+      "part2": [
+        "correction",
+        "accomplish",
+        "literature",
+        "flunk",
+        "progress"
+      ]
+    }
+  },
+  {
+    "lesson": 393,
+    "topic": "Sport and fitness",
+    "lemmas": {
+      "part1": [
+        "toss",
+        "referee",
+        "pole",
+        "glide",
+        "prize"
+      ],
+      "part2": [
+        "hunt",
+        "substitute",
+        "jogging",
+        "unfit",
+        "extreme"
+      ]
+    }
+  },
+  {
+    "lesson": 394,
+    "topic": "Physical Qualities of Objects",
+    "lemmas": {
+      "part1": [
+        "brass",
+        "sparkle",
+        "solid",
+        "shiny",
+        "steel"
+      ],
+      "part2": [
+        "distance",
+        "stable",
+        "darkness",
+        "shadowy",
+        "split"
+      ]
+    }
+  },
+  {
+    "lesson": 395,
+    "topic": "Adverbs",
+    "lemmas": {
+      "part1": [
+        "otherwise",
+        "boldly",
+        "politely",
+        "unusually",
+        "constantly"
+      ],
+      "part2": [
+        "downstairs",
+        "continually",
+        "lovingly",
+        "incredibly",
+        "bravely",
+        "hopefully"
+      ]
+    }
+  },
+  {
+    "lesson": 396,
+    "topic": "Employment",
+    "lemmas": {
+      "part1": [
+        "diligence",
+        "career",
+        "stable",
+        "efficiency",
+        "productive"
+      ],
+      "part2": [
+        "substitute",
+        "substantial",
+        "motivation",
+        "steadily",
+        "industry"
+      ]
+    }
+  },
+  {
+    "lesson": 397,
+    "topic": "Essential words",
+    "lemmas": {
+      "part1": [
+        "possession",
+        "sort",
+        "thump",
+        "phenomenon",
+        "fragment"
+      ],
+      "part2": [
+        "resource",
+        "request",
+        "either",
+        "disaster",
+        "limitation"
+      ]
+    }
+  },
+  {
+    "lesson": 398,
+    "topic": "Media",
+    "lemmas": {
+      "part1": [
+        "caller",
+        "gossip",
+        "bulletin",
+        "press",
+        "film-maker"
+      ],
+      "part2": [
+        "format",
+        "highlight",
+        "soap opera",
+        "blogger",
+        "message board",
+        "social networking"
+      ]
+    }
+  },
+  {
+    "lesson": 399,
+    "topic": "Science",
+    "lemmas": {
+      "part1": [
+        "quantity",
+        "universe",
+        "astronomer",
+        "observation",
+        "rapid"
+      ],
+      "part2": [
+        "probability",
+        "extinct",
+        "debris",
+        "circle",
+        "filter"
+      ]
+    }
+  },
+  {
+    "lesson": 400,
+    "topic": "Education",
+    "lemmas": {
+      "part1": [
+        "full-time",
+        "failure",
+        "informative",
+        "economics",
+        "qualified"
+      ],
+      "part2": [
+        "sticker",
+        "substantial",
+        "assignment",
+        "demonstrate",
+        "vary"
+      ]
+    }
+  },
+  {
+    "lesson": 401,
+    "topic": "Essential words",
+    "lemmas": {
+      "part1": [
+        "absence",
+        "potential",
+        "gap",
+        "future"
+      ],
+      "part2": [
+        "refusal",
+        "individual",
+        "intention",
+        "signal",
+        "finding"
+      ]
+    }
+  },
+  {
+    "lesson": 402,
+    "topic": "Entertainment",
+    "lemmas": {
+      "part1": [
+        "attraction",
+        "imitate",
+        "comedy",
+        "rap",
+        "folk"
+      ],
+      "part2": [
+        "humorous",
+        "popcorn",
+        "nightlife",
+        "monster",
+        "applaud"
+      ]
+    }
+  },
+  {
+    "lesson": 403,
+    "topic": "Formal Institutions",
+    "lemmas": {
+      "part1": [
+        "civil",
+        "sheriff",
+        "conduct",
+        "policy"
+      ],
+      "part2": [
+        "opposition",
+        "democracy",
+        "protest",
+        "foundation",
+        "permit"
+      ]
+    }
+  },
+  {
+    "lesson": 404,
+    "topic": "Entertainment",
+    "lemmas": {
+      "part1": [
+        "trumpet",
+        "spectator",
+        "brass",
+        "live",
+        "release"
+      ],
+      "part2": [
+        "dazzle",
+        "soap opera",
+        "idol",
+        "fantasy",
+        "celebrity"
+      ]
+    }
+  },
+  {
+    "lesson": 405,
+    "topic": "Employment",
+    "lemmas": {
+      "part1": [
+        "service",
+        "part-time",
+        "application",
+        "promote",
+        "slogan"
+      ],
+      "part2": [
+        "strike",
+        "supply",
+        "procrastination",
+        "reception",
+        "transportation"
+      ]
+    }
+  },
+  {
+    "lesson": 406,
+    "topic": "Transport",
+    "lemmas": {
+      "part1": [
+        "bound",
+        "platform",
+        "vessel",
+        "fasten",
+        "marine"
+      ],
+      "part2": [
+        "carriage",
+        "motorcycle",
+        "paddle",
+        "engine",
+        "harbor",
+        "roadside"
+      ]
+    }
+  },
+  {
+    "lesson": 407,
+    "topic": "Qualities of People and Events",
+    "lemmas": {
+      "part1": [
+        "cruel",
+        "earnest",
+        "humanity",
+        "stylish"
+      ],
+      "part2": [
+        "vision",
+        "patience",
+        "impression",
+        "hearted",
+        "supportive"
+      ]
+    }
+  },
+  {
+    "lesson": 408,
+    "topic": "Finances",
+    "lemmas": {
+      "part1": [
+        "depression",
+        "renew",
+        "approval",
+        "duty",
+        "balance"
+      ],
+      "part2": [
+        "promotion",
+        "risk",
+        "expense",
+        "grant",
+        "market"
+      ]
+    }
+  },
+  {
+    "lesson": 409,
+    "topic": "Qualities of People and Events",
+    "lemmas": {
+      "part1": [
+        "patient",
+        "lie",
+        "friendliness",
+        "kindly",
+        "nasty"
+      ],
+      "part2": [
+        "justice",
+        "confidence",
+        "shameful",
+        "easygoing",
+        "graceful"
+      ]
+    }
+  },
+  {
+    "lesson": 410,
+    "topic": "Sport and fitness",
+    "lemmas": {
+      "part1": [
+        "golfer",
+        "twist",
+        "tournament",
+        "defend",
+        "opposition"
+      ],
+      "part2": [
+        "technique",
+        "outdoors",
+        "pace",
+        "goalkeeper",
+        "stretch"
+      ]
+    }
+  },
+  {
+    "lesson": 411,
+    "topic": "Qualities of People and Events",
+    "lemmas": {
+      "part1": [
+        "moral",
+        "endure",
+        "victim",
+        "courage"
+      ],
+      "part2": [
+        "selfish",
+        "unlikely",
+        "honestly",
+        "shame",
+        "vain"
+      ]
+    }
+  },
+  {
+    "lesson": 412,
+    "topic": "Science",
+    "lemmas": {
+      "part1": [
+        "depth",
+        "maximum",
+        "distance",
+        "cell",
+        "powder"
+      ],
+      "part2": [
+        "orbit",
+        "dioxide",
+        "chemical",
+        "molecule",
+        "calculation"
+      ]
+    }
+  },
+  {
+    "lesson": 413,
+    "topic": "Adverbs",
+    "lemmas": {
+      "part1": [
+        "continuously",
+        "tightly",
+        "specially",
+        "forth",
+        "suddenly"
+      ],
+      "part2": [
+        "primarily",
+        "curiously",
+        "alike",
+        "occasionally",
+        "socially",
+        "properly"
+      ]
+    }
+  },
+  {
+    "lesson": 414,
+    "topic": "Science",
+    "lemmas": {
+      "part1": [
+        "systematic",
+        "nuclear",
+        "comet",
+        "pollutant",
+        "exploration"
+      ],
+      "part2": [
+        "phenomenon",
+        "deficiency",
+        "stream",
+        "logic",
+        "arithmetic"
+      ]
+    }
+  },
+  {
+    "lesson": 415,
+    "topic": "Adjectives",
+    "lemmas": {
+      "part1": [
+        "innocent",
+        "scary",
+        "ordinary",
+        "fortunate",
+        "up-to-date"
+      ],
+      "part2": [
+        "central",
+        "productive",
+        "little",
+        "sticky",
+        "dramatic"
+      ]
+    }
+  },
+  {
+    "lesson": 416,
+    "topic": "Literature",
+    "lemmas": {
+      "part1": [
+        "dialog",
+        "riddle",
+        "literature",
+        "encyclopedia",
+        "goddess"
+      ],
+      "part2": [
+        "science fiction",
+        "recite",
+        "literary",
+        "soul",
+        "monster"
+      ]
+    }
+  },
+  {
+    "lesson": 417,
+    "topic": "Common verbs",
+    "lemmas": {
+      "part1": [
+        "simplify",
+        "compose",
+        "eliminate",
+        "punish",
+        "retain"
+      ],
+      "part2": [
+        "swear",
+        "paddle",
+        "knock",
+        "propose",
+        "mourn"
+      ]
+    }
+  },
+  {
+    "lesson": 418,
+    "topic": "Science",
+    "lemmas": {
+      "part1": [
+        "marble",
+        "genetically",
+        "diameter",
+        "minimum",
+        "ecosystem"
+      ],
+      "part2": [
+        "biology",
+        "laboratory",
+        "frequency",
+        "bubble",
+        "deposit"
+      ]
+    }
+  },
+  {
+    "lesson": 419,
+    "topic": "Geographical Features",
+    "lemmas": {
+      "part1": [
+        "sand",
+        "pit",
+        "sunset",
+        "northwestern",
+        "northwest"
+      ],
+      "part2": [
+        "southeast",
+        "border",
+        "plain",
+        "southern",
+        "southwest"
+      ]
+    }
+  }
+]

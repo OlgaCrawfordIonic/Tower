@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>B1 Lessons</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="downloadLessonsJson()">
+        Download JSON
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button expand="block" (click)="loadLessons()">Preview Lessons</ion-button>
+
+  <ion-list *ngIf="lessons.length">
+    <ion-item *ngFor="let lesson of lessons | slice:0:10">
+      <ion-label>
+        <h2>Lesson {{ lesson.lesson }} – {{ lesson.topic }}</h2>
+        <p>part1: {{ lesson.lemmas.part1.join(', ') }}</p>
+        <p>part2: {{ lesson.lemmas.part2.join(', ') }}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -43,7 +43,12 @@ type Segment = {
 type SenseView = {
   senseId: string;
   definition: string;
-  examples: string[];
+  examples: TextWithAudio[];
+};
+
+type TextWithAudio ={
+  text: string;
+  audioUrl?: string | null;
 };
 
 type PartOfSpeechView = {
@@ -127,12 +132,14 @@ quizMistakes = signal<string[]>([]);
   {
     lemma: "compose",
     english: "compose",
+    enUrl: "",
     american: "compose",
+    amUrl: "",
     language: "en",
     lessons: [12, 18, 29],
     shortDescription: {
-      "en-GB": ["create music or writing"],
-      "en-US": ["create music or writing Am"]
+      "en-GB": "create music or writing",
+      "en-US": "create music or writing Am"
     },
     levels: ["B1"],
     partsOfSpeech: [
@@ -142,17 +149,27 @@ quizMistakes = signal<string[]>([]);
           {
             senseId: "s1",
             definition: "to create music, writing, or art",
+            url: "",
             examples: {
-              "en-GB": ["She composed a hymn for the service."],
-              "en-US": ["She composed a song for the school band."]
+              "en-GB": [
+                { text: "She composed a hymn for the service.", audioUrl: "" }
+              ],
+              "en-US": [
+                { text: "She composed a song for the school band.", audioUrl: "" }
+              ]
             }
           },
           {
             senseId: "s2",
             definition: "to form or make up something",
+            url: "",
             examples: {
-              "en-GB": ["The team is composed of five players."],
-              "en-US": ["The team is composed of five players."]
+              "en-GB": [
+                { text: "The team is composed of five players.", audioUrl: "" }
+              ],
+              "en-US": [
+                { text: "The team is composed of five players.", audioUrl: "" }
+              ]
             }
           }
         ]
@@ -163,41 +180,67 @@ quizMistakes = signal<string[]>([]);
         topicKey: "music",
         lessons: [12],
         examples: {
-          "en-GB": ["He will compose a piece for the school concert."],
-          "en-US": ["He will compose a piece for the school concert."]
+          "en-GB": [
+            { text: "He will compose a piece for the school concert.", audioUrl: "" }
+          ],
+          "en-US": [
+            { text: "He will compose a piece for the school concert.", audioUrl: "" }
+          ]
         }
       },
       {
         topicKey: "literature",
         lessons: [18],
         examples: {
-          "en-GB": ["The author will compose a short story for the magazine."],
-          "en-US": ["The author will compose a short story for the magazine."]
+          "en-GB": [
+            { text: "The author will compose a short story for the magazine.", audioUrl: "" }
+          ],
+          "en-US": [
+            { text: "The author will compose a short story for the magazine.", audioUrl: "" }
+          ]
         }
       },
       {
         topicKey: "education",
         lessons: [29],
         examples: {
-          "en-GB": ["Students must compose a paragraph about their weekend."],
-          "en-US": ["Students must compose a paragraph about their weekend."]
+          "en-GB": [
+            { text: "Students must compose a paragraph about their weekend.", audioUrl: "" }
+          ],
+          "en-US": [
+            { text: "Students must compose a paragraph about their weekend.", audioUrl: "" }
+          ]
         }
       }
     ],
     variants: {
-      "en-GB": { phonetics: { ipa: "/kəmˈpəʊz/", voice: "en-GB" } },
-      "en-US": { phonetics: { ipa: "/kəmˈpoʊz/", voice: "en-US" } }
+      "en-GB": {
+        phonetics: {
+          ipa: "/kəmˈpəʊz/",
+          audioUrl: "",
+          voice: "en-GB"
+        }
+      },
+      "en-US": {
+        phonetics: {
+          ipa: "/kəmˈpoʊz/",
+          audioUrl: "",
+          voice: "en-US"
+        }
+      }
     }
   },
   {
     lemma: "dedicate",
     english: "dedicate",
+    enUrl: "",
     american: "dedicate",
+    amUrl: "",
     language: "en",
     lessons: [13, 21],
     shortDescription: {
-      "en-GB": ["devote time or effort"],
-      "en-US": ["devote time or effort"]
+      "en-GB": "devote time or effort",
+      "en-US": "devote time or effort"
     },
     levels: ["B1"],
     partsOfSpeech: [
@@ -207,17 +250,27 @@ quizMistakes = signal<string[]>([]);
           {
             senseId: "s1",
             definition: "to devote time or effort to a purpose",
+            url: "",
             examples: {
-              "en-GB": ["They dedicated hours to revision before exams."],
-              "en-US": ["They dedicated hours to studying before exams."]
+              "en-GB": [
+                { text: "They dedicated hours to revision before exams.", audioUrl: "" }
+              ],
+              "en-US": [
+                { text: "They dedicated hours to studying before exams.", audioUrl: "" }
+              ]
             }
           },
           {
             senseId: "s2",
             definition: "to formally address a work to someone",
+            url: "",
             examples: {
-              "en-GB": ["He dedicated the book to his parents."],
-              "en-US": ["He dedicated the book to his parents."]
+              "en-GB": [
+                { text: "He dedicated the book to his parents.", audioUrl: "" }
+              ],
+              "en-US": [
+                { text: "He dedicated the book to his parents.", audioUrl: "" }
+              ]
             }
           }
         ]
@@ -229,12 +282,12 @@ quizMistakes = signal<string[]>([]);
         lessons: [13],
         examples: {
           "en-GB": [
-            "You must dedicate time to practise every day.",
-            "They dedicated hours to revision before exams."
+            { text: "You must dedicate time to practise every day.", audioUrl: "" },
+            { text: "They dedicated hours to revision before exams.", audioUrl: "" }
           ],
           "en-US": [
-            "You must dedicate time to practice every day.",
-            "They dedicated hours to studying before exams."
+            { text: "You must dedicate time to practice every day.", audioUrl: "" },
+            { text: "They dedicated hours to studying before exams.", audioUrl: "" }
           ]
         }
       },
@@ -242,25 +295,43 @@ quizMistakes = signal<string[]>([]);
         topicKey: "literature",
         lessons: [21],
         examples: {
-          "en-GB": ["The poet decided to dedicate the book to her mentor."],
-          "en-US": ["The poet decided to dedicate the book to her mentor."]
+          "en-GB": [
+            { text: "The poet decided to dedicate the book to her mentor.", audioUrl: "" }
+          ],
+          "en-US": [
+            { text: "The poet decided to dedicate the book to her mentor.", audioUrl: "" }
+          ]
         }
       }
     ],
     variants: {
-      "en-GB": { phonetics: { ipa: "/ˈdedɪkeɪt/", voice: "en-GB" } },
-      "en-US": { phonetics: { ipa: "/ˈdɛdəˌkeɪt/", voice: "en-US" } }
+      "en-GB": {
+        phonetics: {
+          ipa: "/ˈdedɪkeɪt/",
+          audioUrl: "",
+          voice: "en-GB"
+        }
+      },
+      "en-US": {
+        phonetics: {
+          ipa: "/ˈdɛdəˌkeɪt/",
+          audioUrl: "",
+          voice: "en-US"
+        }
+      }
     }
   },
   {
     lemma: "dialog",
     english: "dialogue",
+    enUrl: "",
     american: "dialog",
+    amUrl: "",
     language: "en",
     lessons: [10, 24],
     shortDescription: {
-      "en-GB": ["conversation between characters"],
-      "en-US": ["conversation between characters"]
+      "en-GB": "conversation between characters",
+      "en-US": "conversation between characters"
     },
     levels: ["B1"],
     partsOfSpeech: [
@@ -270,9 +341,14 @@ quizMistakes = signal<string[]>([]);
           {
             senseId: "s1",
             definition: "a conversation between two or more people",
+            url: "",
             examples: {
-              "en-GB": ["We analysed the dialogue in Act 2."],
-              "en-US": ["We analyzed the dialog in Act 2."]
+              "en-GB": [
+                { text: "We analysed the dialogue in Act 2.", audioUrl: "" }
+              ],
+              "en-US": [
+                { text: "We analyzed the dialog in Act 2.", audioUrl: "" }
+              ]
             }
           }
         ]
@@ -283,33 +359,55 @@ quizMistakes = signal<string[]>([]);
         topicKey: "literature",
         lessons: [10],
         examples: {
-          "en-GB": ["The play’s dialogue sounds natural."],
-          "en-US": ["The play’s dialog sounds natural."]
+          "en-GB": [
+            { text: "The play’s dialogue sounds natural.", audioUrl: "" }
+          ],
+          "en-US": [
+            { text: "The play’s dialog sounds natural.", audioUrl: "" }
+          ]
         }
       },
       {
         topicKey: "education",
         lessons: [24],
         examples: {
-          "en-GB": ["Practise a short dialogue with your partner."],
-          "en-US": ["Practice a short dialog with your partner."]
+          "en-GB": [
+            { text: "Practise a short dialogue with your partner.", audioUrl: "" }
+          ],
+          "en-US": [
+            { text: "Practice a short dialog with your partner.", audioUrl: "" }
+          ]
         }
       }
     ],
     variants: {
-      "en-GB": { phonetics: { ipa: "/ˈdaɪəlɒɡ/", voice: "en-GB" } },
-      "en-US": { phonetics: { ipa: "/ˈdaɪəˌlɔɡ/", voice: "en-US" } }
+      "en-GB": {
+        phonetics: {
+          ipa: "/ˈdaɪəlɒɡ/",
+          audioUrl: "",
+          voice: "en-GB"
+        }
+      },
+      "en-US": {
+        phonetics: {
+          ipa: "/ˈdaɪəˌlɔɡ/",
+          audioUrl: "",
+          voice: "en-US"
+        }
+      }
     }
   },
   {
     lemma: "inscribe",
     english: "inscribe",
+    enUrl: "",
     american: "inscribe",
+    amUrl: "",
     language: "en",
     lessons: [19, 32],
     shortDescription: {
-      "en-GB": ["write words on a surface"],
-      "en-US": ["write words on a surface"]
+      "en-GB": "write words on a surface",
+      "en-US": "write words on a surface"
     },
     levels: ["B1"],
     partsOfSpeech: [
@@ -319,9 +417,14 @@ quizMistakes = signal<string[]>([]);
           {
             senseId: "s1",
             definition: "to write or carve words on something",
+            url: "",
             examples: {
-              "en-GB": ["The stone was inscribed with the captain’s name."],
-              "en-US": ["The stone was inscribed with the captain's name."]
+              "en-GB": [
+                { text: "The stone was inscribed with the captain’s name.", audioUrl: "" }
+              ],
+              "en-US": [
+                { text: "The stone was inscribed with the captain's name.", audioUrl: "" }
+              ]
             }
           }
         ]
@@ -333,12 +436,12 @@ quizMistakes = signal<string[]>([]);
         lessons: [19],
         examples: {
           "en-GB": [
-            "They inscribe dates on the monument to honour the event.",
-            "The stone was inscribed with the captain’s name."
+            { text: "They inscribe dates on the monument to honour the event.", audioUrl: "" },
+            { text: "The stone was inscribed with the captain’s name.", audioUrl: "" }
           ],
           "en-US": [
-            "They inscribe dates on the monument to honor the event.",
-            "The stone was inscribed with the captain's name."
+            { text: "They inscribe dates on the monument to honor the event.", audioUrl: "" },
+            { text: "The stone was inscribed with the captain's name.", audioUrl: "" }
           ]
         }
       },
@@ -346,25 +449,43 @@ quizMistakes = signal<string[]>([]);
         topicKey: "literature",
         lessons: [32],
         examples: {
-          "en-GB": ["She asked the author to inscribe the book to her sister."],
-          "en-US": ["She asked the author to inscribe the book to her sister."]
+          "en-GB": [
+            { text: "She asked the author to inscribe the book to her sister.", audioUrl: "" }
+          ],
+          "en-US": [
+            { text: "She asked the author to inscribe the book to her sister.", audioUrl: "" }
+          ]
         }
       }
     ],
     variants: {
-      "en-GB": { phonetics: { ipa: "/ɪnˈskraɪb/", voice: "en-GB" } },
-      "en-US": { phonetics: { ipa: "/ɪnˈskraɪb/", voice: "en-US" } }
+      "en-GB": {
+        phonetics: {
+          ipa: "/ɪnˈskraɪb/",
+          audioUrl: "",
+          voice: "en-GB"
+        }
+      },
+      "en-US": {
+        phonetics: {
+          ipa: "/ɪnˈskraɪb/",
+          audioUrl: "",
+          voice: "en-US"
+        }
+      }
     }
   },
   {
     lemma: "narrate",
     english: "narrate",
+    enUrl: "",
     american: "narrate",
+    amUrl: "",
     language: "en",
     lessons: [11, 28],
     shortDescription: {
-      "en-GB": ["tell a story formally"],
-      "en-US": ["tell a story formally"]
+      "en-GB": "tell a story formally",
+      "en-US": "tell a story formally"
     },
     levels: ["B1"],
     partsOfSpeech: [
@@ -374,9 +495,14 @@ quizMistakes = signal<string[]>([]);
           {
             senseId: "s1",
             definition: "to tell a story or describe events",
+            url: "",
             examples: {
-              "en-GB": ["A famous actor will narrate the documentary."],
-              "en-US": ["A famous actor will narrate the documentary."]
+              "en-GB": [
+                { text: "A famous actor will narrate the documentary.", audioUrl: "" }
+              ],
+              "en-US": [
+                { text: "A famous actor will narrate the documentary.", audioUrl: "" }
+              ]
             }
           }
         ]
@@ -387,33 +513,55 @@ quizMistakes = signal<string[]>([]);
         topicKey: "entertainment",
         lessons: [11],
         examples: {
-          "en-GB": ["A famous actor will narrate the documentary."],
-          "en-US": ["A famous actor will narrate the documentary."]
+          "en-GB": [
+            { text: "A famous actor will narrate the documentary.", audioUrl: "" }
+          ],
+          "en-US": [
+            { text: "A famous actor will narrate the documentary.", audioUrl: "" }
+          ]
         }
       },
       {
         topicKey: "literature",
         lessons: [28],
         examples: {
-          "en-GB": ["The writer chose to narrate the story in the first person."],
-          "en-US": ["The writer chose to narrate the story in the first person."]
+          "en-GB": [
+            { text: "The writer chose to narrate the story in the first person.", audioUrl: "" }
+          ],
+          "en-US": [
+            { text: "The writer chose to narrate the story in the first person.", audioUrl: "" }
+          ]
         }
       }
     ],
     variants: {
-      "en-GB": { phonetics: { ipa: "/nəˈreɪt/", voice: "en-GB" } },
-      "en-US": { phonetics: { ipa: "/nəˈreɪt/", voice: "en-US" } }
+      "en-GB": {
+        phonetics: {
+          ipa: "/nəˈreɪt/",
+          audioUrl: "",
+          voice: "en-GB"
+        }
+      },
+      "en-US": {
+        phonetics: {
+          ipa: "/nəˈreɪt/",
+          audioUrl: "",
+          voice: "en-US"
+        }
+      }
     }
   },
   {
     lemma: "narrative",
     english: "narrative",
+    enUrl: "",
     american: "narrative",
+    amUrl: "",
     language: "en",
     lessons: [14, 30],
     shortDescription: {
-      "en-GB": ["story or account of events"],
-      "en-US": ["story or account of events"]
+      "en-GB": "story or account of events",
+      "en-US": "story or account of events"
     },
     levels: ["B1"],
     partsOfSpeech: [
@@ -423,9 +571,14 @@ quizMistakes = signal<string[]>([]);
           {
             senseId: "s1",
             definition: "a story or description of events",
+            url: "",
             examples: {
-              "en-GB": ["The novel’s narrative is clear and engaging."],
-              "en-US": ["The novel’s narrative is clear and engaging."]
+              "en-GB": [
+                { text: "The novel’s narrative is clear and engaging.", audioUrl: "" }
+              ],
+              "en-US": [
+                { text: "The novel’s narrative is clear and engaging.", audioUrl: "" }
+              ]
             }
           }
         ]
@@ -436,33 +589,55 @@ quizMistakes = signal<string[]>([]);
         topicKey: "literature",
         lessons: [14],
         examples: {
-          "en-GB": ["The novel’s narrative is clear and engaging."],
-          "en-US": ["The novel’s narrative is clear and engaging."]
+          "en-GB": [
+            { text: "The novel’s narrative is clear and engaging.", audioUrl: "" }
+          ],
+          "en-US": [
+            { text: "The novel’s narrative is clear and engaging.", audioUrl: "" }
+          ]
         }
       },
       {
         topicKey: "education",
         lessons: [30],
         examples: {
-          "en-GB": ["Write a short narrative about your childhood home."],
-          "en-US": ["Write a short narrative about your childhood home."]
+          "en-GB": [
+            { text: "Write a short narrative about your childhood home.", audioUrl: "" }
+          ],
+          "en-US": [
+            { text: "Write a short narrative about your childhood home.", audioUrl: "" }
+          ]
         }
       }
     ],
     variants: {
-      "en-GB": { phonetics: { ipa: "/ˈnærətɪv/", voice: "en-GB" } },
-      "en-US": { phonetics: { ipa: "/ˈnærətɪv/", voice: "en-US" } }
+      "en-GB": {
+        phonetics: {
+          ipa: "/ˈnærətɪv/",
+          audioUrl: "",
+          voice: "en-GB"
+        }
+      },
+      "en-US": {
+        phonetics: {
+          ipa: "/ˈnærətɪv/",
+          audioUrl: "",
+          voice: "en-US"
+        }
+      }
     }
   },
   {
     lemma: "recite",
     english: "recite",
+    enUrl: "",
     american: "recite",
+    amUrl: "",
     language: "en",
     lessons: [9, 23],
     shortDescription: {
-      "en-GB": ["say aloud from memory"],
-      "en-US": ["say aloud from memory"]
+      "en-GB": "say aloud from memory",
+      "en-US": "say aloud from memory"
     },
     levels: ["B1"],
     partsOfSpeech: [
@@ -472,9 +647,14 @@ quizMistakes = signal<string[]>([]);
           {
             senseId: "s1",
             definition: "to say a poem or text from memory",
+            url: "",
             examples: {
-              "en-GB": ["Please recite the poem to the class."],
-              "en-US": ["Please recite the poem to the class."]
+              "en-GB": [
+                { text: "Please recite the poem to the class.", audioUrl: "" }
+              ],
+              "en-US": [
+                { text: "Please recite the poem to the class.", audioUrl: "" }
+              ]
             }
           }
         ]
@@ -485,33 +665,55 @@ quizMistakes = signal<string[]>([]);
         topicKey: "education",
         lessons: [9],
         examples: {
-          "en-GB": ["Please recite the poem to the class."],
-          "en-US": ["Please recite the poem to the class."]
+          "en-GB": [
+            { text: "Please recite the poem to the class.", audioUrl: "" }
+          ],
+          "en-US": [
+            { text: "Please recite the poem to the class.", audioUrl: "" }
+          ]
         }
       },
       {
         topicKey: "entertainment",
         lessons: [23],
         examples: {
-          "en-GB": ["The actor can recite long lines without mistakes."],
-          "en-US": ["The actor can recite long lines without mistakes."]
+          "en-GB": [
+            { text: "The actor can recite long lines without mistakes.", audioUrl: "" }
+          ],
+          "en-US": [
+            { text: "The actor can recite long lines without mistakes.", audioUrl: "" }
+          ]
         }
       }
     ],
     variants: {
-      "en-GB": { phonetics: { ipa: "/rɪˈsaɪt/", voice: "en-GB" } },
-      "en-US": { phonetics: { ipa: "/rɪˈsaɪt/", voice: "en-US" } }
+      "en-GB": {
+        phonetics: {
+          ipa: "/rɪˈsaɪt/",
+          audioUrl: "",
+          voice: "en-GB"
+        }
+      },
+      "en-US": {
+        phonetics: {
+          ipa: "/rɪˈsaɪt/",
+          audioUrl: "",
+          voice: "en-US"
+        }
+      }
     }
   },
   {
     lemma: "retell",
     english: "retell",
+    enUrl: "",
     american: "retell",
+    amUrl: "",
     language: "en",
     lessons: [16, 31],
     shortDescription: {
-      "en-GB": ["tell again in new way"],
-      "en-US": ["tell again in new way"]
+      "en-GB": "tell again in new way",
+      "en-US": "tell again in new way"
     },
     levels: ["B1"],
     partsOfSpeech: [
@@ -521,9 +723,14 @@ quizMistakes = signal<string[]>([]);
           {
             senseId: "s1",
             definition: "to tell a story again, often in a different way",
+            url: "",
             examples: {
-              "en-GB": ["Retell the story using your own words."],
-              "en-US": ["Retell the story using your own words."]
+              "en-GB": [
+                { text: "Retell the story using your own words.", audioUrl: "" }
+              ],
+              "en-US": [
+                { text: "Retell the story using your own words.", audioUrl: "" }
+              ]
             }
           }
         ]
@@ -534,33 +741,55 @@ quizMistakes = signal<string[]>([]);
         topicKey: "education",
         lessons: [16],
         examples: {
-          "en-GB": ["Retell the story using your own words."],
-          "en-US": ["Retell the story using your own words."]
+          "en-GB": [
+            { text: "Retell the story using your own words.", audioUrl: "" }
+          ],
+          "en-US": [
+            { text: "Retell the story using your own words.", audioUrl: "" }
+          ]
         }
       },
       {
         topicKey: "literature",
         lessons: [31],
         examples: {
-          "en-GB": ["The film attempts to retell a classic fairy tale."],
-          "en-US": ["The film attempts to retell a classic fairy tale."]
+          "en-GB": [
+            { text: "The film attempts to retell a classic fairy tale.", audioUrl: "" }
+          ],
+          "en-US": [
+            { text: "The film attempts to retell a classic fairy tale.", audioUrl: "" }
+          ]
         }
       }
     ],
     variants: {
-      "en-GB": { phonetics: { ipa: "/ˌriːˈtel/", voice: "en-GB" } },
-      "en-US": { phonetics: { ipa: "/ˌriˈtɛl/", voice: "en-US" } }
+      "en-GB": {
+        phonetics: {
+          ipa: "/ˌriːˈtel/",
+          audioUrl: "",
+          voice: "en-GB"
+        }
+      },
+      "en-US": {
+        phonetics: {
+          ipa: "/ˌriˈtɛl/",
+          audioUrl: "",
+          voice: "en-US"
+        }
+      }
     }
   },
   {
     lemma: "rewrite",
     english: "rewrite",
+    enUrl: "",
     american: "rewrite",
+    amUrl: "",
     language: "en",
     lessons: [20, 33],
     shortDescription: {
-      "en-GB": ["write again to improve"],
-      "en-US": ["write again to improve"]
+      "en-GB": "write again to improve",
+      "en-US": "write again to improve"
     },
     levels: ["B1"],
     partsOfSpeech: [
@@ -570,9 +799,14 @@ quizMistakes = signal<string[]>([]);
           {
             senseId: "s1",
             definition: "to write something again to improve it or change it",
+            url: "",
             examples: {
-              "en-GB": ["Rewrite the essay with better structure."],
-              "en-US": ["Rewrite the essay with better structure."]
+              "en-GB": [
+                { text: "Rewrite the essay with better structure.", audioUrl: "" }
+              ],
+              "en-US": [
+                { text: "Rewrite the essay with better structure.", audioUrl: "" }
+              ]
             }
           }
         ]
@@ -584,12 +818,12 @@ quizMistakes = signal<string[]>([]);
         lessons: [20],
         examples: {
           "en-GB": [
-            "Please rewrite the paragraph to make it clearer.",
-            "Rewrite the essay with better structure."
+            { text: "Please rewrite the paragraph to make it clearer.", audioUrl: "" },
+            { text: "Rewrite the essay with better structure.", audioUrl: "" }
           ],
           "en-US": [
-            "Please rewrite the paragraph to make it clearer.",
-            "Rewrite the essay with better structure."
+            { text: "Please rewrite the paragraph to make it clearer.", audioUrl: "" },
+            { text: "Rewrite the essay with better structure.", audioUrl: "" }
           ]
         }
       },
@@ -597,25 +831,43 @@ quizMistakes = signal<string[]>([]);
         topicKey: "literature",
         lessons: [33],
         examples: {
-          "en-GB": ["The editor asked the author to rewrite chapter two."],
-          "en-US": ["The editor asked the author to rewrite chapter two."]
+          "en-GB": [
+            { text: "The editor asked the author to rewrite chapter two.", audioUrl: "" }
+          ],
+          "en-US": [
+            { text: "The editor asked the author to rewrite chapter two.", audioUrl: "" }
+          ]
         }
       }
     ],
     variants: {
-      "en-GB": { phonetics: { ipa: "/ˌriːˈraɪt/", voice: "en-GB" } },
-      "en-US": { phonetics: { ipa: "/ˌriˈraɪt/", voice: "en-US" } }
+      "en-GB": {
+        phonetics: {
+          ipa: "/ˌriːˈraɪt/",
+          audioUrl: "",
+          voice: "en-GB"
+        }
+      },
+      "en-US": {
+        phonetics: {
+          ipa: "/ˌriˈraɪt/",
+          audioUrl: "",
+          voice: "en-US"
+        }
+      }
     }
   },
   {
     lemma: "setting",
     english: "setting",
+    enUrl: "",
     american: "setting",
+    amUrl: "",
     language: "en",
     lessons: [8, 26],
     shortDescription: {
-      "en-GB": ["place and time of story"],
-      "en-US": ["place and time of story"]
+      "en-GB": "place and time of story",
+      "en-US": "place and time of story"
     },
     levels: ["B1"],
     partsOfSpeech: [
@@ -625,17 +877,27 @@ quizMistakes = signal<string[]>([]);
           {
             senseId: "s1",
             definition: "the time and place where a story happens",
+            url: "",
             examples: {
-              "en-GB": ["The novel’s setting is a small coastal town."],
-              "en-US": ["The novel’s setting is a small coastal town."]
+              "en-GB": [
+                { text: "The novel’s setting is a small coastal town.", audioUrl: "" }
+              ],
+              "en-US": [
+                { text: "The novel’s setting is a small coastal town.", audioUrl: "" }
+              ]
             }
           },
           {
             senseId: "s2",
             definition: "the surroundings or environment of something",
+            url: "",
             examples: {
-              "en-GB": ["The restaurant has a relaxed setting."],
-              "en-US": ["The restaurant has a relaxed setting."]
+              "en-GB": [
+                { text: "The restaurant has a relaxed setting.", audioUrl: "" }
+              ],
+              "en-US": [
+                { text: "The restaurant has a relaxed setting.", audioUrl: "" }
+              ]
             }
           }
         ]
@@ -646,33 +908,55 @@ quizMistakes = signal<string[]>([]);
         topicKey: "literature",
         lessons: [8],
         examples: {
-          "en-GB": ["The novel’s setting is a small coastal town."],
-          "en-US": ["The novel’s setting is a small coastal town."]
+          "en-GB": [
+            { text: "The novel’s setting is a small coastal town.", audioUrl: "" }
+          ],
+          "en-US": [
+            { text: "The novel’s setting is a small coastal town.", audioUrl: "" }
+          ]
         }
       },
       {
         topicKey: "entertainment",
         lessons: [26],
         examples: {
-          "en-GB": ["The film’s setting changes from city to desert."],
-          "en-US": ["The movie’s setting changes from city to desert."]
+          "en-GB": [
+            { text: "The film’s setting changes from city to desert.", audioUrl: "" }
+          ],
+          "en-US": [
+            { text: "The movie’s setting changes from city to desert.", audioUrl: "" }
+          ]
         }
       }
     ],
     variants: {
-      "en-GB": { phonetics: { ipa: "/ˈsetɪŋ/", voice: "en-GB" } },
-      "en-US": { phonetics: { ipa: "/ˈsɛtɪŋ/", voice: "en-US" } }
+      "en-GB": {
+        phonetics: {
+          ipa: "/ˈsetɪŋ/",
+          audioUrl: "",
+          voice: "en-GB"
+        }
+      },
+      "en-US": {
+        phonetics: {
+          ipa: "/ˈsɛtɪŋ/",
+          audioUrl: "",
+          voice: "en-US"
+        }
+      }
     }
   },
   {
     lemma: "sorrow",
     english: "sorrow",
+    enUrl: "",
     american: "sorrow",
+    amUrl: "",
     language: "en",
     lessons: [22, 34],
     shortDescription: {
-      "en-GB": ["deep sadness or regret"],
-      "en-US": ["deep sadness or regret"]
+      "en-GB": "deep sadness or regret",
+      "en-US": "deep sadness or regret"
     },
     levels: ["B1"],
     partsOfSpeech: [
@@ -682,9 +966,14 @@ quizMistakes = signal<string[]>([]);
           {
             senseId: "s1",
             definition: "a feeling of deep sadness or regret",
+            url: "",
             examples: {
-              "en-GB": ["The poem expresses deep sorrow after the loss."],
-              "en-US": ["The poem expresses deep sorrow after the loss."]
+              "en-GB": [
+                { text: "The poem expresses deep sorrow after the loss.", audioUrl: "" }
+              ],
+              "en-US": [
+                { text: "The poem expresses deep sorrow after the loss.", audioUrl: "" }
+              ]
             }
           }
         ]
@@ -695,22 +984,42 @@ quizMistakes = signal<string[]>([]);
         topicKey: "literature",
         lessons: [22],
         examples: {
-          "en-GB": ["The poem expresses deep sorrow after the loss."],
-          "en-US": ["The poem expresses deep sorrow after the loss."]
+          "en-GB": [
+            { text: "The poem expresses deep sorrow after the loss.", audioUrl: "" }
+          ],
+          "en-US": [
+            { text: "The poem expresses deep sorrow after the loss.", audioUrl: "" }
+          ]
         }
       },
       {
         topicKey: "health-and-wellbeing",
         lessons: [34],
         examples: {
-          "en-GB": ["Talking to a friend can ease sorrow."],
-          "en-US": ["Talking to a friend can ease sorrow."]
+          "en-GB": [
+            { text: "Talking to a friend can ease sorrow.", audioUrl: "" }
+          ],
+          "en-US": [
+            { text: "Talking to a friend can ease sorrow.", audioUrl: "" }
+          ]
         }
       }
     ],
     variants: {
-      "en-GB": { phonetics: { ipa: "/ˈsɒrəʊ/", voice: "en-GB" } },
-      "en-US": { phonetics: { ipa: "/ˈsɑːroʊ/", voice: "en-US" } }
+      "en-GB": {
+        phonetics: {
+          ipa: "/ˈsɒrəʊ/",
+          audioUrl: "",
+          voice: "en-GB"
+        }
+      },
+      "en-US": {
+        phonetics: {
+          ipa: "/ˈsɑːroʊ/",
+          audioUrl: "",
+          voice: "en-US"
+        }
+      }
     }
   }
 ]);
@@ -1169,3 +1478,4 @@ totalSlides = computed(() => {
 
 
 }
+

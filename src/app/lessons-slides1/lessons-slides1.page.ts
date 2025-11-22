@@ -1,4 +1,4 @@
-import { Component, ViewChild, ElementRef, signal, computed } from '@angular/core';
+/*import { Component, ViewChild, ElementRef, signal, computed } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
   IonContent, IonicSlides, IonSegment, IonSegmentButton, IonLabel
@@ -770,4 +770,4 @@ clearDesc() {
   onSwiperInit() {
     setTimeout(() => this.swiperRef?.nativeElement?.swiper?.update(), 0);
   }
-}
+} */
