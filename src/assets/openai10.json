@@ -1,0 +1,1257 @@
+{
+  "words": [
+    {
+      "lemma": "damp",
+      "english": "damp",
+      "enUrl": "",
+      "american": "damp",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        1,
+        87
+      ],
+      "shortDescription": {
+        "en-GB": "A little wet, not dry",
+        "en-US": "A little wet, not dry"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "adjective",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "A little wet on the surface after rain or water is present.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "The towel is damp after the child used it to clean the table.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "The towel is damp after the child used it to clean the table.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "partOfSpeech": "verb",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "To make something a little wet, for example after rain or water.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "Do not damp the bread with too much water before you cook it.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "Do not damp the bread with too much water before you cook it.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Adjectives",
+          "lessons": [
+            1,
+            87
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "Damp clothes must dry before you put them in the wardrobe inside.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "Damp clothes must dry before you put them in the wardrobe inside.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "House",
+          "lessons": [
+            1,
+            87
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "There was a damp smell in the kitchen after the heavy rain yesterday.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "There was a damp smell in the kitchen after the heavy rain yesterday.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/dæmp/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/dæmp/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "lemma": "vacancy",
+      "english": "vacancy",
+      "enUrl": "",
+      "american": "vacancy",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        1,
+        309
+      ],
+      "shortDescription": {
+        "en-GB": "An empty job or room",
+        "en-US": "An empty job or room"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "An open job that a company wants to fill for a new worker.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "The company has a vacancy for an assistant in the office from Monday.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "The company has a vacancy for an assistant in the office from Monday.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            },
+            {
+              "senseId": "s2",
+              "definition": "A room or house that is empty and available for someone to use.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "Is there a vacancy in this hotel next week for two nights?",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "Is there a vacancy in this hotel next week for two nights?",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Employment",
+          "lessons": [
+            1,
+            309
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "Look at the job board to find a vacancy you can apply for.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "Look at the job board to find a vacancy you can apply for.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "House",
+          "lessons": [
+            1,
+            309
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "The house has one vacancy because the tenant moved to another town last month.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "The house has one vacancy because the tenant moved to another town last month.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/ˈveɪkənsi/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/ˈveɪkənsi/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "lemma": "hut",
+      "english": "hut",
+      "enUrl": "",
+      "american": "hut",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        1,
+        252
+      ],
+      "shortDescription": {
+        "en-GB": "A small simple building",
+        "en-US": "A small simple building"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "A small simple building with one or two rooms, often in the countryside.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "They live in a small hut near the river during the summer months.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "They live in a small hut near the river during the summer months.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Countryside",
+          "lessons": [
+            1,
+            252
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "A shepherd sleeps in a hut when he watches the sheep all night.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "A shepherd sleeps in a hut when he watches the sheep all night.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "House",
+          "lessons": [
+            1,
+            252
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "The hut had one room and a small kitchen for the family to use.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "The hut had one room and a small kitchen for the family to use.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/hʌt/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/hʌt/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "lemma": "upstairs",
+      "english": "upstairs",
+      "enUrl": "",
+      "american": "upstairs",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        1,
+        342
+      ],
+      "shortDescription": {
+        "en-GB": "On or to the higher floor",
+        "en-US": "On or to the higher floor"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "adverb",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "On or to the higher floor of a building, above the ground floor.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "Go upstairs to the living room and wait there for my call.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "Go upstairs to the living room and wait there for my call.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Adverbs",
+          "lessons": [
+            1,
+            342
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "Use upstairs when you tell someone to go to the higher floor.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "Use upstairs when you tell someone to go to the higher floor.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "House",
+          "lessons": [
+            1,
+            342
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "All the bedrooms are upstairs above the kitchen and the living room.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "All the bedrooms are upstairs above the kitchen and the living room.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/ʌpˈsteəz/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/ʌpˈstɛrz/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "lemma": "restore",
+      "english": "restore",
+      "enUrl": "",
+      "american": "restore",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        1,
+        54,
+        328
+      ],
+      "shortDescription": {
+        "en-GB": "Fix or return to earlier state",
+        "en-US": "Fix or return to earlier state"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "verb",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "To fix something old so it becomes good and useful again for people.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "They will restore the old chair so it looks good and can be used again.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "They will restore the old chair so it looks good and can be used again.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            },
+            {
+              "senseId": "s2",
+              "definition": "To return a building or place to the earlier condition it had before.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "The museum will restore the old house and show its history to visitors.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "The museum will restore the old house and show its history to visitors.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "DIY Tools",
+          "lessons": [
+            1,
+            54,
+            328
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "Use small tools to restore the wooden table and fix its loose parts.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "Use small tools to restore the wooden table and fix its loose parts.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "History",
+          "lessons": [
+            1,
+            54,
+            328
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "Experts restore old documents to keep the history safe for future people.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "Experts restore old documents to keep the history safe for future people.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "House",
+          "lessons": [
+            1,
+            54,
+            328
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "They will restore the house after the flood to make it safe again.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "They will restore the house after the flood to make it safe again.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/rɪˈstɔː/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/rɪˈstɔr/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "lemma": "flat",
+      "english": "flat",
+      "enUrl": "",
+      "american": "flat",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        1,
+        210
+      ],
+      "shortDescription": {
+        "en-GB": "Level or an apartment",
+        "en-US": "Level or an apartment"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "adjective",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "Smooth and level, without high or low parts on a surface or land.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "The road is flat here so children can ride bikes easily without hills.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "The road is flat here so children can ride bikes easily without hills.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "An apartment or home in a building, usually on one floor for people.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "She lives in a small flat on the second floor near the station.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "She lives in a small flat on the second floor near the station.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Adjectives",
+          "lessons": [
+            1,
+            210
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "Flat means not bumpy, like a flat surface you can write on easily.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "Flat means not bumpy, like a flat surface you can write on easily.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "House",
+          "lessons": [
+            1,
+            210
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "The flat has one bedroom, a kitchen, and a small bathroom for the tenant.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "The flat has one bedroom, a kitchen, and a small bathroom for the tenant.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/flæt/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/flæt/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "lemma": "nap",
+      "english": "nap",
+      "enUrl": "",
+      "american": "nap",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        1,
+        263
+      ],
+      "shortDescription": {
+        "en-GB": "A short sleep in the day",
+        "en-US": "A short sleep in the day"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "A short sleep during the day to rest and feel better afterwards.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "I will have a short nap after lunch to feel better this afternoon.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "I will have a short nap after lunch to feel better this afternoon.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "partOfSpeech": "verb",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "To sleep for a short time during the day so you can feel rested.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "She will nap for thirty minutes before she goes back to work.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "She will nap for thirty minutes before she goes back to work.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "House",
+          "lessons": [
+            1,
+            263
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "The child has a nap on the sofa after school every rainy day.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "The child has a nap on the sofa after school every rainy day.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "Medicine",
+          "lessons": [
+            1,
+            263
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "The doctor said a short nap can help people who feel very tired.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "The doctor said a short nap can help people who feel very tired.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/næp/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/næp/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "lemma": "fold",
+      "english": "fold",
+      "enUrl": "",
+      "american": "fold",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        1,
+        247,
+        338
+      ],
+      "shortDescription": {
+        "en-GB": "Bend or make smaller by bending",
+        "en-US": "Bend or make smaller by bending"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "verb",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "To bend something so one part lies over another part to make it smaller.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "Please fold the clean shirts carefully and put them in the drawer.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "Please fold the clean shirts carefully and put them in the drawer.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "A line or part of cloth or paper where it is bent over.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "There is a fold in the fabric near the sleeve that you should fix.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "There is a fold in the fabric near the sleeve that you should fix.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Clothes",
+          "lessons": [
+            1,
+            247,
+            338
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "Fold the clothes after washing and then put them in the clean shelf.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "Fold the clothes after washing and then put them in the clean shelf.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "Common verbs",
+          "lessons": [
+            1,
+            247,
+            338
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "Fold is a common verb used when you make paper or clothes smaller.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "Fold is a common verb used when you make paper or clothes smaller.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "House",
+          "lessons": [
+            1,
+            247,
+            338
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "Fold the blanket and keep it on the shelf by the bed.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "Fold the blanket and keep it on the shelf by the bed.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/fəʊld/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/foʊld/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "lemma": "uncover",
+      "english": "uncover",
+      "enUrl": "",
+      "american": "uncover",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        1,
+        95
+      ],
+      "shortDescription": {
+        "en-GB": "Remove a cover or find secrets",
+        "en-US": "Remove a cover or find secrets"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "verb",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "To remove a cover from something so it is open or seen.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "Please uncover the pot to check if the food is ready to eat.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "Please uncover the pot to check if the food is ready to eat.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            },
+            {
+              "senseId": "s2",
+              "definition": "To find or show facts or things that were secret before now.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "Detectives uncover facts slowly when they ask people to tell the truth.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "Detectives uncover facts slowly when they ask people to tell the truth.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Common verbs",
+          "lessons": [
+            1,
+            95
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "Uncover is a common verb meaning to remove a cover or to find things.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "Uncover is a common verb meaning to remove a cover or to find things.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "House",
+          "lessons": [
+            1,
+            95
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "Uncover the floorboards to see if there is a problem with the wood.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "Uncover the floorboards to see if there is a problem with the wood.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/ʌnˈkʌvə/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/ʌnˈkʌvər/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "lemma": "first-floor",
+      "english": "first-floor",
+      "enUrl": "",
+      "american": "first-floor",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        1,
+        116
+      ],
+      "shortDescription": {
+        "en-GB": "On the floor above ground floor",
+        "en-US": "On the floor above ground floor"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "adjective",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "On the floor above the ground floor in a building, often with bedrooms.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "Our class is on the first-floor above the main reception in the building.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "Our class is on the first-floor above the main reception in the building.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Adjectives",
+          "lessons": [
+            1,
+            116
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "First-floor describes a room or flat on the floor above the ground floor.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "First-floor describes a room or flat on the floor above the ground floor.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "House",
+          "lessons": [
+            1,
+            116
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "The first-floor windows look over the street and the small town square below.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "The first-floor windows look over the street and the small town square below.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/ˈfɜːstflɔː/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/ˈfɝstflɔr/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    }
+  ]
+}

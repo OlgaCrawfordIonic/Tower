@@ -21,7 +21,43 @@
       <ion-button routerLink="/lessons"  routerDirection="forward">Lesson Makeric serve
         
       </ion-button>
+         <ion-button routerLink="/lessonsimports"  routerDirection="forward">Lessons Import to Firebase
+        
+      </ion-button>
+       
+         <ion-button routerLink="/wordsimport"  routerDirection="forward">Wordrs Import to Firebase
+        
+      </ion-button>
 
+<ion-list lines="none" class="admin-tools-list">
+  <!-- Other admin tiles ... -->
+
+  <ion-item
+    button
+    detail
+    routerLink="/importfirebase"
+    class="admin-tile-json"
+  >
+    <ion-avatar slot="start" class="json-avatar">
+      <ion-icon name="code-slash-outline"></ion-icon>
+    </ion-avatar>
+
+    <ion-label>
+      <h2 class="tile-title">JSON &amp; Firestore (B1 Words)</h2>
+      <p class="tile-subtitle">
+        Download or import JSON with the full lemmas array, then send it into
+        Firestore for content creation.
+      </p>
+    </ion-label>
+
+    <ion-chip routerLink="/"  routerDirection="forward" slot="end" color="light" class="json-chip">
+      <ion-icon name="cloud-upload-outline" class="chip-icon"></ion-icon>
+      <ion-label>Content tools</ion-label>
+    </ion-chip>
+  </ion-item>
+
+  <!-- Other admin tiles ... -->
+</ion-list>
 
 
 

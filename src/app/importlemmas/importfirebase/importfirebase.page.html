@@ -1,0 +1,109 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>B1 Content JSON Tools</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Check JSON chunk against B1 reference</ion-card-title>
+      <ion-card-subtitle>
+        Paste a JSON chunk from ChatGPT
+  (<code>&#123;"words": [ WordDoc, ... ]&#125;</code>)
+  and check that lemma, id, lessons, and topics match
+  <code>b1-words-openai-input-with-ids.json</code>.
+      </ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item lines="none">
+        <ion-label position="stacked">JSON input</ion-label>
+        <ion-textarea
+          [(ngModel)]="jsonText"
+          auto-grow="true"
+          rows="12"
+       [placeholder]="jsonPlaceholder"
+        ></ion-textarea>
+      </ion-item>
+     <!-- CHECK BUTTON -->
+      <ion-button
+        expand="block"
+        class="ion-margin-top"
+        color="primary"
+        (click)="onCheckClick()"
+        [disabled]="checking || !jsonText.trim()"
+      >
+        <ion-spinner *ngIf="checking" name="dots" class="btn-spinner"></ion-spinner>
+        <span *ngIf="!checking">Check for errors only</span>
+      </ion-button>
+<input type="file" accept=".json" (change)="onFileSelected($event)" />
+
+  <!-- IMPORT BUTTON -->
+      <ion-button
+        expand="block"
+        class="ion-margin-top"
+        color="success"
+        (click)="onImportClick()"
+        [disabled]="
+          importing ||
+          checking ||
+          !hasChecked ||
+          issues.length > 0 ||
+          !jsonText.trim()
+        "
+      >
+        <ion-spinner *ngIf="importing" name="dots" class="btn-spinner"></ion-spinner>
+        <span *ngIf="!importing">Import lemmas to Firestore</span>
+      </ion-button>
+        <!-- General validation error -->
+      <ion-text color="danger" *ngIf="error">
+        <p class="error-text">{{ error }}</p>
+      </ion-text>
+
+       <!-- Import errors/success -->
+      <ion-text color="danger" *ngIf="importError">
+        <p class="error-text">{{ importError }}</p>
+      </ion-text>
+
+      <ion-text color="success" *ngIf="importSuccess">
+        <p class="success-text">{{ importSuccess }}</p>
+      </ion-text>
+
+ <!-- Validation errors/success -->
+      <ion-item *ngIf="hasChecked">
+        <ion-label>
+          <h2>Validation summary</h2>
+          <p *ngIf="issues.length === 0">
+            ✅ No errors found. {{ validCount }} word(s) valid, out of {{ totalCount }}.
+          </p>
+          <p *ngIf="issues.length > 0">
+            ⚠️ Found {{ issues.length }} issue(s) across {{ totalCount }} word(s).
+            Valid lemmas: {{ validCount }}.
+          </p>
+        </ion-label>
+      </ion-item>
+      <ion-list *ngIf="issues.length > 0">
+        <ion-list-header>
+          <ion-label>Issues</ion-label>
+        </ion-list-header>
+
+        <ion-item *ngFor="let issue of issues">
+          <ion-label>
+            <h3>
+              {{ issue.lemma ? (issue.lemma + ' – ') : '' }}
+              {{ issue.type }}
+            </h3>
+            <p>{{ issue.message }}</p>
+
+            <pre *ngIf="issue.details" class="details-pre">
+{{ issue.details | json }}
+            </pre>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

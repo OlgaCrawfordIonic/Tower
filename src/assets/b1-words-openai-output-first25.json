@@ -1,0 +1,2878 @@
+{
+  "words": [
+    {
+      "lemma": "damp",
+      "english": "damp",
+      "enUrl": "",
+      "american": "damp",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        1,
+        87
+      ],
+      "shortDescription": {
+        "en-GB": "a little wet in the air",
+        "en-US": "a little wet in the air"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "adjective",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "A little wet in the air or on the walls in houses.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "The basement feels damp and cold after the long rainy winter months.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "The basement feels damp and cold after the long rainy winter months.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Adjectives",
+          "lessons": [
+            1,
+            87
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "Use damp as an adjective to describe a room that is a little wet.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "Use damp as an adjective to describe a room that is a little wet.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "House",
+          "lessons": [
+            1,
+            87
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "The damp wall needed new paint and a repair to stop the moisture.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "The damp wall needed new paint and a repair to stop the moisture.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/dæmp/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/dæmp/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "lemma": "vacancy",
+      "english": "vacancy",
+      "enUrl": "",
+      "american": "vacancy",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        1,
+        309
+      ],
+      "shortDescription": {
+        "en-GB": "an empty job or room",
+        "en-US": "an empty job or room"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "An empty job or room that someone can use or fill now.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "The hotel had one vacancy for the weekend during the busy season.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "The hotel had one vacancy for the weekend during the busy season.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Employment",
+          "lessons": [
+            1,
+            309
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "The company posted a vacancy for a teacher in the local school today.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "The company posted a vacancy for a teacher in the local school today.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "House",
+          "lessons": [
+            1,
+            309
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "There was a vacancy in the flat and we could move in next month.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "There was a vacancy in the flat and we could move in next month.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/ˈveɪkənsi/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/ˈveɪkənsi/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "lemma": "hut",
+      "english": "hut",
+      "enUrl": "",
+      "american": "hut",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        1,
+        252
+      ],
+      "shortDescription": {
+        "en-GB": "a small simple house",
+        "en-US": "a small simple house"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "A small simple house made of wood or other plain materials outside.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "We stayed in a small hut by the lake during our village visit.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "We stayed in a small hut by the lake during our village visit.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Countryside",
+          "lessons": [
+            1,
+            252
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "The farmer kept a wood hut near the field for tools and rest stops.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "The farmer kept a wood hut near the field for tools and rest stops.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "House",
+          "lessons": [
+            1,
+            252
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "The small hut had a bed and a small stove for cooking and warmth.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "The small hut had a bed and a small stove for cooking and warmth.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/hʌt/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/hʌt/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "lemma": "upstairs",
+      "english": "upstairs",
+      "enUrl": "",
+      "american": "upstairs",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        1,
+        342
+      ],
+      "shortDescription": {
+        "en-GB": "on or to a higher floor",
+        "en-US": "on or to a higher floor"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "adverb",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "On or to a higher floor in a building, above the ground floor.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "Please go upstairs and take the blue book from the top shelf now.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "Please go upstairs and take the blue book from the top shelf now.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Adverbs",
+          "lessons": [
+            1,
+            342
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "We use upstairs as an adverb to say where someone must go in a house.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "We use upstairs as an adverb to say where someone must go in a house.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "House",
+          "lessons": [
+            1,
+            342
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "The children were playing upstairs near the window while I made dinner downstairs.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "The children were playing upstairs near the window while I made dinner downstairs.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/ʌpˈsteəz/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/ʌpˈstɛrz/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "lemma": "restore",
+      "english": "restore",
+      "enUrl": "",
+      "american": "restore",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        1,
+        54,
+        328
+      ],
+      "shortDescription": {
+        "en-GB": "to make something like new",
+        "en-US": "to make something like new"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "verb",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "To repair or return something so it looks and works like new again.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "They will restore the old house to the original style next summer.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "They will restore the old house to the original style next summer.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "DIY Tools",
+          "lessons": [
+            1,
+            54,
+            328
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "You need good tools to restore wooden furniture that is old and broken.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "You need good tools to restore wooden furniture that is old and broken.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "History",
+          "lessons": [
+            1,
+            54,
+            328
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "The town will restore the old castle to save the history for visitors.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "The town will restore the old castle to save the history for visitors.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "House",
+          "lessons": [
+            1,
+            54,
+            328
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "They plan to restore the roof and windows before winter comes this year.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "They plan to restore the roof and windows before winter comes this year.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/rɪˈstɔː/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/rɪˈstɔr/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "lemma": "flat",
+      "english": "flat",
+      "enUrl": "",
+      "american": "flat",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        1,
+        210
+      ],
+      "shortDescription": {
+        "en-GB": "level or even; also an apartment",
+        "en-US": "level or even; also an apartment"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "adjective",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "Level and even, with no high or low parts on a surface or road.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "The table is flat so the glass did not fall or move at all.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "The table is flat so the glass did not fall or move at all.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Adjectives",
+          "lessons": [
+            1,
+            210
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "Flat is an adjective that describes a surface which is smooth and even.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "Flat is an adjective that describes a surface which is smooth and even.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "House",
+          "lessons": [
+            1,
+            210
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "They rent a flat near the school to be close to their work each day.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "They rent a flat near the school to be close to their work each day.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/flæt/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/flæt/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "lemma": "nap",
+      "english": "nap",
+      "enUrl": "",
+      "american": "nap",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        1,
+        263
+      ],
+      "shortDescription": {
+        "en-GB": "a short sleep during the day",
+        "en-US": "a short sleep during the day"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "A short sleep during the day to rest and feel more ready to work.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "After lunch she had a short nap on the sofa to feel better later.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "After lunch she had a short nap on the sofa to feel better later.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "House",
+          "lessons": [
+            1,
+            263
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "He took a quick nap on the couch before starting his evening chores.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "He took a quick nap on the couch before starting his evening chores.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "Medicine",
+          "lessons": [
+            1,
+            263
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "Doctors often say a short nap can help a tired person feel more alert.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "Doctors often say a short nap can help a tired person feel more alert.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/næp/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/næp/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "lemma": "fold",
+      "english": "fold",
+      "enUrl": "",
+      "american": "fold",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        1,
+        247,
+        338
+      ],
+      "shortDescription": {
+        "en-GB": "to bend or make something smaller",
+        "en-US": "to bend or make something smaller"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "verb",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "To bend something so one part lies on another part to make it smaller.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "Please fold the shirt carefully and put it into the clean drawer now.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "Please fold the shirt carefully and put it into the clean drawer now.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Clothes",
+          "lessons": [
+            1,
+            247,
+            338
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "I fold my clothes after washing and place them on the shelf in order.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "I fold my clothes after washing and place them on the shelf in order.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "Common verbs",
+          "lessons": [
+            1,
+            247,
+            338
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "Fold is a common verb that students learn to use with many objects.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "Fold is a common verb that students learn to use with many objects.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "House",
+          "lessons": [
+            1,
+            247,
+            338
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "After dinner we fold the paper napkins and place them on the table.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "After dinner we fold the paper napkins and place them on the table.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/fəʊld/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/foʊld/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "lemma": "uncover",
+      "english": "uncover",
+      "enUrl": "",
+      "american": "uncover",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        1,
+        95
+      ],
+      "shortDescription": {
+        "en-GB": "to remove a cover or find out something",
+        "en-US": "to remove a cover or find out something"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "verb",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "To remove a cover or hiding and see what is under it or what happened.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "The police will uncover the facts about the missing bag this week.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "The police will uncover the facts about the missing bag this week.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Common verbs",
+          "lessons": [
+            1,
+            95
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "Uncover is a common verb used when you remove a lid or reveal something hidden.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "Uncover is a common verb used when you remove a lid or reveal something hidden.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "House",
+          "lessons": [
+            1,
+            95
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "Please uncover the pot so the soup can cool before you serve it to guests.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "Please uncover the pot so the soup can cool before you serve it to guests.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/ʌnˈkʌvə/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/ʌnˈkʌvər/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "lemma": "first-floor",
+      "english": "first-floor",
+      "enUrl": "",
+      "american": "first-floor",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        1,
+        116
+      ],
+      "shortDescription": {
+        "en-GB": "on the floor above the ground floor",
+        "en-US": "on the floor above the ground floor"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "adjective",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "On or of the floor above the ground floor in a building or house.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "Their first-floor flat has two bedrooms and a small balcony with a view.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "Their first-floor flat has two bedrooms and a small balcony with a view.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Adjectives",
+          "lessons": [
+            1,
+            116
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "First-floor is an adjective that tells you which floor a room is on.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "First-floor is an adjective that tells you which floor a room is on.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "House",
+          "lessons": [
+            1,
+            116
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "The first-floor bedroom gets more light and a better view than the basement room.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "The first-floor bedroom gets more light and a better view than the basement room.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/ˈfɜːstflɔː/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/ˈfɜrstflɔr/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "lemma": "full-time",
+      "english": "full-time",
+      "enUrl": "",
+      "american": "full-time",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        2,
+        200,
+        400
+      ],
+      "shortDescription": {
+        "en-GB": "working the whole normal week",
+        "en-US": "working the whole normal week"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "adjective",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "Working the usual number of hours for a job during the week or week days.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "She has a full-time job and she works five days every week in town.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "She has a full-time job and she works five days every week in town.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Adjectives",
+          "lessons": [
+            2,
+            200,
+            400
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "Full-time is an adjective used to describe work with regular full working hours.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "Full-time is an adjective used to describe work with regular full working hours.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "Education",
+          "lessons": [
+            2,
+            200,
+            400
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "He studies full-time at the college and he attends lessons every weekday morning.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "He studies full-time at the college and he attends lessons every weekday morning.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "Employment",
+          "lessons": [
+            2,
+            200,
+            400
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "The company offers both part-time and full-time positions to new applicants this month.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "The company offers both part-time and full-time positions to new applicants this month.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/ˈfʊltaɪm/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/ˈfʊltaɪm/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "lemma": "status",
+      "english": "status",
+      "enUrl": "",
+      "american": "status",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        2,
+        128
+      ],
+      "shortDescription": {
+        "en-GB": "the social or official position",
+        "en-US": "the social or official position"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "The social or official position of a person or thing in a group or system.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "Her new job changed her status at work and people treated her differently.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "Her new job changed her status at work and people treated her differently.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Describing Society",
+          "lessons": [
+            2,
+            128
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "People speak about status when they describe a person place or social position.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "People speak about status when they describe a person place or social position.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "Employment",
+          "lessons": [
+            2,
+            128
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "His job title changed so his status in the company became higher than before.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "His job title changed so his status in the company became higher than before.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/ˈsteɪtəs/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/ˈsteɪtəs/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "lemma": "extend",
+      "english": "extend",
+      "enUrl": "",
+      "american": "extend",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        2,
+        6,
+        46
+      ],
+      "shortDescription": {
+        "en-GB": "to make something longer or larger",
+        "en-US": "to make something longer or larger"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "verb",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "To make something longer in time or larger in size or area than before.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "They will extend the road to reach the new houses by next year.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "They will extend the road to reach the new houses by next year.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Common verbs",
+          "lessons": [
+            2,
+            6,
+            46
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "Extend is a common verb used when you make time space or size larger.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "Extend is a common verb used when you make time space or size larger.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "Employment",
+          "lessons": [
+            2,
+            6,
+            46
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "The company will extend the contract for another year because the work continues.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "The company will extend the contract for another year because the work continues.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "House",
+          "lessons": [
+            2,
+            6,
+            46
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "They plan to extend the kitchen by adding a new room to the back.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "They plan to extend the kitchen by adding a new room to the back.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/ɪkˈstend/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/ɪkˈstɛnd/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "lemma": "tourism",
+      "english": "tourism",
+      "enUrl": "",
+      "american": "tourism",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        2,
+        106
+      ],
+      "shortDescription": {
+        "en-GB": "the business of visitors and travel",
+        "en-US": "the business of visitors and travel"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "The business and activity of people visiting places for pleasure and travel.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "Tourism brings many visitors to the coast every summer for sun and food.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "Tourism brings many visitors to the coast every summer for sun and food.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Employment",
+          "lessons": [
+            2,
+            106
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "Many people work in tourism in this town during the busy summer months each year.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "Many people work in tourism in this town during the busy summer months each year.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "Holidays",
+          "lessons": [
+            2,
+            106
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "We learned about tourism and planned a short holiday to the nearby islands.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "We learned about tourism and planned a short holiday to the nearby islands.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/ˈtʊərɪzəm/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/ˈtʊrɪzəm/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "lemma": "department",
+      "english": "department",
+      "enUrl": "",
+      "american": "department",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        2,
+        41,
+        166
+      ],
+      "shortDescription": {
+        "en-GB": "a part of an organisation or shop",
+        "en-US": "a part of an organization or shop"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "A part of a company shop or school that has a particular job or service.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "She works in the sales department and helps customers choose the right items.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "She works in the sales department and helps customers choose the right items.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Employment",
+          "lessons": [
+            2,
+            41,
+            166
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "The HR department will answer your question about work hours and pay today.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "The HR department will answer your question about work hours and pay today.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "Formal Institutions",
+          "lessons": [
+            2,
+            41,
+            166
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "This department handles official forms and documents for people in the city.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "This department handles official forms and documents for people in the city.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "Shopping",
+          "lessons": [
+            2,
+            41,
+            166
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "The toy department is near the entrance and has many colourful items for children.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "The toy department is near the entrance and has many colorful items for children.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/dɪˈpɑːtmənt/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/dɪˈpɑrtmənt/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "lemma": "leave",
+      "english": "leave",
+      "enUrl": "",
+      "american": "leave",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        2,
+        268
+      ],
+      "shortDescription": {
+        "en-GB": "to go away from a place",
+        "en-US": "to go away from a place"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "verb",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "To go away from a place or person, or to allow someone to go.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "We will leave the house at seven to catch the early morning bus today.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "We will leave the house at seven to catch the early morning bus today.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Common verbs",
+          "lessons": [
+            2,
+            268
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "Leave is a common verb students use when they talk about going away from home.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "Leave is a common verb students use when they talk about going away from home.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "Employment",
+          "lessons": [
+            2,
+            268
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "She asked for leave from work to care for a sick family member this week.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "She asked for leave from work to care for a sick family member this week.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/liːv/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/liːv/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "lemma": "proposal",
+      "english": "proposal",
+      "enUrl": "",
+      "american": "proposal",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        2,
+        193,
+        216
+      ],
+      "shortDescription": {
+        "en-GB": "an idea offered for agreement",
+        "en-US": "an idea offered for agreement"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "An idea or plan that someone offers for others to accept or refuse.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "He gave a clear proposal for the new project at the meeting yesterday morning.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "He gave a clear proposal for the new project at the meeting yesterday morning.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Employment",
+          "lessons": [
+            2,
+            193,
+            216
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "The manager read the proposal and will decide on the new hires next week.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "The manager read the proposal and will decide on the new hires next week.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "Formal Institutions",
+          "lessons": [
+            2,
+            193,
+            216
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "The council discussed the proposal to build a small park near the school today.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "The council discussed the proposal to build a small park near the school today.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "Relationships",
+          "lessons": [
+            2,
+            193,
+            216
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "She wrote a proposal to ask for help from a friend for the event idea.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "She wrote a proposal to ask for help from a friend for the event idea.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/prəˈpəʊzəl/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/prəˈpoʊzəl/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "lemma": "patrol",
+      "english": "patrol",
+      "enUrl": "",
+      "american": "patrol",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        2,
+        135,
+        298
+      ],
+      "shortDescription": {
+        "en-GB": "to go round and watch an area",
+        "en-US": "to go round and watch an area"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "verb",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "To walk, drive or go around an area to check safety or look for problems.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "The guard will patrol the park every night to keep people and property safe.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "The guard will patrol the park every night to keep people and property safe.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Employment",
+          "lessons": [
+            2,
+            135,
+            298
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "He works as a security officer and must patrol the building for six hours each shift.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "He works as a security officer and must patrol the building for six hours each shift.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "Law",
+          "lessons": [
+            2,
+            135,
+            298
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "Police patrol the streets at night to help keep the area safe for everyone.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "Police patrol the streets at night to help keep the area safe for everyone.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "Transport",
+          "lessons": [
+            2,
+            135,
+            298
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "Airport security officers patrol the terminal to watch for any safety concerns all day.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "Airport security officers patrol the terminal to watch for any safety concerns all day.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/pəˈtrəʊl/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/pəˈtroʊl/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "lemma": "estimate",
+      "english": "estimate",
+      "enUrl": "",
+      "american": "estimate",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        2,
+        162,
+        381
+      ],
+      "shortDescription": {
+        "en-GB": "to make a careful guess about size",
+        "en-US": "to make a careful guess about size"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "verb",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "To make a careful guess about the number, cost, size, or time of something.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "They estimate the cost of the repair will be high but they will check soon.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "They estimate the cost of the repair will be high but they will check soon.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Common verbs",
+          "lessons": [
+            2,
+            162,
+            381
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "Estimate is a common verb used when you give a number that may not be exact.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "Estimate is a common verb used when you give a number that may not be exact.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "Employment",
+          "lessons": [
+            2,
+            162,
+            381
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "The manager asked the team to estimate the time needed to finish the task.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "The manager asked the team to estimate the time needed to finish the task.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "Finances",
+          "lessons": [
+            2,
+            162,
+            381
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "We estimate our monthly bills to plan the family budget for the next year.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "We estimate our monthly bills to plan the family budget for the next year.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/ˈestɪmeɪt/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/ˈestəmət/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "lemma": "opposite",
+      "english": "opposite",
+      "enUrl": "",
+      "american": "opposite",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        3,
+        31
+      ],
+      "shortDescription": {
+        "en-GB": "on the other side or very different",
+        "en-US": "on the other side or very different"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "adjective",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "Very different from something else or at the other side of a place.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "Her idea was the opposite of mine and we had to discuss it slowly together.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "Her idea was the opposite of mine and we had to discuss it slowly together.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "partOfSpeech": "preposition",
+          "definitions": [
+            {
+              "senseId": "s2",
+              "definition": "At the other side of something, facing it with only a short space between.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "The bank is opposite the station, so you will see it across the road easily.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "The bank is opposite the station, so you will see it across the road easily.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Adjectives",
+          "lessons": [
+            3,
+            31
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "Opposite is an adjective you can use to show two ideas are very different from each other.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "Opposite is an adjective you can use to show two ideas are very different from each other.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "Prepositions",
+          "lessons": [
+            3,
+            31
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "Use opposite as a preposition to say one thing is on the other side of another thing.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "Use opposite as a preposition to say one thing is on the other side of another thing.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/ˈɒpəzɪt/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/ˈɑːpəzɪt/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "lemma": "useless",
+      "english": "useless",
+      "enUrl": "",
+      "american": "useless",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        3,
+        198
+      ],
+      "shortDescription": {
+        "en-GB": "not able to help or work",
+        "en-US": "not able to help or work"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "adjective",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "Not able to do the job or not helpful, so it is without real use.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "The broken phone was useless so she bought a new one the same week quickly.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "The broken phone was useless so she bought a new one the same week quickly.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Adjectives",
+          "lessons": [
+            3,
+            198
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "Useless is an adjective people use when something cannot do its job at all.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "Useless is an adjective people use when something cannot do its job at all.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "Qualities of People and Events",
+          "lessons": [
+            3,
+            198
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "He felt useless after losing his job, but friends helped him find a new role.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "He felt useless after losing his job, but friends helped him find a new role.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/ˈjuːsləs/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/ˈjuːsləs/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "lemma": "eager",
+      "english": "eager",
+      "enUrl": "",
+      "american": "eager",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        3,
+        257
+      ],
+      "shortDescription": {
+        "en-GB": "wanting to do or have something",
+        "en-US": "wanting to do or have something"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "adjective",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "Wanting very much to do or have something, and ready to start or try now.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "The children were eager to see the new film and they waited at the cinema early.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "The children were eager to see the new film and they waited at the cinema early.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Adjectives",
+          "lessons": [
+            3,
+            257
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "Eager is an adjective used when someone shows strong wish or excitement to do something.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "Eager is an adjective used when someone shows strong wish or excitement to do something.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "Expressing Feelings",
+          "lessons": [
+            3,
+            257
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "He was eager to meet his friends after the long trip far from the city.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "He was eager to meet his friends after the long trip far from the city.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/ˈiːɡə/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/ˈiːɡər/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "lemma": "southeast",
+      "english": "southeast",
+      "enUrl": "",
+      "american": "southeast",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        3,
+        419
+      ],
+      "shortDescription": {
+        "en-GB": "the direction between south and east",
+        "en-US": "the direction between south and east"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "adjective",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "In or from the part of an area or country that is between south and east.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "The village is in the southeast part of the island near the small harbour town.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "The village is in the southeast part of the island near the small harbor town.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Adjectives",
+          "lessons": [
+            3,
+            419
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "Southeast is an adjective used when you describe the location of a place on a map.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "Southeast is an adjective used when you describe the location of a place on a map.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "Geographical Features",
+          "lessons": [
+            3,
+            419
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "The weather in the southeast region is often warm and sunny in the summer months.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "The weather in the southeast region is often warm and sunny in the summer months.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/ˈsaʊθiːst/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/ˈsaʊθiːst/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "lemma": "southern",
+      "english": "southern",
+      "enUrl": "",
+      "american": "southern",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        3,
+        419
+      ],
+      "shortDescription": {
+        "en-GB": "in or from the south part",
+        "en-US": "in or from the south part"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "adjective",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "In or from the southern part of a country or area, near the south side.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "The southern coast has many small towns and it is warm in the summer months.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "The southern coast has many small towns and it is warm in the summer months.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Adjectives",
+          "lessons": [
+            3,
+            419
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "Southern is an adjective used to describe the part of a country that is to the south.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "Southern is an adjective used to describe the part of a country that is to the south.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "Geographical Features",
+          "lessons": [
+            3,
+            419
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "The southern area of the island has hills and many small beaches for visitors to enjoy.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "The southern area of the island has hills and many small beaches for visitors to enjoy.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/ˈsʌðən/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/ˈsʌðərn/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "lemma": "tropical",
+      "english": "tropical",
+      "enUrl": "",
+      "american": "tropical",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        3,
+        47,
+        60
+      ],
+      "shortDescription": {
+        "en-GB": "hot and wet weather area",
+        "en-US": "hot and wet weather area"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "adjective",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "Related to regions that are hot all year and often have a lot of rain.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "The tropical island has green plants and warm weather most months of the year.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "The tropical island has green plants and warm weather most months of the year.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Adjectives",
+          "lessons": [
+            3,
+            47,
+            60
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "Tropical is an adjective used to describe hot wet places near the equator on maps.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "Tropical is an adjective used to describe hot wet places near the equator on maps.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "Geographical Features",
+          "lessons": [
+            3,
+            47,
+            60
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "Many tropical forests have wide trees and many animals that live near water areas.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "Many tropical forests have wide trees and many animals that live near water areas.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "Weather",
+          "lessons": [
+            3,
+            47,
+            60
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "The weather in tropical regions is often warm with heavy rain in the wet season.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "The weather in tropical regions is often warm with heavy rain in the wet season.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/ˈtrɒpɪkəl/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/ˈtrɑːpɪkəl/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    }
+  ]
+}

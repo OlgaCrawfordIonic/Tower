@@ -128,8 +128,9 @@ quizMistakes = signal<string[]>([]);
       ]);
     
       
-   readonly words = signal<WordDoc[]>([
+ readonly words = signal<WordDoc[]>([
   {
+    id: 1,
     lemma: "compose",
     english: "compose",
     enUrl: "",
@@ -231,6 +232,7 @@ quizMistakes = signal<string[]>([]);
     }
   },
   {
+    id: 2,
     lemma: "dedicate",
     english: "dedicate",
     enUrl: "",
@@ -322,6 +324,7 @@ quizMistakes = signal<string[]>([]);
     }
   },
   {
+    id: 3,
     lemma: "dialog",
     english: "dialogue",
     enUrl: "",
@@ -398,6 +401,7 @@ quizMistakes = signal<string[]>([]);
     }
   },
   {
+    id: 4,
     lemma: "inscribe",
     english: "inscribe",
     enUrl: "",
@@ -476,6 +480,7 @@ quizMistakes = signal<string[]>([]);
     }
   },
   {
+    id: 5,
     lemma: "narrate",
     english: "narrate",
     enUrl: "",
@@ -552,6 +557,7 @@ quizMistakes = signal<string[]>([]);
     }
   },
   {
+    id: 6,
     lemma: "narrative",
     english: "narrative",
     enUrl: "",
@@ -628,6 +634,7 @@ quizMistakes = signal<string[]>([]);
     }
   },
   {
+    id: 7,
     lemma: "recite",
     english: "recite",
     enUrl: "",
@@ -704,6 +711,7 @@ quizMistakes = signal<string[]>([]);
     }
   },
   {
+    id: 8,
     lemma: "retell",
     english: "retell",
     enUrl: "",
@@ -780,6 +788,7 @@ quizMistakes = signal<string[]>([]);
     }
   },
   {
+    id: 9,
     lemma: "rewrite",
     english: "rewrite",
     enUrl: "",
@@ -858,6 +867,7 @@ quizMistakes = signal<string[]>([]);
     }
   },
   {
+    id: 10,
     lemma: "setting",
     english: "setting",
     enUrl: "",
@@ -947,6 +957,7 @@ quizMistakes = signal<string[]>([]);
     }
   },
   {
+    id: 11,
     lemma: "sorrow",
     english: "sorrow",
     enUrl: "",

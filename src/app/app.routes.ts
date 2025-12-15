@@ -67,5 +67,22 @@ export const routes: Routes = [
     path: 'lessons',
     loadComponent: () => import('./LessonMaker/lessons/lessons.page').then( m => m.LessonsPage)
   },
+  {
+    path: 'lessonsimports',
+    loadComponent: () => import('./FirebaseImports/lessonsimports/lessonsimports.page').then( m => m.LessonsimportsPage)
+  },
+ 
+  {
+    path: 'wordsimport',
+    loadComponent: () => import('./FirebaseImports/wordsimport/wordsimport.page').then( m => m.WordsimportPage)
+  },
+  
+  {
+    path: 'importfirebase',
+    loadComponent: () => import('./importlemmas/importfirebase/importfirebase.page').then( m => m.ImportfirebasePage)
+  },
+  
+  
+
   
 ];

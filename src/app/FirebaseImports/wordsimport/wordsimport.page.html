@@ -1,0 +1,22 @@
+<!-- admin-import-b1-words.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Import B1 Words</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-button (click)="runImport()" [disabled]="importing">
+    {{ importing ? 'Importing…' : 'Import B1 words from lessons JSON' }}
+  </ion-button>
+
+  <p *ngIf="importedCount">
+    Imported/updated {{ importedCount }} words into
+    <strong>EnglishB1words</strong>.
+  </p>
+
+  <ion-button (click)="downloadOpenAIInput()" [disabled]="exporting">
+    {{ exporting ? 'Building…' : 'Download OpenAI input JSON' }}
+  </ion-button>
+</ion-content>
+

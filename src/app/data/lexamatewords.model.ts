@@ -83,6 +83,7 @@ export interface VariantSection {
  * - enUrl / amUrl: main audio for each headword
  */
 export interface WordDoc {
+  id:number;
   lemma: string;                 // canonical key (usually same as 'english')
   english: string;               // UK form shown in UI (e.g. 'colour')
   enUrl?: string | null;         // UK headword audio url

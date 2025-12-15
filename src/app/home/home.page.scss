@@ -17,11 +17,61 @@
   font-size: 16px;
   line-height: 22px;
 
-  color: #8c8c8c;
+  color: #191717;
 
   margin: 0;
 }
 
 #container a {
   text-decoration: none;
+}
+
+.admin-tools-list {
+  margin-top: 1rem;
+}
+
+.admin-tile-json {
+  --background: linear-gradient(135deg, #c7d9e7 0%, #958ec1 60%, #ba9099 100%);
+  --color: #ffffff;
+  border-radius: 16px;
+  margin: 0.75rem 1rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+  padding-block: 8px;
+}
+
+.admin-tile-json ion-label {
+  white-space: normal;
+}
+
+.tile-title {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.tile-subtitle {
+  font-size: 1.55rem;
+ color:#191717;
+}
+
+.json-avatar {
+  --border-radius: 16px;
+  background: rgba(255, 255, 255, 0.16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.json-avatar ion-icon {
+  font-size: 1.4rem;
+}
+
+.json-chip {
+  --background: rgba(255, 255, 255, 0.18);
+  --color: #d09d9d;
+  font-size: 0.75rem;
+  backdrop-filter: blur(6px);
+}
+
+.json-chip .chip-icon {
+  margin-right: 4px;
 }

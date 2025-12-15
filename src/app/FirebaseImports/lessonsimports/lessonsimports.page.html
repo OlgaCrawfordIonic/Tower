@@ -1,0 +1,16 @@
+<!-- admin-import-b1-lessons.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Import B1 Lessons</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-button (click)="runImport()" [disabled]="importing">
+    {{ importing ? 'Importing…' : 'Import B1 lessons from JSON' }}
+  </ion-button>
+
+  <p *ngIf="importedCount">
+    Imported {{ importedCount }} lessons into <strong>EnglishB1Lessons</strong>.
+  </p>
+</ion-content>

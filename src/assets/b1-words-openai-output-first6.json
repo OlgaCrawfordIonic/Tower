@@ -1,0 +1,640 @@
+{
+  "words": [
+    {
+      "lemma": "damp",
+      "english": "damp",
+      "enUrl": "",
+      "american": "damp",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        1,
+        87
+      ],
+      "shortDescription": {
+        "en-GB": "slightly wet and cold",
+        "en-US": "slightly wet and cold"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "adjective",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "Slightly wet and cold, often in the air or on a surface.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "The room was damp after the rain and it felt cold to touch.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "The room was damp after the rain and it felt cold to touch.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "partOfSpeech": "verb",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "To make something slightly wet, often by water or moist air outside.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "Do not damp the bread with water before you put it in the oven.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "Do not damp the bread with water before you put it in the oven.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Adjectives",
+          "lessons": [
+            1,
+            87
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "Damp is an adjective that describes a thing that is a little wet.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "Damp is an adjective that describes a thing that is a little wet.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "House",
+          "lessons": [
+            1,
+            87
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "The wall in the house was damp and the paint began to peel.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "The wall in the house was damp and the paint began to peel.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/dæmp/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/dæmp/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "lemma": "vacancy",
+      "english": "vacancy",
+      "enUrl": "",
+      "american": "vacancy",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        1,
+        309
+      ],
+      "shortDescription": {
+        "en-GB": "an empty job or room",
+        "en-US": "an empty job or room"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "A job that a company can give to a new person now.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "The company has a vacancy for a teacher starting next month soon.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "The company has a vacancy for a teacher starting next month soon.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            },
+            {
+              "senseId": "s2",
+              "definition": "A room or space that is empty and available for someone to use.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "There was a vacancy in the hotel when we arrived late in the evening.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "There was a vacancy in the hotel when we arrived late in the evening.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Employment",
+          "lessons": [
+            1,
+            309
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "The job centre told me about a new vacancy for teachers this week.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "The job center told me about a new vacancy for teachers this week.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "House",
+          "lessons": [
+            1,
+            309
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "We found a vacancy in the building and the room was clean and empty.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "We found a vacancy in the building and the room was clean and empty.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/ˈveɪkənsi/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/ˈveɪkənsi/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "lemma": "hut",
+      "english": "hut",
+      "enUrl": "",
+      "american": "hut",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        1,
+        252
+      ],
+      "shortDescription": {
+        "en-GB": "a small simple building",
+        "en-US": "a small simple building"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "A small simple building, often made of wood, for people or animals.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "The children built a small hut in the garden to play in all day.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "The children built a small hut in the garden to play in all day.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Countryside",
+          "lessons": [
+            1,
+            252
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "We slept in a hut near the river when we went to the countryside.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "We slept in a hut near the river when we went to the countryside.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "House",
+          "lessons": [
+            1,
+            252
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "The farmer used a small hut on the land to keep tools safe.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "The farmer used a small hut on the land to keep tools safe.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/hʌt/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/hʌt/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "lemma": "upstairs",
+      "english": "upstairs",
+      "enUrl": "",
+      "american": "upstairs",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        1,
+        342
+      ],
+      "shortDescription": {
+        "en-GB": "on or to a higher floor",
+        "en-US": "on or to a higher floor"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "adverb",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "To or on the higher floor of a building, above the ground floor.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "She went upstairs to get a book from her room before dinner.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "She went upstairs to get a book from her room before dinner.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "partOfSpeech": "adjective",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "On a higher floor of a building, not on the ground floor.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "The upstairs bathroom is small but it has a good warm shower today.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "The upstairs bathroom is small but it has a good warm shower today.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Adverbs",
+          "lessons": [
+            1,
+            342
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "Upstairs is an adverb that tells us where someone moves in a house.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "Upstairs is an adverb that tells us where someone moves in a house.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "House",
+          "lessons": [
+            1,
+            342
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "The child's toys are upstairs in the bedroom on the bed near the window.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "The child's toys are upstairs in the bedroom on the bed near the window.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/ʌpˈsteəz/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/ʌpˈstɛrz/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "lemma": "restore",
+      "english": "restore",
+      "enUrl": "",
+      "american": "restore",
+      "amUrl": "",
+      "language": "en",
+      "lessons": [
+        1,
+        54,
+        328
+      ],
+      "shortDescription": {
+        "en-GB": "repair or return to earlier state",
+        "en-US": "repair or return to earlier state"
+      },
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "verb",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": "To repair something so it is in good condition again and it works well.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "They will restore the old chair and make it strong and useful again.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "They will restore the old chair and make it strong and useful again.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            },
+            {
+              "senseId": "s2",
+              "definition": "To return a building or place to an earlier style or state.",
+              "url": "",
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "The city wants to restore the old bridge to how it looked long ago.",
+                    "audioUrl": ""
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "The city wants to restore the old bridge to how it looked long ago.",
+                    "audioUrl": ""
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "DIY Tools",
+          "lessons": [
+            1,
+            54,
+            328
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "We use small tools to restore the wooden door in our house this weekend.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "We use small tools to restore the wooden door in our house this weekend.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "History",
+          "lessons": [
+            1,
+            54,
+            328
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "The museum will restore the old painting to show how it looked in history.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "The museum will restore the old painting to show how it looked in history.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        },
+        {
+          "topicKey": "House",
+          "lessons": [
+            1,
+            54,
+            328
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "They plan to restore the house and keep the old windows and doors.",
+                "audioUrl": ""
+              }
+            ],
+            "en-US": [
+              {
+                "text": "They plan to restore the house and keep the old windows and doors.",
+                "audioUrl": ""
+              }
+            ]
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/rɪˈstɔː/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/rɪˈstɔr/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    }
+  ]
+}
