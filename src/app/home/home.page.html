@@ -57,6 +57,51 @@
   </ion-item>
 
   <!-- Other admin tiles ... -->
+    <ion-item
+    button
+    detail
+    routerLink="/reviewwords"
+    class="admin-tile-json"
+  >
+    <ion-avatar slot="start" class="json-avatar">
+      <ion-icon name="code-slash-outline"></ion-icon>
+    </ion-avatar>
+
+    <ion-label>
+      <h2 class="tile-title">&amp; Firestore (B1 Words)</h2>
+      <p class="tile-subtitle">
+        Review words from Firebase database
+      </p>
+    </ion-label>
+
+    <ion-chip routerLink="/"  routerDirection="forward" slot="end" color="light" class="json-chip">
+      <ion-icon name="cloud-upload-outline" class="chip-icon"></ion-icon>
+      <ion-label>Review words from Firebase database</ion-label>
+    </ion-chip>
+  </ion-item>
+
+    <ion-item
+    button
+    detail
+    routerLink="/maintenance"
+    class="edit"
+  >
+    <ion-avatar slot="start" class="json-avatar">
+      <ion-icon name="code-slash-outline"></ion-icon>
+    </ion-avatar>
+
+    <ion-label>
+      <h2 class="tile-title">&amp; Maintenance</h2>
+      <p class="tile-subtitle">
+       Caution! This is to edit Firebase database!maintenance.js page
+      </p>
+    </ion-label>
+
+    <ion-chip routerLink="/"  routerDirection="forward" slot="end" color="light" class="json-chip">
+      <ion-icon name="cloud-upload-outline" class="chip-icon"></ion-icon>
+      <ion-label>Edit</ion-label>
+    </ion-chip>
+  </ion-item>
 </ion-list>
 
 

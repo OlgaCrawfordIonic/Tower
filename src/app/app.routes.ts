@@ -81,8 +81,26 @@ export const routes: Routes = [
     path: 'importfirebase',
     loadComponent: () => import('./importlemmas/importfirebase/importfirebase.page').then( m => m.ImportfirebasePage)
   },
+  {
+    path: 'reviewwords',
+    loadComponent: () => import('./Firebaseedit/reviewwords/reviewwords.page').then( m => m.ReviewwordsPage)
+  },
+  {
+    path: 'editword',
+    loadComponent: () => import('./Firebaseedit/editword/editword.page').then( m => m.EditwordPage)
+  },
   
-  
+{
+  path: 'editword/:lemma',
+  loadComponent: () =>
+    import('./Firebaseedit/editword/editword.page')
+      .then(m => m.EditwordPage)
+},
+  {
+    path: 'maintenance',
+    loadComponent: () => import('./maintenance/maintenance.page').then( m => m.MaintenancePage)
+  },
+
 
   
 ];

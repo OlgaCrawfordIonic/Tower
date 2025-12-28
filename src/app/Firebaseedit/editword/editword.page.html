@@ -1,0 +1,206 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Edit word</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-spinner *ngIf="loading" name="dots"></ion-spinner>
+
+  <ion-text color="danger" *ngIf="error">
+    <p>{{ error }}</p>
+  </ion-text>
+
+  <ion-text color="success" *ngIf="saveMessage">
+    <p>{{ saveMessage }}</p>
+  </ion-text>
+
+  <ng-container *ngIf="word && !loading">
+
+    <!-- BASIC FIELDS -->
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Lemma & forms</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+
+        <!-- lemma (ID key, read-only) -->
+        <ion-item>
+          <ion-label position="stacked">Lemma (key)</ion-label>
+          <ion-input
+            [value]="word.lemma"
+            readonly="true"
+          ></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">English (GB form)</ion-label>
+          <ion-input
+            [(ngModel)]="word.english"
+          ></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">American (US form)</ion-label>
+          <ion-input
+            [(ngModel)]="word.american"
+          ></ion-input>
+        </ion-item>
+
+      </ion-card-content>
+    </ion-card>
+
+    <!-- NO MORE SHORT DESCRIPTION HERE -->
+
+    <!-- PART OF SPEECH / SENSES -->
+
+    <ion-card *ngIf="mainPOS">
+      <ion-card-header>
+        <ion-card-title>Part of speech & senses</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="stacked">Part of speech</ion-label>
+          <ion-input
+            [(ngModel)]="mainPOS.partOfSpeech"
+          ></ion-input>
+        </ion-item>
+
+        <ion-list>
+          <ion-list-header>
+            <ion-label>Senses</ion-label>
+            <ion-button size="small" (click)="addSense()">Add sense</ion-button>
+          </ion-list-header>
+
+          <ion-item
+            *ngFor="let def of mainPOS.definitions; let i = index; trackBy: trackByIndex"
+            lines="full"
+          >
+            <ion-label class="sense-label">
+              <h3>Sense {{ def.senseId }}</h3>
+
+              <!-- Definition per locale -->
+              <ion-item lines="none">
+                <ion-label position="stacked">Definition (en-GB)</ion-label>
+                <ion-textarea
+                  [(ngModel)]="def.definition['en-GB'].text"
+                  auto-grow="true"
+                  rows="2"
+                ></ion-textarea>
+              </ion-item>
+
+              <ion-item lines="none">
+                <ion-label position="stacked">Definition (en-US)</ion-label>
+                <ion-textarea
+                  [(ngModel)]="def.definition['en-US'].text"
+                  auto-grow="true"
+                  rows="2"
+                ></ion-textarea>
+              </ion-item>
+
+              <!-- Examples -->
+
+              <ion-item lines="none">
+                <ion-label position="stacked">Example (en-GB)</ion-label>
+                <ion-textarea
+                  [(ngModel)]="def.examples['en-GB'][0].text"
+                  auto-grow="true"
+                  rows="2"
+                ></ion-textarea>
+              </ion-item>
+
+              <ion-item lines="none">
+                <ion-label position="stacked">Example (en-US)</ion-label>
+                <ion-textarea
+                  [(ngModel)]="def.examples['en-US'][0].text"
+                  auto-grow="true"
+                  rows="2"
+                ></ion-textarea>
+              </ion-item>
+
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- TOPICS -->
+
+    <ion-card *ngIf="word.topics && word.topics.length">
+      <ion-card-header>
+        <ion-card-title>Topics</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+          <ion-item *ngFor="let t of word.topics; let i = index; trackBy: trackByIndex">
+            <ion-label>
+              <h3>{{ t.topicKey }}</h3>
+              <p>Lessons: {{ t.lessons.join(', ') }}</p>
+
+              <ion-item lines="none">
+                <ion-label position="stacked">Topic example (en-GB)</ion-label>
+                <ion-textarea
+                  [(ngModel)]="t.examples['en-GB'][0].text"
+                  auto-grow="true"
+                  rows="2"
+                ></ion-textarea>
+              </ion-item>
+
+              <ion-item lines="none">
+                <ion-label position="stacked">Topic example (en-US)</ion-label>
+                <ion-textarea
+                  [(ngModel)]="t.examples['en-US'][0].text"
+                  auto-grow="true"
+                  rows="2"
+                ></ion-textarea>
+              </ion-item>
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+
+    <!-- PHONETICS -->
+
+    <ion-card *ngIf="word">
+      <ion-card-header>
+        <ion-card-title>Phonetics</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+
+        <ion-item>
+          <ion-label position="stacked">IPA (en-GB)</ion-label>
+          <ion-input
+            [ngModel]="getGbIpa()"
+            (ngModelChange)="setGbIpa($event)"
+          ></ion-input>
+        </ion-item>
+
+        <ion-item class="ion-margin-top">
+          <ion-label position="stacked">IPA (en-US)</ion-label>
+          <ion-input
+            [ngModel]="getUsIpa()"
+            (ngModelChange)="setUsIpa($event)"
+          ></ion-input>
+        </ion-item>
+
+      </ion-card-content>
+    </ion-card>
+
+    <!-- SAVE BUTTON -->
+
+    <ion-button
+      expand="block"
+      color="primary"
+      (click)="onSave()"
+      [disabled]="saving"
+    >
+      <ion-spinner *ngIf="saving" name="dots" class="btn-spinner"></ion-spinner>
+      <span *ngIf="!saving">Save</span>
+    </ion-button>
+
+  </ng-container>
+</ion-content>

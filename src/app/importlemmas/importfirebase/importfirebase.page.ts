@@ -12,11 +12,13 @@ import { WordDoc } from '../../data/lexamatewords.model';
 import {
   writeBatch,
   doc,
+  getDoc,
   serverTimestamp,
   DocumentReference,
 } from 'firebase/firestore';
 import { db } from '../../firebase';          // adjust path if needed
 import { wordDocId } from '../../utils/ids';  // adjust path if needed
+import {  TopicUsage, LocalisedExamples } from '../../data/lexamatewords.model';
 
 interface ReferenceWord {
   id: number;
@@ -92,6 +94,162 @@ export class ImportfirebasePage {
 
   //Firebase impots
 
+// merge with lemma in firebase where lemma is already present with lesson n and topickey
+async onMergeClick() {
+  this.importError = null;
+  this.importSuccess = null;
+
+  const raw = this.jsonText?.trim();
+  if (!raw) {
+    this.importError = 'Please paste JSON text first.';
+    return;
+  }
+
+  this.importing = true;
+
+  try {
+    // 1) Parse JSON from textarea
+    let parsed: any;
+    try {
+      parsed = JSON.parse(raw);
+    } catch (err: any) {
+      this.importError = 'JSON parse error. Please check the file.';
+      console.error(err);
+      return;
+    }
+
+    let incomingDocs: WordDoc[];
+    if (Array.isArray(parsed)) {
+      incomingDocs = parsed as WordDoc[];
+    } else if (parsed && Array.isArray(parsed.words)) {
+      incomingDocs = parsed.words as WordDoc[];
+    } else {
+      this.importError =
+        'JSON must be either an array or an object with a "words" array.';
+      return;
+    }
+
+    if (!incomingDocs.length) {
+      this.importError = 'The "words" array is empty.';
+      return;
+    }
+
+    // 2) Build a map lemma -> incoming WordDoc
+    const incomingMap = new Map<string, WordDoc>();
+    for (const w of incomingDocs) {
+      if (!w.lemma) continue;
+      incomingMap.set(w.lemma, w);
+    }
+
+    // 3) For each incoming lemma, fetch the existing Firestore doc and merge
+    const batch = writeBatch(db);
+    let processed = 0;
+
+    for (const [lemma, incoming] of incomingMap.entries()) {
+      const ref: DocumentReference = doc(
+        db,
+        'EnglishB1words',
+        wordDocId(lemma)
+      );
+
+      const snap = await getDoc(ref);
+      if (!snap.exists()) {
+        console.warn(`No existing doc for lemma "${lemma}". Skipping.`);
+        continue;
+      }
+
+      const existing = snap.data() as WordDoc;
+
+      const merged = this.mergeWordDocsKeepingLessons(existing, incoming);
+
+      batch.set(
+        ref,
+        {
+          ...merged,
+          createdAt: existing.createdAt ?? serverTimestamp(),
+          updatedAt: serverTimestamp(),
+        },
+        { merge: false } // we control the final shape
+      );
+
+      processed++;
+    }
+
+    await batch.commit();
+
+    this.importSuccess = `Merged ${processed} word(s) into EnglishB1words (kept lessons & topic lesson numbers).`;
+  } catch (err: any) {
+    console.error('Merge failed', err);
+    this.importError = 'Merge failed. See console for details.';
+  } finally {
+    this.importing = false;
+  }
+}
+
+private mergeWordDocsKeepingLessons(existing: WordDoc, incoming: WordDoc): WordDoc {
+ 
+  
+  const anyIncoming = incoming as any;
+  // 1) ID: always use incoming JSON id
+  const id =  anyIncoming.id;
+
+  // 2) LESSONS: keep existing lesson set (truth from Firestore)
+  const lessons = Array.isArray(existing.lessons)
+    ? existing.lessons.slice()
+    : [];
+
+  // 3) Merge topics: keep topicKey + lessons from existing,
+  //    copy examples from incoming where topicKey matches.
+  const mergedTopics: TopicUsage[] = [];
+
+  const incomingTopicsByKey = new Map<string, TopicUsage>();
+  (incoming.topics || []).forEach(t => {
+    incomingTopicsByKey.set(t.topicKey, t);
+  });
+
+  (existing.topics || []).forEach(exTopic => {
+    const inTopic = incomingTopicsByKey.get(exTopic.topicKey);
+
+    const examples: LocalisedExamples = inTopic?.examples ?? exTopic.examples ?? {
+      'en-GB': [],
+      'en-US': [],
+    };
+
+    mergedTopics.push({
+      topicKey: exTopic.topicKey,
+      lessons: Array.isArray(exTopic.lessons)
+        ? exTopic.lessons.slice()
+        : [],
+      examples,
+    });
+  });
+
+  // Optional: if there are topics in incoming that are not in existing,
+  // you can either ignore them, or add them with empty lessons:
+  /*
+  (incoming.topics || []).forEach(inTopic => {
+    if (!mergedTopics.find(t => t.topicKey === inTopic.topicKey)) {
+      mergedTopics.push({
+        topicKey: inTopic.topicKey,
+        lessons: [], // or incoming.lessons ?? []
+        examples: inTopic.examples ?? { 'en-GB': [], 'en-US': [] },
+      });
+    }
+  });
+  */
+
+  const merged: WordDoc = {
+    ...existing,   // keep anything we had
+    ...incoming,   // overwrite with incoming lexical fields
+    id,            // ensure id is from correct source
+    lemma: existing.lemma,    // lemma is the canonical key
+    lessons,                 // keep existing lesson set
+    topics: mergedTopics,    // keep existing topicKey/lessons, new examples
+    language: 'en',          // constant
+  };
+
+  return merged;
+}
 
   
    // --------- PUBLIC HANDLER: called from the "Check" button ----------

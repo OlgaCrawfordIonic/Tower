@@ -1,0 +1,140 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Review B1 Words</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <!-- FILTER CARD -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Which words do you want to review?</ion-card-title>
+      <ion-card-subtitle>
+        Use either lemmas <strong>or</strong> an ID range, then press <em>View</em>.
+      </ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+
+      <!-- Section 1: Lemma input -->
+      <ion-item lines="none">
+        <ion-label position="stacked">
+          Type lemmas (separated by commas, spaces, or new lines)
+        </ion-label>
+        <ion-textarea
+          [(ngModel)]="lemmaInput"
+          auto-grow="true"
+          rows="4"
+          placeholder="compose, dedicate, dialog..."
+        ></ion-textarea>
+      </ion-item>
+
+      <ion-item lines="none" class="section-label">
+        <ion-label>OR filter by ID range</ion-label>
+      </ion-item>
+
+      <!-- Section 2: ID range -->
+      <ion-item>
+        <ion-label position="stacked">From ID</ion-label>
+        <ion-input
+          type="number"
+          [(ngModel)]="idFrom"
+          placeholder="1"
+        ></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">To ID</ion-label>
+        <ion-input
+          type="number"
+          [(ngModel)]="idTo"
+          placeholder="77"
+        ></ion-input>
+      </ion-item>
+
+      <ion-note color="medium">
+        If you type any lemmas above, the ID range will be ignored.
+      </ion-note>
+
+      <!-- View button -->
+       <a [routerLink]="['/editword', 'compose']">Test editword route</a>
+
+      <ion-button
+        expand="block"
+        class="ion-margin-top"
+        color="primary"
+        (click)="onViewClick()"
+        [disabled]="loading"
+      >
+        <ion-spinner
+          *ngIf="loading"
+          name="dots"
+          class="btn-spinner"
+        ></ion-spinner>
+        <span *ngIf="!loading">View</span>
+      </ion-button>
+
+      <!-- Error message -->
+      <ion-text color="danger" *ngIf="error">
+        <p class="error-text">{{ error }}</p>
+      </ion-text>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- RESULTS -->
+  <ion-card *ngIf="words.length > 0">
+    <ion-card-header>
+      <ion-card-title>Results ({{ words.length }})</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ng-container *ngFor="let w of words">
+        <ion-card class="word-card">
+          <ion-card-content>
+           <h2>
+  <strong *ngIf="hasId(w)">#{{ getId(w) }} – </strong>
+  {{ w.lemma }}
+</h2>
+
+
+            <p *ngIf="w.english || w.american">
+              <strong>GB:</strong> {{ w.english || '—' }} &nbsp; |
+              <strong>US:</strong> {{ w.american || '—' }}
+            </p>
+
+            <p *ngIf="w.lessons?.length">
+              <strong>Lessons:</strong> {{ w.lessons.join(', ') }}
+            </p>
+
+           <p *ngIf="w.topics && w.topics.length">
+  <strong>Topics:</strong>
+  {{ topicKeys(w) }}
+</p>
+
+      <!-- FULL RAW JSON VIEW -->
+          <ion-item lines="none">
+            <ion-label>
+              <strong>Full WordDoc (raw):</strong>
+            </ion-label>
+          </ion-item>
+          <pre class="json-block">
+{{ w | json }}
+          </pre>
+
+            <ion-button
+              expand="block"
+              size="small"
+              color="secondary"
+              class="ion-margin-top"
+              (click)="onEdit(w)"
+            >
+              Edit
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ng-container>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

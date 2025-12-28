@@ -12,7 +12,8 @@ import { RawLessonFromJson } from './b1-lessons.models';
 import {
   WordDoc,
   TopicUsage,
-  LocalisedExamples,
+  Localised,
+  TextWithAudio
 } from '../data/lexamatewords.model';
 interface WordForOpenAI {
   lemma: string;
@@ -22,16 +23,18 @@ interface WordForOpenAI {
 
 
 interface WordAgg {
+ 
   lemma: string;
   lessons: Set<number>;
   topics: Map<string, Set<number>>;   // topicKey -> lesson numbers
 }
 
 // empty examples object
-const EMPTY_EXAMPLES: LocalisedExamples = {
+const makeEmptyExamples = (): Localised<TextWithAudio[]> => ({
   'en-GB': [],
   'en-US': [],
-};
+});
+
 
 @Injectable({ providedIn: 'root' })
 export class B1WordsImport {
@@ -52,12 +55,12 @@ export class B1WordsImport {
       topics.push({
         topicKey,
         lessons: Array.from(lessonSet).sort((a, b) => a - b),
-        examples: { ...EMPTY_EXAMPLES },
+        examples: makeEmptyExamples(),
       });
     });
 
     return {
-      id:1,
+      id:0,
       lemma: agg.lemma,
       english: '',
       enUrl: '',
@@ -65,13 +68,10 @@ export class B1WordsImport {
       amUrl: '',
       language: 'en',
       lessons,
-      shortDescription: {
-        'en-GB': '',
-        'en-US': '',
-      },
+    
       levels: ['B1'],
       partsOfSpeech: [],
-      topics,
+      topics:[],
       variants: {},   // no phonetics yet
       // createdAt / updatedAt added in batch.set
     };

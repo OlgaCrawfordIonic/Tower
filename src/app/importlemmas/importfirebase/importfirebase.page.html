@@ -41,22 +41,17 @@
 <input type="file" accept=".json" (change)="onFileSelected($event)" />
 
   <!-- IMPORT BUTTON -->
-      <ion-button
-        expand="block"
-        class="ion-margin-top"
-        color="success"
-        (click)="onImportClick()"
-        [disabled]="
-          importing ||
-          checking ||
-          !hasChecked ||
-          issues.length > 0 ||
-          !jsonText.trim()
-        "
-      >
-        <ion-spinner *ngIf="importing" name="dots" class="btn-spinner"></ion-spinner>
-        <span *ngIf="!importing">Import lemmas to Firestore</span>
-      </ion-button>
+     <ion-button
+  expand="block"
+  class="ion-margin-top"
+  color="tertiary"
+  (click)="onMergeClick()"
+  [disabled]="importing || checking || !jsonText.trim()"
+>
+  <ion-spinner *ngIf="importing" name="dots" class="btn-spinner"></ion-spinner>
+  <span *ngIf="!importing">Merge with existing Firestore words (keep lessons)</span>
+</ion-button>
+
         <!-- General validation error -->
       <ion-text color="danger" *ngIf="error">
         <p class="error-text">{{ error }}</p>

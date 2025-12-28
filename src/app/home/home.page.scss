@@ -43,6 +43,19 @@
   white-space: normal;
 }
 
+.edit {
+  --background: linear-gradient(135deg, #a95990 0%, #9b99a8 60%, #ba9099 100%);
+  --color: #ffffff;
+  border-radius: 16px;
+  margin: 0.75rem 1rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.18);
+  padding-block: 8px;
+}
+
+.edit ion-label {
+  white-space: normal;
+}
+
 .tile-title {
   font-weight: 700;
   margin-bottom: 4px;

@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>maintenance</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+  <ion-card-header>
+    <ion-card-title>ShortDescription Migration</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+   <p>
+  Convert shortDescription from plain strings to
+  [&#123; text, audioUrl &#125;] arrays for en-GB / en-US.
+</p>
+
+
+    <ion-button
+      color="warning"
+      expand="block"
+      (click)="onMigrateShortDescriptions()"
+      [disabled]="migrating"
+    >
+      <ion-spinner
+        *ngIf="migrating"
+        name="dots"
+        class="btn-spinner"
+      ></ion-spinner>
+      <span *ngIf="!migrating">Run migration</span>
+    </ion-button>
+
+    <ion-text color="success" *ngIf="migrateResult">
+      <p>{{ migrateResult }}</p>
+    </ion-text>
+
+    <ion-text color="danger" *ngIf="migrateError">
+      <p>{{ migrateError }}</p>
+    </ion-text>
+  </ion-card-content>
+</ion-card>
+
+</ion-content>
