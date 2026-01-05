@@ -45,12 +45,25 @@
   expand="block"
   class="ion-margin-top"
   color="tertiary"
-  (click)="onMergeClick()"
+ 
   [disabled]="importing || checking || !jsonText.trim()"
 >
   <ion-spinner *ngIf="importing" name="dots" class="btn-spinner"></ion-spinner>
   <span *ngIf="!importing">Merge with existing Firestore words (keep lessons)</span>
 </ion-button>
+
+
+<ion-button
+  expand="block"
+  class="ion-margin-top"
+  color="success"
+  (click)="onCreateNewClick()"
+  [disabled]="importing || checking || !jsonText.trim()"
+>
+  <ion-spinner *ngIf="importing" name="dots" class="btn-spinner"></ion-spinner>
+  <span *ngIf="!importing">Create NEW Firestore words only (skip existing)</span>
+</ion-button>
+
 
         <!-- General validation error -->
       <ion-text color="danger" *ngIf="error">

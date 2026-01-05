@@ -1318,11 +1318,159 @@ export class AmEngSlidePage {
         }
       }
     },
-    
-   
+    {
+  id: 6,
+  lemma: "flat",
+  language: "en",
+  english: "flat",
+  enUrl: "",
+  american: "",
+  amUrl: "",
+  lessons: [1, 210],
+  levels: ["B1"],
+  partsOfSpeech: [
+    {
+      partOfSpeech: "noun",
+      definitions: [
+        {
+          senseId: "s1",
+         
+          definition: {
+            "en-GB": {
+              text: "A home with rooms on one floor.",
+              audioUrl: "",
+            },
+            "en-US": {
+              text: "A home with rooms on one floor.",
+              audioUrl: "",
+               headwords: {
+           
+            "en-US": {
+              headword: "apartment",
+              ipa: "/əˈpɑːrtmənt/",
+              audioUrl: "en-US/B1/f/flat/senses/noun/s1/headword.mp3",
+               partOfSpeech: "noun",
+                senseid: "s1",
+            },
+          },
+            },
+          },
+          examples: {
+            "en-GB": [
+              {
+                text: "I rent a small flat near the station, and I walk to work every morning.",
+                audioUrl: "",
+                partOfSpeech: "noun",
+                senseId: "s1",
+              },
+            ],
+            "en-US": [
+              {
+                text: "I rent a small apartment near the station, and I walk to work every morning.",
+                audioUrl: "",
+                partOfSpeech: "noun",
+                senseId: "s1",
+              },
+            ],
+          },
+        },
+      ],
+    },
+    {
+      partOfSpeech: "adjective",
+      definitions: [
+        {
+          senseId: "s1",
+          definition: {
+            "en-GB": {
+              text: "Level and smooth, with no bumps.",
+              audioUrl: "",
+            },
+            "en-US": {
+              text: "Level and smooth, with no bumps.",
+              audioUrl: "",
+            },
+          },
+          examples: {
+            "en-GB": [
+              {
+                text: "The field is flat, so the children can run and play football there after school.",
+                audioUrl: "",
+                partOfSpeech: "adjective",
+                senseId: "s1",
+              },
+            ],
+            "en-US": [
+              {
+                text: "The field is flat, so the children can run and play football there after school.",
+                audioUrl: "",
+                partOfSpeech: "adjective",
+                senseId: "s1",
+              },
+            ],
+          },
+        },
+      ],
+    },
+  ],
+  topics: [
+    {
+      topicKey: "Adjectives",
+      lessons: [1, 210],
+      examples: {
+        "en-GB": [
+          {
+            text: "The table is flat, and my book stays very still on it all day.",
+            audioUrl: "",
+            partOfSpeech: "adjective",
+            senseId: "s1",
+          },
+        ],
+        "en-US": [],
+      },
+    },
+    {
+      topicKey: "House",
+      lessons: [1, 210],
+      examples: {
+        "en-GB": [
+          {
+            text: "Her flat has two rooms and a small kitchen, and it is warm in winter.",
+            audioUrl: "",
+            partOfSpeech: "noun",
+            senseId: "s1",
+          },
+        ],
+        "en-US": [
+          {
+            text: "Her apartment has two rooms and a small kitchen, and it is warm in winter.",
+            audioUrl: "",
+            partOfSpeech: "noun",
+            senseId: "s1",
+          },
+        ],
+      },
+    },
+  ],
+  variants: {
+    "en-GB": {
+      phonetics: {
+        ipa: "/flæt/",
+        audioUrl: "",
+        voice: "en-GB",
+      },
+    },
+    "en-US": {
+      phonetics: {
+        ipa: "/flæt/",
+        audioUrl: "",
+        voice: "en-US",
+      },
+    },
+  },
+}
 
-
-  ]);
+]);
 
   // variety toggle: 'british' or 'american'
   variety = signal<'british' | 'american'>('british');

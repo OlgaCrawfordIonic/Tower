@@ -1,6 +1,17 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>Edit word</ion-title>
+      <ion-buttons slot="end">
+      <ion-button
+        color="danger"
+        fill="outline"
+        (click)="onDelete()"
+        [disabled]="saving || loading"
+        *ngIf="word"
+      >
+        Delete
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
@@ -86,7 +97,7 @@
               <ion-item lines="none">
                 <ion-label position="stacked">Definition (en-GB)</ion-label>
                 <ion-textarea
-                  [(ngModel)]="def.definition['en-GB'].text"
+                  [(ngModel)]="def.definition['en-GB']!.text"
                   auto-grow="true"
                   rows="2"
                 ></ion-textarea>
@@ -95,7 +106,7 @@
               <ion-item lines="none">
                 <ion-label position="stacked">Definition (en-US)</ion-label>
                 <ion-textarea
-                  [(ngModel)]="def.definition['en-US'].text"
+                  [(ngModel)]="def.definition['en-US']!.text"
                   auto-grow="true"
                   rows="2"
                 ></ion-textarea>
@@ -106,7 +117,7 @@
               <ion-item lines="none">
                 <ion-label position="stacked">Example (en-GB)</ion-label>
                 <ion-textarea
-                  [(ngModel)]="def.examples['en-GB'][0].text"
+                  [(ngModel)]="def.examples['en-GB']![0]!.text"
                   auto-grow="true"
                   rows="2"
                 ></ion-textarea>
@@ -115,7 +126,7 @@
               <ion-item lines="none">
                 <ion-label position="stacked">Example (en-US)</ion-label>
                 <ion-textarea
-                  [(ngModel)]="def.examples['en-US'][0].text"
+                  [(ngModel)]="def.examples['en-US']![0]!.text"
                   auto-grow="true"
                   rows="2"
                 ></ion-textarea>
@@ -143,7 +154,7 @@
               <ion-item lines="none">
                 <ion-label position="stacked">Topic example (en-GB)</ion-label>
                 <ion-textarea
-                  [(ngModel)]="t.examples['en-GB'][0].text"
+                  [(ngModel)]="t.examples['en-GB']![0]!.text"
                   auto-grow="true"
                   rows="2"
                 ></ion-textarea>
@@ -152,7 +163,7 @@
               <ion-item lines="none">
                 <ion-label position="stacked">Topic example (en-US)</ion-label>
                 <ion-textarea
-                  [(ngModel)]="t.examples['en-US'][0].text"
+                  [(ngModel)]="t.examples['en-US']![0]!.text"
                   auto-grow="true"
                   rows="2"
                 ></ion-textarea>
@@ -201,6 +212,18 @@
       <ion-spinner *ngIf="saving" name="dots" class="btn-spinner"></ion-spinner>
       <span *ngIf="!saving">Save</span>
     </ion-button>
+    <p>{{saveMessage}}</p>
+ <ion-button
+  expand="block"
+  color="danger"
+  fill="outline"
+  class="ion-margin-top"
+  (click)="onDelete()"
+  [disabled]="saving || loading"
+>
+  Delete lemma
+</ion-button>
+
 
   </ng-container>
 </ion-content>

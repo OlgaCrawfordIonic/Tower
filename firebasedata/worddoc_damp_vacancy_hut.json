@@ -1,0 +1,629 @@
+{
+  "words": [
+    {
+      "id": 1,
+      "lemma": "damp",
+      "language": "en",
+      "english": "damp",
+      "enUrl": "",
+      "american": "",
+      "amUrl": "",
+      "lessons": [
+        1,
+        87
+      ],
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "adjective",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": {
+                "en-GB": {
+                  "text": "It is slightly wet and not fully dry.",
+                  "audioUrl": ""
+                },
+                "en-US": {
+                  "text": "It is slightly wet and not fully dry.",
+                  "audioUrl": ""
+                }
+              },
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "My coat was damp after the rain, so I hung it near the heater.",
+                    "audioUrl": "",
+                    "partOfSpeech": "adjective",
+                    "senseId": "s1"
+                  }
+                ],
+                "en-US": []
+              }
+            }
+          ]
+        },
+        {
+          "partOfSpeech": "verb",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": {
+                "en-GB": {
+                  "text": "To make something slightly wet with water.",
+                  "audioUrl": ""
+                },
+                "en-US": {
+                  "text": "To make something slightly wet with water.",
+                  "audioUrl": ""
+                }
+              },
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "Please damp the cloth with water before you clean the table, then dry it well.",
+                    "audioUrl": "",
+                    "partOfSpeech": "verb",
+                    "senseId": "s1"
+                  }
+                ],
+                "en-US": []
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Adjectives",
+          "lessons": [
+            1,
+            87
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "The morning air was damp, and my hair stayed wet on the walk to school.",
+                "audioUrl": "",
+                "partOfSpeech": "adjective",
+                "senseId": "s1"
+              }
+            ],
+            "en-US": []
+          }
+        },
+        {
+          "topicKey": "House",
+          "lessons": [
+            1,
+            87
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "There is damp on the bathroom wall, so we open the window after every shower.",
+                "audioUrl": "",
+                "partOfSpeech": "adjective",
+                "senseId": "s1"
+              }
+            ],
+            "en-US": []
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/dæmp/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/dæmp/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "id": 2,
+      "lemma": "vacancy",
+      "language": "en",
+      "english": "vacancy",
+      "enUrl": "",
+      "american": "",
+      "amUrl": "",
+      "lessons": [
+        1,
+        309
+      ],
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": {
+                "en-GB": {
+                  "text": "An empty job that needs a new worker.",
+                  "audioUrl": ""
+                },
+                "en-US": {
+                  "text": "An empty job that needs a new worker.",
+                  "audioUrl": ""
+                }
+              },
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "There is a vacancy at the café, and my sister will apply tomorrow morning.",
+                    "audioUrl": "",
+                    "partOfSpeech": "noun",
+                    "senseId": "s1"
+                  }
+                ],
+                "en-US": []
+              }
+            },
+            {
+              "senseId": "s2",
+              "definition": {
+                "en-GB": {
+                  "text": "An empty room or seat that you can use.",
+                  "audioUrl": ""
+                },
+                "en-US": {
+                  "text": "An empty room or seat that you can use.",
+                  "audioUrl": ""
+                }
+              },
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "We asked at the hotel, and they said there was one vacancy for tonight.",
+                    "audioUrl": "",
+                    "partOfSpeech": "noun",
+                    "senseId": "s2"
+                  }
+                ],
+                "en-US": []
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Employment",
+          "lessons": [
+            1,
+            309
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "I saw a vacancy on the notice board, so I sent my form that day.",
+                "audioUrl": "",
+                "partOfSpeech": "noun",
+                "senseId": "s1"
+              }
+            ],
+            "en-US": []
+          }
+        },
+        {
+          "topicKey": "House",
+          "lessons": [
+            1,
+            309
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "The hotel has a vacancy, so we can stay there after the long trip.",
+                "audioUrl": "",
+                "partOfSpeech": "noun",
+                "senseId": "s2"
+              }
+            ],
+            "en-US": []
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/ˈveɪkənsi/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/ˈveɪkənsi/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "id": 3,
+      "lemma": "hut",
+      "language": "en",
+      "english": "hut",
+      "enUrl": "",
+      "american": "",
+      "amUrl": "",
+      "lessons": [
+        1,
+        252
+      ],
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "noun",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": {
+                "en-GB": {
+                  "text": "A small simple house, often made of wood.",
+                  "audioUrl": ""
+                },
+                "en-US": {
+                  "text": "A small simple house, often made of wood.",
+                  "audioUrl": ""
+                }
+              },
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "We ate lunch in a small hut by the river when the weather was warm.",
+                    "audioUrl": "",
+                    "partOfSpeech": "noun",
+                    "senseId": "s1"
+                  }
+                ],
+                "en-US": []
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Countryside",
+          "lessons": [
+            1,
+            252
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "In the countryside, we saw a hut on the hill, and sheep walked near it.",
+                "audioUrl": "",
+                "partOfSpeech": "noun",
+                "senseId": "s1"
+              }
+            ],
+            "en-US": []
+          }
+        },
+        {
+          "topicKey": "House",
+          "lessons": [
+            1,
+            252
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "My uncle built a hut in the garden, and he keeps his tools there.",
+                "audioUrl": "",
+                "partOfSpeech": "noun",
+                "senseId": "s1"
+              }
+            ],
+            "en-US": []
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/hʌt/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/hʌt/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "id": 4,
+      "lemma": "upstairs",
+      "language": "en",
+      "english": "upstairs",
+      "enUrl": "",
+      "american": "",
+      "amUrl": "",
+      "lessons": [
+        1,
+        342
+      ],
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "adverb",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": {
+                "en-GB": {
+                  "text": "On a floor above the one you are on.",
+                  "audioUrl": ""
+                },
+                "en-US": {
+                  "text": "On a floor above the one you are on.",
+                  "audioUrl": ""
+                }
+              },
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "My sister is upstairs, and she is cleaning her room with music playing softly.",
+                    "audioUrl": "",
+                    "partOfSpeech": "adverb",
+                    "senseId": "s1"
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "My sister is upstairs, and she is cleaning her room with music playing softly.",
+                    "audioUrl": "",
+                    "partOfSpeech": "adverb",
+                    "senseId": "s1"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "Adverbs",
+          "lessons": [
+            1,
+            342
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "Please leave the bags downstairs, and take the light ones upstairs with you.",
+                "audioUrl": "",
+                "partOfSpeech": "adverb",
+                "senseId": "s1"
+              }
+            ],
+            "en-US": []
+          }
+        },
+        {
+          "topicKey": "House",
+          "lessons": [
+            1,
+            342
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "The bathroom is upstairs, so I go up slowly with the towels after my shower.",
+                "audioUrl": "",
+                "partOfSpeech": "adverb",
+                "senseId": "s1"
+              }
+            ],
+            "en-US": []
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/ʌpˈsteəz/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/ʌpˈsterz/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    },
+    {
+      "id": 5,
+      "lemma": "restore",
+      "language": "en",
+      "english": "restore",
+      "enUrl": "",
+      "american": "",
+      "amUrl": "",
+      "lessons": [
+        1,
+        54,
+        328
+      ],
+      "levels": [
+        "B1"
+      ],
+      "partsOfSpeech": [
+        {
+          "partOfSpeech": "verb",
+          "definitions": [
+            {
+              "senseId": "s1",
+              "definition": {
+                "en-GB": {
+                  "text": "Make something old look good again.",
+                  "audioUrl": ""
+                },
+                "en-US": {
+                  "text": "Make something old look good again.",
+                  "audioUrl": ""
+                }
+              },
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "He will restore the old chair with paint, and he will use it again tomorrow.",
+                    "audioUrl": "",
+                    "partOfSpeech": "verb",
+                    "senseId": "s1"
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "He will restore the old chair with paint, and he will use it again tomorrow.",
+                    "audioUrl": "",
+                    "partOfSpeech": "verb",
+                    "senseId": "s1"
+                  }
+                ]
+              }
+            },
+            {
+              "senseId": "s2",
+              "definition": {
+                "en-GB": {
+                  "text": "Bring something back after it was gone.",
+                  "audioUrl": ""
+                },
+                "en-US": {
+                  "text": "Bring something back after it was gone.",
+                  "audioUrl": ""
+                }
+              },
+              "examples": {
+                "en-GB": [
+                  {
+                    "text": "The new teacher will restore peace in the class, and the children will listen better.",
+                    "audioUrl": "",
+                    "partOfSpeech": "verb",
+                    "senseId": "s2"
+                  }
+                ],
+                "en-US": [
+                  {
+                    "text": "The new teacher will restore peace in the class, and the children will listen better.",
+                    "audioUrl": "",
+                    "partOfSpeech": "verb",
+                    "senseId": "s2"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "topics": [
+        {
+          "topicKey": "DIY Tools",
+          "lessons": [
+            1,
+            54,
+            328
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "We use paint and a brush to restore the old door at home this week.",
+                "audioUrl": "",
+                "partOfSpeech": "verb",
+                "senseId": "s1"
+              }
+            ],
+            "en-US": []
+          }
+        },
+        {
+          "topicKey": "History",
+          "lessons": [
+            1,
+            54,
+            328
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "People worked hard to restore the old castle, and now visitors can walk inside safely.",
+                "audioUrl": "",
+                "partOfSpeech": "verb",
+                "senseId": "s1"
+              }
+            ],
+            "en-US": []
+          }
+        },
+        {
+          "topicKey": "House",
+          "lessons": [
+            1,
+            54,
+            328
+          ],
+          "examples": {
+            "en-GB": [
+              {
+                "text": "They want to restore the kitchen, so they clean the walls and fix the lights.",
+                "audioUrl": "",
+                "partOfSpeech": "verb",
+                "senseId": "s1"
+              }
+            ],
+            "en-US": []
+          }
+        }
+      ],
+      "variants": {
+        "en-GB": {
+          "phonetics": {
+            "ipa": "/rɪˈstɔː/",
+            "audioUrl": "",
+            "voice": "en-GB"
+          }
+        },
+        "en-US": {
+          "phonetics": {
+            "ipa": "/rɪˈstɔr/",
+            "audioUrl": "",
+            "voice": "en-US"
+          }
+        }
+      }
+    }
+  ]
+}

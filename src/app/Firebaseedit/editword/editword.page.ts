@@ -2,11 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
+import { AlertController, NavController, ToastController } from '@ionic/angular';
+
 import { ActivatedRoute } from '@angular/router';
 
 import {
   doc,
   getDoc,
+  deleteDoc,
   setDoc,
   serverTimestamp,
 } from 'firebase/firestore';
@@ -28,6 +31,7 @@ import {
   imports: [IonicModule, CommonModule, FormsModule]
 })
 export class EditwordPage implements OnInit {
+  docIdParam = '';
   lemmaParam = '';
   loading = false;
   saving = false;
@@ -38,40 +42,46 @@ export class EditwordPage implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
+    private alertCtrl: AlertController,
+    private toastCtrl: ToastController,
+    private navCtrl: NavController,
   ) {}
 
-  ngOnInit() {
-    this.lemmaParam = this.route.snapshot.paramMap.get('lemma') || '';
-    if (this.lemmaParam) {
-      this.loadWord(this.lemmaParam);
-    } else {
-      this.error = 'No lemma provided in route.';
-    }
+ 
+
+ngOnInit() {
+  this.docIdParam = decodeURIComponent(this.route.snapshot.paramMap.get('lemma') || '').trim();
+
+  if (this.docIdParam) {
+    this.loadWordByDocId(this.docIdParam);
+  } else {
+    this.error = 'No document id provided in route.';
   }
+}
 
-  private async loadWord(lemma: string) {
-    this.loading = true;
-    this.error = null;
-    this.saveMessage = null;
+private async loadWordByDocId(docId: string) {
+  this.loading = true;
+  this.error = null;
+  this.saveMessage = null;
 
-    try {
-      const ref = doc(db, 'EnglishB1words', wordDocId(lemma));
-      const snap = await getDoc(ref);
+  try {
+    const ref = doc(db, 'EnglishB1words', docId);
+    const snap = await getDoc(ref);
 
-      if (!snap.exists()) {
-        this.error = `Word "${lemma}" not found in Firestore.`;
-        return;
-      }
-
-      const data = snap.data() as WordDoc;
-      this.word = this.normaliseWord(data);
-    } catch (err) {
-      console.error(err);
-      this.error = 'Failed to load word from Firestore.';
-    } finally {
-      this.loading = false;
+    if (!snap.exists()) {
+      this.error = `Doc "${docId}" not found in Firestore.`;
+      return;
     }
+
+    this.word = this.normaliseWord(snap.data() as WordDoc);
+  } catch (err) {
+    console.error(err);
+    this.error = 'Failed to load word from Firestore.';
+  } finally {
+    this.loading = false;
   }
+}
+
 
   /**
    * Ensure nested structures exist so template bindings don't explode:
@@ -226,38 +236,33 @@ export class EditwordPage implements OnInit {
     pos.definitions.push(newSense);
   }
 
-  async onSave() {
-    if (!this.word) return;
+ async onSave() {
+  if (!this.word) return;
 
-    this.saving = true;
-    this.error = null;
-    this.saveMessage = null;
+  this.saving = true;
+  this.error = null;
+  this.saveMessage = null;
 
-    try {
-      const ref = doc(db, 'EnglishB1words', wordDocId(this.word.lemma));
+  try {
+    const ref = doc(db, 'EnglishB1words', this.docIdParam);
 
-      const payload: WordDoc = {
-        ...this.word,
-        language: 'en',
-      };
+    const payload: WordDoc = {
+      ...this.word,
+      lemma: this.word.lemma.trim(),
+      language: 'en',
+    };
 
-      await setDoc(
-        ref,
-        {
-          ...payload,
-          updatedAt: serverTimestamp(),
-        },
-        { merge: true }
-      );
+    await setDoc(ref, { ...payload, updatedAt: serverTimestamp() }, { merge: true });
 
-      this.saveMessage = 'Word saved successfully.';
-    } catch (err) {
-      console.error(err);
-      this.error = 'Failed to save word.';
-    } finally {
-      this.saving = false;
-    }
+    this.saveMessage = 'Word saved successfully.';
+  } catch (err) {
+    console.error(err);
+    this.error = 'Failed to save word.';
+  } finally {
+    this.saving = false;
   }
+}
+
 
   // ---------- IPA helpers ----------
 
@@ -310,4 +315,56 @@ export class EditwordPage implements OnInit {
 
     this.word.variants['en-US']!.phonetics!.ipa = value;
   }
+
+
+
+  
+ async onDelete() {
+    const lemma = this.word?.lemma || this.lemmaParam;
+    if (!lemma) return;
+
+    const alert = await this.alertCtrl.create({
+      header: 'Delete word?',
+      message: `This will permanently delete "${lemma}" from Firestore.`,
+      buttons: [
+        { text: 'Cancel', role: 'cancel' },
+        {
+          text: 'Delete',
+          role: 'destructive',
+          handler: () => {
+            void this.deleteWord(lemma);
+          },
+        },
+      ],
+    });
+
+    await alert.present();
+  }
+
+  private async deleteWord(lemma: string) {
+    this.saving = true;
+    this.error = null;
+    this.saveMessage = null;
+
+    try {
+      const ref = doc(db, 'EnglishB1words', wordDocId(lemma));
+      await deleteDoc(ref);
+
+      const toast = await this.toastCtrl.create({
+        message: `Deleted "${lemma}".`,
+        duration: 1500,
+        color: 'success',
+      });
+      await toast.present();
+
+      // back to wherever you came from (usually the review list)
+      this.navCtrl.back();
+    } catch (err) {
+      console.error(err);
+      this.error = 'Failed to delete word.';
+    } finally {
+      this.saving = false;
+    }
+  }
 }
+

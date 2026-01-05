@@ -23,6 +23,7 @@ export interface TextWithAudio {
   // useful metadata for filtering/grouping
   partOfSpeech?: string;
   senseId?: string;
+   headwords?: Localised<HeadwordEntry>;
 }
 
 /**
@@ -39,9 +40,11 @@ export interface Phonetics {
  * for this sense in that locale (e.g. flat vs apartment).
  */
 export interface HeadwordEntry {
-  text: string;                 // "flat" / "apartment"
-  audioUrl?: string | null;     // optional headword audio
-  phonetics?: Phonetics;        // allows: { ipa: "/flæt/" }
+  ipa: string;
+  headword: string;                 // "flat" / "apartment"
+  audioUrl: string | null;  
+  partOfSpeech?:string; 
+  senseid?:string;
 }
 
 /**
@@ -59,7 +62,7 @@ export interface DefinitionSense {
    *   "en-US": { text:"apartment", phonetics:{ipa:"/əˈpɑːrtmənt/"} }
    * }
    */
-  headwords?: Localised<HeadwordEntry>;
+ 
 
   /** Localised definition (per locale) */
   definition: Localised<TextWithAudio>;

@@ -13,6 +13,8 @@ import {
 } from 'firebase/firestore';
 import { db } from '../../firebase'; // adjust path if needed
 import { Router, RouterLink } from '@angular/router';
+type WordRow = WordDoc & { _docId: string };
+
 
 @Component({
   selector: 'app-reviewwords',
@@ -33,7 +35,7 @@ export class ReviewwordsPage  {
   loading = false;
   error: string | null = null;
 
-  words: WordDoc[] = [];
+  words: WordRow[] = [];
 
   constructor(private router:Router) {}
 
@@ -60,7 +62,15 @@ export class ReviewwordsPage  {
           this.error = 'Could not find any lemma in your input.';
           return;
         }
-        this.words = await this.fetchByLemmas(lemmas);
+         console.log('LEMMA INPUT RAW:', JSON.stringify(rawLemma));
+  console.log('LEMMAS PARSED:', lemmas, 'count=', lemmas.length);
+
+  const res = await this.fetchByLemmas(lemmas);
+
+  console.log('FETCH RESULT COUNT:', res.length);
+  console.log('FETCH RESULT LEMMAS:', res.map(x => x.lemma));
+
+  this.words = res;
       } else if (hasIdRange) {
         const from = Math.min(this.idFrom!, this.idTo!);
         const to = Math.max(this.idFrom!, this.idTo!);
@@ -90,38 +100,50 @@ export class ReviewwordsPage  {
     return Array.from(new Set(parts)); // dedupe
   }
 
-  private async fetchByLemmas(lemmas: string[]): Promise<WordDoc[]> {
-    const results: WordDoc[] = [];
+private async fetchByLemmas(lemmas: string[]): Promise<WordRow[]> {
+  const results: WordRow[] = [];
 
-    // Firestore "in" operator allows up to 10 values at a time
-    const CHUNK_SIZE = 10;
-    for (let i = 0; i < lemmas.length; i += CHUNK_SIZE) {
-      const chunk = lemmas.slice(i, i + CHUNK_SIZE);
+  const CHUNK_SIZE = 10;
+  for (let i = 0; i < lemmas.length; i += CHUNK_SIZE) {
+    const chunk = lemmas.slice(i, i + CHUNK_SIZE);
 
-      const colRef = collection(db, 'EnglishB1words');
-      const qRef = query(
-        colRef,
-        where('lemma', 'in', chunk)
-      );
+    const qRef = query(
+      collection(db, 'EnglishB1words'),
+      where('lemma', 'in', chunk)
+    );
 
-      const snap = await getDocs(qRef);
-      snap.forEach(docSnap => {
-        results.push(docSnap.data() as WordDoc);
-      });
-    }
+    const snap = await getDocs(qRef);
 
-    // sort by id if present, otherwise by lemma
-    results.sort((a, b) => {
-      const aId = (a as any).id ?? 0;
-      const bId = (b as any).id ?? 0;
-      if (aId && bId) return aId - bId;
-      return a.lemma.localeCompare(b.lemma);
+    console.log(
+      'SNAP SIZE:',
+      snap.size,
+      'DOC IDS:',
+      snap.docs.map(d => JSON.stringify(d.id)),
+      'LEMMAS:',
+      snap.docs.map(d => JSON.stringify((d.data() as any).lemma))
+    );
+
+    snap.forEach(docSnap => {
+      const data = docSnap.data() as any;
+      console.log('FOUND:', { docId: docSnap.id, lemma: data.lemma });
+
+      // ✅ push once
+      results.push({ ...(docSnap.data() as WordDoc), _docId: docSnap.id });
     });
-
-    return results;
   }
 
-  private async fetchByIdRange(from: number, to: number): Promise<WordDoc[]> {
+  results.sort((a, b) => {
+    const aId = (a as any).id ?? 0;
+    const bId = (b as any).id ?? 0;
+    if (aId && bId) return aId - bId;
+    return a.lemma.localeCompare(b.lemma);
+  });
+
+  return results;
+}
+
+
+  private async fetchByIdRange(from: number, to: number): Promise<WordRow[]> {
     const colRef = collection(db, 'EnglishB1words');
 
     const qRef = query(
@@ -133,18 +155,17 @@ export class ReviewwordsPage  {
 
     const snap = await getDocs(qRef);
 
-    const results: WordDoc[] = [];
+    const results: WordRow[] = [];
     snap.forEach(docSnap => {
-      results.push(docSnap.data() as WordDoc);
+      results.push(docSnap.data() as WordRow);
     });
 
     return results;
   }
 
-  onEdit(word: WordDoc) {
+  onEdit(word: WordRow) {
      // Navigate to /edit-word/:lemma
-    this.router.navigate(['/editword', word.lemma]);
-    // For now just log – later you can navigate to an edit page or open a modal
+ this.router.navigate(['/editword', word._docId]);    // For now just log – later you can navigate to an edit page or open a modal
     console.log('Edit clicked for:', word.lemma, word);
   }
 

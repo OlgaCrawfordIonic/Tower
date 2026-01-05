@@ -68,7 +68,6 @@ export class B1WordsImport {
       amUrl: '',
       language: 'en',
       lessons,
-    
       levels: ['B1'],
       partsOfSpeech: [],
       topics:[],

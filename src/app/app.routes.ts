@@ -79,7 +79,7 @@ export const routes: Routes = [
   
   {
     path: 'importfirebase',
-    loadComponent: () => import('./importlemmas/importfirebase/importfirebase.page').then( m => m.ImportfirebasePage)
+    loadComponent: () => import('./importlemmas/importfirebase/importfirebase.page').then( m => m.ImportFirebasePage)
   },
   {
     path: 'reviewwords',
@@ -99,6 +99,10 @@ export const routes: Routes = [
   {
     path: 'maintenance',
     loadComponent: () => import('./maintenance/maintenance.page').then( m => m.MaintenancePage)
+  },
+  {
+    path: 'importfirebaseold',
+    loadComponent: () => import('./importlemmas/importfirebaseold/importfirebaseold.page').then( m => m.ImportfirebaseoldPage)
   },
 
 
