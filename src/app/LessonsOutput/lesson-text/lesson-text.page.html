@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Lesson text</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-segment [value]="variety()" (ionChange)="setVariety($event.detail.value)">
+    <ion-segment-button value="british"><ion-label>British</ion-label></ion-segment-button>
+    <ion-segment-button value="american"><ion-label>American</ion-label></ion-segment-button>
+  </ion-segment>
+
+  <ion-segment class="ion-margin-top" [value]="part()" (ionChange)="setPart($event.detail.value)">
+    <ion-segment-button value="part1"><ion-label>Part 1</ion-label></ion-segment-button>
+    <ion-segment-button value="part2"><ion-label>Part 2</ion-label></ion-segment-button>
+  </ion-segment>
+
+  <div class="slide">
+    <div class="card intro-card">
+      <div class="pill">1 / 1</div>
+
+      <div class="desc-container" *ngIf="activeWord" aria-live="polite">
+        <div class="desc-bubble">
+          <strong>{{ activeWord }}</strong> — {{ activeShortDesc }}
+        </div>
+      </div>
+
+      <p class="intro-text">
+        <ng-container *ngFor="let seg of introSegmentsLesson1Part1(); trackBy: trackSeg">
+
+          <button
+            *ngIf="seg.type === 'kw'"
+            class="kw"
+            [class.active]="activeKey === keyOf(seg.ref)"
+            (click)="onKeywordClick(seg)">
+            {{ seg.label }}
+          </button>
+
+          <ng-container *ngIf="seg.type === 'text'">
+            {{ seg.text }}
+          </ng-container>
+
+        </ng-container>
+      </p>
+
+      <div class="actions">
+        <ion-button size="default" fill="clear" (click)="clearDesc()">Clear</ion-button>
+      </div>
+    </div>
+  </div>
+
+</ion-content>

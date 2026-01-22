@@ -102,6 +102,144 @@
       <ion-label>Edit</ion-label>
     </ion-chip>
   </ion-item>
+
+   <ion-item
+    button
+    detail
+    (click)="lemmadetail()"
+    class="edit"
+  >
+    <ion-avatar slot="start" class="json-avatar">
+      <ion-icon name="code-slash-outline"></ion-icon>
+    </ion-avatar>
+
+    <ion-label>
+      <h2 class="tile-title">&amp; Lemmas output</h2>
+      <p class="tile-subtitle">
+       Lemma output from KV pairs and R2 bucket
+      </p>
+    </ion-label>
+
+    <ion-chip routerLink="/"  routerDirection="forward" slot="end" color="light" class="json-chip">
+      <ion-icon name="cloud-upload-outline" class="chip-icon"></ion-icon>
+      <ion-label>Edit</ion-label>
+    </ion-chip>
+  </ion-item>
+
+
+    <ion-item
+    detail
+    routerLink="/lesson-text"
+    class="admin-tile-json"
+  >
+    <ion-avatar slot="start" class="json-avatar">
+      <ion-icon name="code-slash-outline"></ion-icon>
+    </ion-avatar>
+
+    <ion-label>
+      <h2 class="tile-title">&amp; Lessons output</h2>
+      <p class="tile-subtitle">
+    Lessons
+      </p>
+    </ion-label>
+
+    <ion-chip routerLink="/"  routerDirection="forward" slot="end" color="light" class="json-chip">
+      <ion-icon name="cloud-upload-outline" class="chip-icon"></ion-icon>
+      <ion-label>Edit</ion-label>
+    </ion-chip>
+  </ion-item>
+
+
+    <ion-item
+    detail
+    routerLink="/importlessonsfirebase"
+    class="admin-tile-json"
+  >
+    <ion-avatar slot="start" class="json-avatar">
+      <ion-icon name="code-slash-outline"></ion-icon>
+    </ion-avatar>
+
+    <ion-label>
+      <h2 class="tile-title">&amp; Lessons import into Firebase</h2>
+      <p class="tile-subtitle">
+    Lessons
+      </p>
+    </ion-label>
+
+    <ion-chip routerLink="/"  routerDirection="forward" slot="end" color="light" class="json-chip">
+      <ion-icon name="cloud-upload-outline" class="chip-icon"></ion-icon>
+      <ion-label>Edit</ion-label>
+    </ion-chip>
+  </ion-item>
+
+
+    <ion-item
+    detail
+    routerLink="/lesson-firebase-output"
+    class="admin-tile-json"
+  >
+    <ion-avatar slot="start" class="json-avatar">
+      <ion-icon name="code-slash-outline"></ion-icon>
+    </ion-avatar>
+
+    <ion-label>
+      <h2 class="tile-title">&amp; Lessons output from Firebase</h2>
+      <p class="tile-subtitle">
+    Lessons
+      </p>
+    </ion-label>
+
+    <ion-chip routerLink="/"  routerDirection="forward" slot="end" color="light" class="json-chip">
+      <ion-icon name="cloud-upload-outline" class="chip-icon"></ion-icon>
+      <ion-label>Edit</ion-label>
+    </ion-chip>
+  </ion-item>
+
+
+   <ion-item
+    detail
+    routerLink="/lessons-kv-output"
+    class="admin-tile-json"
+  >
+    <ion-avatar slot="start" class="json-avatar">
+      <ion-icon name="code-slash-outline"></ion-icon>
+    </ion-avatar>
+
+    <ion-label>
+      <h2 class="tile-title">&amp; Lessons output from Cloudflare KV and R2 bucket</h2>
+      <p class="tile-subtitle">
+    Lessons
+      </p>
+    </ion-label>
+
+    <ion-chip routerLink="/"  routerDirection="forward" slot="end" color="light" class="json-chip">
+      <ion-icon name="cloud-upload-outline" class="chip-icon"></ion-icon>
+      <ion-label>Edit</ion-label>
+    </ion-chip>
+  </ion-item>
+
+
+   <ion-item
+    detail
+    routerLink="/wordslessons-kv-output"
+    class="admin-tile-json"
+  >
+    <ion-avatar slot="start" class="json-avatar">
+      <ion-icon name="code-slash-outline"></ion-icon>
+    </ion-avatar>
+
+    <ion-label>
+      <h2 class="tile-title">&amp; Lessons output from Cloudflare KV and R2 bucket</h2>
+      <p class="tile-subtitle">
+    Lessons
+      </p>
+    </ion-label>
+
+    <ion-chip routerLink="/"  routerDirection="forward" slot="end" color="light" class="json-chip">
+      <ion-icon name="cloud-upload-outline" class="chip-icon"></ion-icon>
+      <ion-label>Edit</ion-label>
+    </ion-chip>
+  </ion-item>
 </ion-list>
 
 

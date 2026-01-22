@@ -1,0 +1,105 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Import B1 Lessons to Firebase</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Validate & import lessons JSON</ion-card-title>
+      <ion-card-subtitle>
+        Paste or upload your lessons JSON and import into <code>EnglishB1Lessons</code>.
+      </ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+
+      <ion-item lines="none">
+        <ion-label position="stacked">JSON input</ion-label>
+
+        <ion-textarea
+          [(ngModel)]="jsonText"
+          auto-grow="true"
+          rows="12"
+          placeholder="Paste a lessons JSON array here. Example: [ { lesson: 1, lemmas: ..., text: ... } ]">
+        </ion-textarea>
+      </ion-item>
+
+      <div class="ion-margin-top">
+        <input type="file" accept=".json" (change)="onFileSelected($event)" />
+      </div>
+
+      <ion-button
+        expand="block"
+        class="ion-margin-top"
+        color="primary"
+        (click)="onCheckClick()"
+        [disabled]="checking || !jsonText.trim()"
+      >
+        <ion-spinner *ngIf="checking" name="dots" class="btn-spinner"></ion-spinner>
+        <span *ngIf="!checking">Check for errors only</span>
+      </ion-button>
+
+      <ion-button
+        expand="block"
+        class="ion-margin-top"
+        color="tertiary"
+        (click)="onImportClick()"
+        [disabled]="importing || checking || !jsonText.trim()"
+      >
+        <ion-spinner *ngIf="importing" name="dots" class="btn-spinner"></ion-spinner>
+        <span *ngIf="!importing">Import to Firestore (overwrite)</span>
+      </ion-button>
+
+      <ion-text color="danger" *ngIf="error">
+        <p class="error-text">{{ error }}</p>
+      </ion-text>
+
+      <ion-text color="danger" *ngIf="importError">
+        <p class="error-text">{{ importError }}</p>
+      </ion-text>
+
+      <ion-text color="success" *ngIf="importSuccess">
+        <p class="success-text">{{ importSuccess }}</p>
+      </ion-text>
+
+      <ion-item *ngIf="hasChecked">
+        <ion-label>
+          <h2>Validation summary</h2>
+
+          <p *ngIf="issues.length === 0">
+            ✅ No issues found. {{ validCount }} lesson(s) valid, out of {{ totalCount }}.
+          </p>
+
+          <p *ngIf="issues.length > 0">
+            ⚠️ Found {{ issues.length }} issue(s) across {{ totalCount }} lesson(s).
+            Valid lessons: {{ validCount }}.
+          </p>
+        </ion-label>
+      </ion-item>
+
+      <ion-list *ngIf="issues.length > 0">
+        <ion-list-header>
+          <ion-label>Issues</ion-label>
+        </ion-list-header>
+
+        <ion-item *ngFor="let issue of issues">
+          <ion-label>
+            <h3>
+              <strong>{{ issue.severity.toUpperCase() }}</strong>
+              <span *ngIf="issue.lesson"> — Lesson {{ issue.lesson }}</span>
+              — {{ issue.type }}
+            </h3>
+            <p>{{ issue.message }}</p>
+
+            <pre *ngIf="issue.details" class="details-pre">{{ issue.details | json }}</pre>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

@@ -1,218 +1,169 @@
-import { Component, ViewChild, ElementRef, signal, computed } from '@angular/core';
+import { Component, computed, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { WordDoc } from '../../data/lexamatewords.model';
+
 import {
-  IonContent,
   IonHeader,
-  IonTitle,
   IonToolbar,
+  IonTitle,
+  IonContent,
   IonSegment,
   IonSegmentButton,
   IonLabel,
-  IonButton,
-  IonicSlides
+  IonCard,
+  IonCardHeader,
+  IonCardTitle,
+  IonCardContent,
+  IonButton
 } from '@ionic/angular/standalone';
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { Swiper } from 'swiper';
-import { WordDoc } from '../data/lexamatewords.model';
-import { BehaviorSubject } from 'rxjs';
 
-// For each question: which option (index) was chosen & was it correct
-type QuizSelection = { selectedIndex: number; isCorrect: boolean };
+// ------------------ Types ------------------
 
-// ---------- Types ----------
-export type Variety = "british" | "american";
-export type LessonPartKey = "part1" | "part2";
+type Variety = 'british' | 'american';
+type PartKey = 'part1' | 'part2';
+type Locale = 'en-GB' | 'en-US';
 
-export type Pos = "noun" | "verb" | "adj" | "adv" | "phrase";
-export type SenseId = string; // ideally stable like "compose.v.01" (not just "01")
+export type Pos = 'noun' | 'verb' | 'adjective' | 'adverb' | 'phrase';
 
-export interface LessonKeywordRef {
-  /** Exact form that appears in the text for this variety (e.g., "composed") */
-  surface: string;
-
-  /** Dictionary base form used to fetch WordDoc (e.g., "compose") */
-  lemma: string;
-
-  /** The exact sense you intend (stable id recommended) */
-  senseId: SenseId;
-
-  /** Optional validation / UI label */
-  pos?: Pos;
-
-  /** Optional morphology tag/label (e.g., "VBD", "NNS") */
-  morph?: string;
-
-  /**
-   * Strongly recommended:
-   * If you store spans, you never "search the text" at runtime.
-   * Note: spans are per variety because the text differs.
-   */
-  start?: number; // inclusive char index
-  end?: number;   // exclusive char index
-}
-
-export interface LessonPart {
-  text: Record<Variety, string>;
-
-  /**
-   * Optional helper list for preloading word docs.
-   * You can also derive this from keywords[].lemma.
-   */
-  lemmas?: string[];
-
-  /**
-   * Keywords/highlights for each variety.
-   * Typically surface/start/end match that variety’s text.
-   */
-  keywords: Record<Variety, LessonKeywordRef[]>;
-}
-export interface FindtheWord {/** Exact form that appears in the text for this variety (e.g., "composed") */
-  surface: string;
-
-  /** Dictionary base form used to fetch WordDoc (e.g., "compose") */
-  lemma: string;
-   pos: string; //part of speech
-  /** The exact sense you intend (stable id recommended) */
-  senseId:string;}
-
-  export interface Lesson {
-  lesson: number;
- 
-  lemmas: {
-    part1: string[];
-    activeWordsBritish1: string[];
-    activeWordsAmerican1: string[];
-    part2: string[];
-    activeWordsBritish2: string[];
-    activeWordsAmerican2: string[];
-  };
-  text: {
-    part1: { american:FindtheWord; british:FindtheWord};
-    part2: { american: FindtheWord; british: FindtheWord};
-  };
+export interface FindtheWord {
+  surface: string; // exact form in text: "dialogue", "composed", "apartment"
+  lemma: string;   // WordDoc lemma: "dialog", "compose", "flat"
+  pos: Pos;
+  senseId: string; // "s1", "s2", ...
 }
 
 
-interface Lessons {
-  lesson: number;
-  lemmas: {
-    part1: string[];
-    activeWordsBritish1: string[];
-    activeWordsAmerican1: string[];
-    part2: string[];
-    activeWordsBritish2: string[];
-    activeWordsAmerican2: string[];
-  };
-  text: {
-    part1: { american: string; british: string };
-    part2: { american: string; british: string };
-  };
-}
-
-type Segment = {
-  type: 'text' | 'kw';
-  text?: string;   // for plain text segments
-  lemma?: string;  // for keyword segments (matches words[].lemma)
-  label?: string;  // what is shown in the text
-};
-
-type TextWithAudio = {
+export interface TextWithAudio {
   text: string;
   audioUrl?: string | null;
-};
+}
+export interface LessonTextPart {
+  textWithAudio: TextWithAudio;                 // the paragraph
+  activeWords: FindtheWord[];   // clickable refs used inside this paragraph
+}
+export interface Lesson {
+  lesson: number;
+  lemmas: {
+    part1: string[];
+    part2: string[];
+  };
+  text: {
+    part1: Record<Variety, LessonTextPart>;
+    part2: Record<Variety, LessonTextPart>;
+  };
+}
 
-type SenseView = {
-  senseId: string;
-  definition: string;                 // localised definition text
-  definitionAudioUrl?: string | null; // localised definition audio (if used later)
-  examples: TextWithAudio[];
-};
-
-type PartOfSpeechView = {
-  partOfSpeech: string;
-  senses: SenseView[];
-};
-
-type SlideWord = {
-  lemma: string;     // canonical key
-  display: string;   // english/american form
-  ipa: string;
-  parts: PartOfSpeechView[];
-};
-
-// ---------- Quiz types ----------
-
-type QuizOption = { label: string; isCorrect: boolean };
-
-type QuizQuestion = {
-  id: string;                // use lemma as stable id
-  shortDescription: string;  // now = main definition text for active variety
-  options: QuizOption[];     // [correct, wrong]
-};
+type Segment =
+  | { type: 'text'; text: string }
+  | { type: 'kw'; label: string; ref: FindtheWord };
 
 @Component({
-  selector: 'app-am-eng-slide',
-  templateUrl: './am-eng-slide.page.html',
-  styleUrls: ['./am-eng-slide.page.scss'],
+  selector: 'app-lesson-text',
   standalone: true,
   imports: [
-    IonContent,
-    IonHeader,
-    IonTitle,
-    IonToolbar,
     CommonModule,
+    IonHeader,
+    IonToolbar,
+    IonTitle,
+    IonContent,
     IonSegment,
     IonSegmentButton,
-    IonButton,
-    IonLabel
+    IonLabel,
+    IonCard,
+    IonCardHeader,
+    IonCardTitle,
+    IonCardContent,
+    IonButton
   ],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  templateUrl: './lesson-text.page.html',
+  styleUrls: ['./lesson-text.page.scss'],
 })
-export class AmEngSlidePage {
-  @ViewChild('swiper', { static: false }) swiperRef?: ElementRef;
-  swiperModules = [IonicSlides];
+export class LessonTextPage {
 
-  waveUrl = new URL('/assets/voyage/waves-watercolor.svg', import.meta.url).href;
-  boatUrl = new URL('/assets/voyage/boat-mini.svg', import.meta.url).href;
+  // ---------- State ----------
+  readonly variety = signal<Variety>('british');
+  readonly part = signal<PartKey>('part1');
 
-  quizState = signal<Record<string, QuizSelection | undefined>>({});
+  // bubble output for your intro slide
+  activeWord: string | null = null;
+  activeShortDesc = '';
+  activeKey = '';
 
-  // BehaviorSubject to collect *descriptions* (now: definition texts) where the user made an error
-  quizMistakes$ = new BehaviorSubject<string[]>([]);
-  quizMistakes = signal<string[]>([]);
-
-  // ---------------- DATA ----------------
-
-  readonly lessons = signal<Lessons[]>([
+  // ---------- Data ----------
+  readonly lessons = signal<Lesson[]>([
     {
       lesson: 1,
       lemmas: {
         part1: ['compose', 'dedicate', 'dialog', 'inscribe', 'narrate'],
-        activeWordsBritish1: ['compose', 'dedicate', 'dialogue', 'inscribe', 'narrate'],
-        activeWordsAmerican1: ['compose', 'dedicate', 'dialog', 'inscribe', 'narrate'],
         part2: ['narrative', 'recite', 'retell', 'rewrite', 'setting', 'sorrow'],
-        activeWordsBritish2: [],
-        activeWordsAmerican2: [],
       },
       text: {
         part1: {
-          american:
-            'Maria loves books. She likes to compose short poems in her notebook. She wants to dedicate her first poem to her teacher, who helps her read every day. In class, she and her friend have a dialog about their favorite stories. They talk about the writers who inscribe kind words at the front of their books.',
-          british:
-            'Maria loves books. She likes to compose short poems in her notebook. She wants to dedicate her first poem to her teacher, who helps her read every day. In class, she and her friend have a dialogue about their favourite stories. They talk about the writers who inscribe kind words at the front of their books.',
+          american: {
+           textWithAudio:{
+             text: 'Maria loves stories. Yesterday she composed a short poem and dedicated it to her teacher. In class she had a dialog with a friend about their favorite books in a flat. Later they inscribed kind messages inside their notebooks, and Maria narrated the plot of a new tale.',  audioUrl:''},
+            activeWords: [
+              { surface: 'composed', lemma: 'compose', pos: 'verb', senseId: 's1' },
+              { surface: 'dedicated', lemma: 'dedicate', pos: 'verb', senseId: 's2' },
+              { surface: 'dialog', lemma: 'dialog', pos: 'noun', senseId: 's1' },
+              { surface: 'inscribed', lemma: 'inscribe', pos: 'verb', senseId: 's1' },
+              { surface: 'narrated', lemma: 'narrate', pos: 'verb', senseId: 's1' },
+              { surface: 'apartment', lemma: 'flat', pos: 'noun', senseId: 's1' }
+
+            ],
+          },
+          british: {
+           textWithAudio:{ text:
+              'Maria loves stories. Yesterday she composed a short poem and dedicated it to her teacher. In class she had a dialogue with a friend about their favourite books in a flat. Later they inscribed kind messages inside their notebooks, and Maria narrated the plot of a new tale.',  audioUrl:''},
+            activeWords: [
+              { surface: 'composed', lemma: 'compose', pos: 'verb', senseId: 's1' },
+              { surface: 'dedicated', lemma: 'dedicate', pos: 'verb', senseId: 's2' },
+              { surface: 'dialogue', lemma: 'dialog', pos: 'noun', senseId: 's1' },
+              { surface: 'inscribed', lemma: 'inscribe', pos: 'verb', senseId: 's1' },
+              { surface: 'narrated', lemma: 'narrate', pos: 'verb', senseId: 's1' },
+              { surface: 'flat', lemma: 'flat', pos: 'noun', senseId: 's1' }
+
+            ],
+          },
         },
         part2: {
-          american:
-            'The narrative begins in a quiet setting, where the children recite poems and retell old tales. Later, they rewrite the ending to make it happier, so there is less sorrow.',
-          british:
-            'The narrative begins in a quiet setting, where the children recite poems and retell old tales. Later, they rewrite the ending to make it happier, so there is less sorrow.',
+          american: {
+          textWithAudio:{text:
+              'The narrative begins in a quiet setting, where the children recite poems and retell old tales. Later, they rewrite the ending to make it happier in an apartment, so there is less sorrow.',  audioUrl:''},
+            activeWords: [
+              { surface: 'narrative', lemma: 'narrative', pos: 'noun', senseId: 's1' },
+              { surface: 'setting', lemma: 'setting', pos: 'noun', senseId: 's1' },
+              { surface: 'recite', lemma: 'recite', pos: 'verb', senseId: 's1' },
+              { surface: 'retell', lemma: 'retell', pos: 'verb', senseId: 's1' },
+              { surface: 'rewrite', lemma: 'rewrite', pos: 'verb', senseId: 's1' },
+              { surface: 'sorrow', lemma: 'sorrow', pos: 'noun', senseId: 's1' },
+              
+                { surface: 'apartment', lemma: 'flat', pos: 'noun', senseId: 's1' }
+
+            ],
+          },
+          british: {
+           textWithAudio:{text:
+              'The narrative begins in a quiet setting, where the children recite poems and retell old tales. Later, they rewrite the ending to make it happier, so there is less sorrow.',audioUrl:''},
+            activeWords: [
+              { surface: 'narrative', lemma: 'narrative', pos: 'noun', senseId: 's1' },
+              { surface: 'setting', lemma: 'setting', pos: 'noun', senseId: 's1' },
+              { surface: 'recite', lemma: 'recite', pos: 'verb', senseId: 's1' },
+              { surface: 'retell', lemma: 'retell', pos: 'verb', senseId: 's1' },
+              { surface: 'rewrite', lemma: 'rewrite', pos: 'verb', senseId: 's1' },
+              { surface: 'sorrow', lemma: 'sorrow', pos: 'noun', senseId: 's1' },
+              { surface: 'flat', lemma: 'flat', pos: 'noun', senseId: 's1' }
+
+            ],
+          },
         },
       },
     },
-    // add more lessons here...
   ]);
 
-  // NOTE: WordDoc model is now updated: definition is localised, no shortDescription
+  // Replace with your real words array (I kept your example list shortened here)
+  // IMPORTANT: ensure IDs are unique in your real data
+ // NOTE: WordDoc model is now updated: definition is localised, no shortDescription
   readonly words = signal<WordDoc[]>([
     {
       id: 1,
@@ -1543,434 +1494,148 @@ export class AmEngSlidePage {
 }
 
 ]);
+  // ---------- Computeds ----------
+  readonly locale = computed<Locale>(() => (this.variety() === 'british' ? 'en-GB' : 'en-US'));
+  readonly currentLesson = computed(() => this.lessons()[0] ?? null);
 
-  // variety toggle: 'british' or 'american'
-  variety = signal<'british' | 'american'>('british');
-
-  onVarietyChange(ev: CustomEvent) {
-    const value = (ev.detail as any)?.value as string | undefined;
-    if (value === 'british' || value === 'american') {
-      this.setVariety(value);
+  readonly currentTextPart = computed<LessonTextPart>(() => {
+    const lesson = this.currentLesson();
+    if (!lesson) {
+      return { textWithAudio: { text: '', audioUrl: null }, activeWords: [] };
     }
-  }
+    return lesson.text[this.part()][this.variety()];
+  });
 
-  setVariety(v: 'british' | 'american') {
-    if (this.variety() !== v) {
+  // This is what your intro slide uses
+  readonly introSegmentsLesson1Part1 = computed<Segment[]>(() => {
+    const part = this.currentTextPart();
+    return this.buildSegments(part.textWithAudio.text, part.activeWords);
+  });
+
+  // ---------- UI ----------
+  setVariety(v: any) {
+    if (v === 'british' || v === 'american') {
       this.variety.set(v);
       this.clearDesc();
-      // Optional: reset quiz state if you want
-      // this.quizMistakes$.next([]);
-      // this.quizMistakes.set([]);
-      // this.quizState.set({});
     }
   }
 
-  // ---------- “short description” now = first definition text per lemma & variety ----------
-
-  descByLemma = computed<Record<string, string>>(() => {
-    const out: Record<string, string> = {};
-    const locale = this.getVariantCode();
-
-    for (const w of this.words()) {
-      const pos0 = w.partsOfSpeech?.[0];
-      const def0 = pos0?.definitions?.[0];
-      const defText = def0?.definition?.[locale]?.text ?? '';
-      out[w.lemma] = defText;
+  setPart(p: any) {
+    if (p === 'part1' || p === 'part2') {
+      this.part.set(p);
+      this.clearDesc();
     }
-
-    return out;
-  });
-
-  // reverse lookup: definition text -> lemma (for extra tests)
-  descToLemma = computed<Record<string, string>>(() => {
-    const m: Record<string, string> = {};
-    const map = this.descByLemma();
-    for (const lemma of Object.keys(map)) {
-      const d = map[lemma];
-      if (d) m[d] = lemma;  // assumes definitions are unique per variety (good enough)
-    }
-    return m;
-  });
-
-  activeWord: string | null = null;
-  activeShortDesc = '';
-
-  showDesc(lemma: string) {
-    this.activeWord = lemma;
-    this.activeShortDesc = this.descByLemma()[lemma] ?? '';
   }
 
   clearDesc() {
     this.activeWord = null;
     this.activeShortDesc = '';
+    this.activeKey = '';
   }
 
-  // swiper init
-  onSwiperInit() {
-    setTimeout(() => this.swiperRef?.nativeElement?.swiper?.update(), 0);
+  keyOf(ref: FindtheWord) {
+    return `${ref.lemma}|${ref.pos}|${ref.senseId}`;
   }
 
-  private getVariantCode(): 'en-GB' | 'en-US' {
-    return this.variety() === 'british' ? 'en-GB' : 'en-US';
+  onKeywordClick(seg: Extract<Segment, { type: 'kw' }>) {
+    const locale = this.locale();
+
+    const display = this.resolveDisplay(seg.ref, locale) ?? seg.label;
+    const def = this.resolveShortDefinition(seg.ref, locale);
+
+    this.activeWord = display;
+    this.activeShortDesc = def || '(No definition found)';
+    this.activeKey = this.keyOf(seg.ref);
   }
 
-  private getDisplayWord(doc: WordDoc): string {
-    return this.variety() === 'british'
+  // ---------- Segment builder ----------
+  private buildSegments(text: string, activeWords: FindtheWord[]): Segment[] {
+    if (!text) return [];
+    if (!activeWords?.length) return [{ type: 'text', text }];
+
+    const surfaceMap = new Map<string, FindtheWord>();
+    for (const w of activeWords) {
+      const key = w.surface.toLowerCase();
+      if (!surfaceMap.has(key)) surfaceMap.set(key, w);
+    }
+
+    const surfaces = [...surfaceMap.values()]
+      .map(w => w.surface)
+      .sort((a, b) => b.length - a.length);
+
+    const escape = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const pattern = surfaces.map(escape).join('|');
+    const re = new RegExp(`\\b(${pattern})\\b`, 'gi');
+
+    const out: Segment[] = [];
+    let last = 0;
+    let m: RegExpExecArray | null;
+
+    while ((m = re.exec(text)) !== null) {
+      const label = m[1];
+      const start = m.index;
+
+      if (start > last) out.push({ type: 'text', text: text.slice(last, start) });
+
+      const ref = surfaceMap.get(label.toLowerCase());
+      if (ref) out.push({ type: 'kw', label, ref });
+      else out.push({ type: 'text', text: label });
+
+      last = start + label.length;
+    }
+
+    if (last < text.length) out.push({ type: 'text', text: text.slice(last) });
+
+    return out;
+  }
+
+  // ---------- WordDoc lookup: lemma + pos + senseId ----------
+  private resolveShortDefinition(ref: FindtheWord, locale: Locale): string {
+    const doc = this.words().find(w => w.lemma === ref.lemma);
+    if (!doc) return '';
+
+    const posBlock = doc.partsOfSpeech?.find(p => p.partOfSpeech === ref.pos);
+    if (!posBlock) return '';
+
+    const sense = posBlock.definitions?.find(d => d.senseId === ref.senseId);
+    if (!sense) return '';
+
+    const defLoc =
+      sense.definition?.[locale]
+      ?? (locale === 'en-US' ? sense.definition?.['en-GB'] : sense.definition?.['en-US']);
+
+    return defLoc?.text ?? '';
+  }
+
+  // Display headword override if present, else WordDoc english/american
+  private resolveDisplay(ref: FindtheWord, locale: Locale): string | null {
+    const doc = this.words().find(w => w.lemma === ref.lemma);
+    if (!doc) return null;
+
+    const posBlock = doc.partsOfSpeech?.find(p => p.partOfSpeech === ref.pos);
+    const sense = posBlock?.definitions?.find(d => d.senseId === ref.senseId);
+
+    const defLoc =
+      sense?.definition?.[locale]
+      ?? (locale === 'en-US' ? sense?.definition?.['en-GB'] : sense?.definition?.['en-US']);
+
+    const headword =
+      (defLoc as any)?.headwords?.[locale]?.headword
+      ?? (locale === 'en-US'
+        ? (defLoc as any)?.headwords?.['en-GB']?.headword
+        : (defLoc as any)?.headwords?.['en-US']?.headword)
+      ?? null;
+
+    if (headword) return headword;
+
+    return locale === 'en-GB'
       ? (doc.english || doc.lemma)
       : (doc.american || doc.lemma);
   }
 
-  // ---------- Split lemmas.part1 into first 3 + rest ----------
-
-  lesson1Part1Groups = computed(() => {
-    const lesson = this.lessons()[0];
-    if (!lesson) {
-      return { first: [] as string[], rest: [] as string[] };
-    }
-
-    const lemmas = lesson.lemmas.part1 || [];
-    const firstCount = Math.min(3, lemmas.length);
-
-    const first = lemmas.slice(0, firstCount);
-    const rest = lemmas.slice(firstCount);
-
-    return { first, rest };
-  });
-
-  // ---------- Intro text segments (with clickable keywords) ----------
-
-  introSegmentsLesson1Part1 = computed<Segment[]>(() => {
-    const lesson = this.lessons()[0];
-    if (!lesson) return [];
-
-    const variety = this.variety();
-    const text = lesson.text.part1[variety] || '';
-
-    const activeWords =
-      variety === 'british'
-        ? lesson.lemmas.activeWordsBritish1 || []
-        : lesson.lemmas.activeWordsAmerican1 || [];
-
-    if (!text || activeWords.length === 0) {
-      return [{ type: 'text', text }];
-    }
-
-    // regex with the *visible* active words
-    const escape = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    const pattern = activeWords.map(escape).join('|');
-    const re = new RegExp(`\\b(${pattern})\\b`, 'gi');
-
-    const segments: Segment[] = [];
-    let lastIndex = 0;
-    let match: RegExpExecArray | null;
-
-    while ((match = re.exec(text)) !== null) {
-      const word = match[1];          // actual text match, e.g. "dialogue" or "dialog"
-      const start = match.index;
-
-      // plain text before the keyword
-      if (start > lastIndex) {
-        segments.push({ type: 'text', text: text.slice(lastIndex, start) });
-      }
-
-      const lower = word.toLowerCase();
-
-      // map visible word -> lemma for lookup in `words`
-      let lemma = lower;
-      if (lower === 'dialogue') {
-        lemma = 'dialog'; // British visible, American lemma
-      }
-
-      segments.push({
-        type: 'kw',
-        lemma,
-        label: word
-      });
-
-      lastIndex = start + word.length;
-    }
-
-    // trailing text
-    if (lastIndex < text.length) {
-      segments.push({ type: 'text', text: text.slice(lastIndex) });
-    }
-
-    return segments;
-  });
-
-  // ---------- Slides: FIRST group (first 3 lemmas) ----------
-
-  lesson1Part1SlidesFirst = computed<SlideWord[]>(() => {
-    const { first } = this.lesson1Part1Groups();
-    if (!first.length) return [];
-
-    const locale = this.getVariantCode();
-    const docs = this.words();
-
-    return first
-      .map(lemma => {
-        const doc = docs.find(w => w.lemma === lemma);
-        if (!doc) return null;
-
-        const display =
-          locale === 'en-GB'
-            ? (doc.english || doc.lemma)
-            : (doc.american || doc.lemma);
-
-        const ipa =
-          doc.variants?.[locale]?.phonetics?.ipa
-          ?? doc.variants?.['en-GB']?.phonetics?.ipa
-          ?? doc.variants?.['en-US']?.phonetics?.ipa
-          ?? '';
-
-        const parts: PartOfSpeechView[] = (doc.partsOfSpeech || []).map(pos => {
-          const senses: SenseView[] = (pos.definitions || []).map(def => {
-            const defLoc = def.definition?.[locale];
-            const defText = defLoc?.text ?? '';
-            const defAudioUrl = defLoc?.audioUrl ?? null;
-            const examples = def.examples?.[locale] || [];
-            return {
-              senseId: def.senseId,
-              definition: defText,
-              definitionAudioUrl: defAudioUrl,
-              examples: examples.slice(0, 3), // only sense examples, no topics
-            };
-          });
-
-          return {
-            partOfSpeech: pos.partOfSpeech,
-            senses,
-          };
-        });
-
-        return {
-          lemma: doc.lemma,
-          display,
-          ipa,
-          parts,
-        } as SlideWord;
-      })
-      .filter((w): w is SlideWord => !!w);
-  });
-
-  // ---------- Slides: REST group ----------
-
-  lesson1Part1SlidesRest = computed<SlideWord[]>(() => {
-    const { rest } = this.lesson1Part1Groups();
-    if (!rest.length) return [];
-
-    const locale = this.getVariantCode();
-    const docs = this.words();
-
-    return rest
-      .map(lemma => {
-        const doc = docs.find(w => w.lemma === lemma);
-        if (!doc) return null;
-
-        const display =
-          locale === 'en-GB'
-            ? (doc.english || doc.lemma)
-            : (doc.american || doc.lemma);
-
-        const ipa =
-          doc.variants?.[locale]?.phonetics?.ipa
-          ?? doc.variants?.['en-GB']?.phonetics?.ipa
-          ?? doc.variants?.['en-US']?.phonetics?.ipa
-          ?? '';
-
-        const parts: PartOfSpeechView[] = (doc.partsOfSpeech || []).map(pos => {
-          const senses: SenseView[] = (pos.definitions || []).map(def => {
-            const defLoc = def.definition?.[locale];
-            const defText = defLoc?.text ?? '';
-            const defAudioUrl = defLoc?.audioUrl ?? null;
-            const examples = def.examples?.[locale] || [];
-            return {
-              senseId: def.senseId,
-              definition: defText,
-              definitionAudioUrl: defAudioUrl,
-              examples: examples.slice(0, 3),
-            };
-          });
-
-          return {
-            partOfSpeech: pos.partOfSpeech,
-            senses,
-          };
-        });
-
-        return {
-          lemma: doc.lemma,
-          display,
-          ipa,
-          parts,
-        } as SlideWord;
-      })
-      .filter((w): w is SlideWord => !!w);
-  });
-
-  // ---------- QUIZ: First group ----------
-
-  quizQuestionsFirst = computed<QuizQuestion[]>(() => {
-    const { first } = this.lesson1Part1Groups();
-    const docs = this.words();
-    const descMap = this.descByLemma();
-
-    const candidates = first
-      .map(lemma => docs.find(w => w.lemma === lemma))
-      .filter((d): d is WordDoc => !!d);
-
-    return candidates.map((doc, idx, arr) => {
-      const correct = this.getDisplayWord(doc);
-      const wrongDoc = arr[(idx + 1) % arr.length];
-      const wrong = this.getDisplayWord(wrongDoc);
-
-      const id = `l1p1-first-${doc.lemma}`;
-      const rawOptions: QuizOption[] = [
-        { label: correct, isCorrect: true },
-        { label: wrong,   isCorrect: false },
-      ];
-
-      return {
-        id,
-        shortDescription: descMap[doc.lemma] ?? '',
-        options: this.shuffleOptions(id, rawOptions),
-      };
-    });
-  });
-
-  // ---------- QUIZ: answer handling ----------
-
-  onQuizAnswer(q: QuizQuestion, optIndex: number) {
-    const state = this.quizState();
-    if (state[q.id]) return; // lock after first answer
-
-    const chosen = q.options[optIndex];
-    const newState = {
-      ...state,
-      [q.id]: {
-        selectedIndex: optIndex,
-        isCorrect: chosen.isCorrect,
-      },
-    };
-    this.quizState.set(newState);
-
-    if (!chosen.isCorrect) {
-      const current = this.quizMistakes$.value;
-      if (!current.includes(q.shortDescription)) {
-        const updated = [...current, q.shortDescription];
-        this.quizMistakes$.next(updated);
-        this.quizMistakes.set(updated); // keep signal in sync
-      }
-    }
-  }
-
-  // ---------- QUIZ: Rest group ----------
-
-  quizQuestionsRest = computed<QuizQuestion[]>(() => {
-    const { rest } = this.lesson1Part1Groups();
-    const docs = this.words();
-    const descMap = this.descByLemma();
-
-    const candidates = rest
-      .map(lemma => docs.find(w => w.lemma === lemma))
-      .filter((d): d is WordDoc => !!d);
-
-    if (!candidates.length) return [];
-
-    const pool = docs;
-
-    return candidates.map((doc, idx, arr) => {
-      const correct = this.getDisplayWord(doc);
-      const wrongDoc = arr.length > 1
-        ? arr[(idx + 1) % arr.length]
-        : (pool.find(d => d.lemma !== doc.lemma) || doc);
-      const wrong = this.getDisplayWord(wrongDoc);
-
-      const id = `l1p1-rest-${doc.lemma}`;
-      const rawOptions: QuizOption[] = [
-        { label: correct, isCorrect: true },
-        { label: wrong,   isCorrect: false },
-      ];
-
-      return {
-        id,
-        shortDescription: descMap[doc.lemma] ?? '',
-        options: this.shuffleOptions(id, rawOptions),
-      };
-    });
-  });
-
-  private shuffleOptions(id: string, options: QuizOption[]): QuizOption[] {
-    if (options.length <= 1) return options;
-
-    // Simple deterministic hash from id
-    let hash = 0;
-    for (let i = 0; i < id.length; i++) {
-      hash = (hash * 31 + id.charCodeAt(i)) | 0;
-    }
-
-    // If just 2 options, flip based on hash parity
-    if (options.length === 2) {
-      return (hash & 1) === 0
-        ? options
-        : [options[1], options[0]];
-    }
-
-    // For more options: hash-based Fisher-Yates
-    const arr = options.slice();
-    for (let i = arr.length - 1; i > 0; i--) {
-      hash = (hash * 1664525 + 1013904223) | 0;
-      const j = Math.abs(hash) % (i + 1);
-      [arr[i], arr[j]] = [arr[j], arr[i]];
-    }
-    return arr;
-  }
-
-  // ---------- Extra quiz (mistakes) ----------
-
-  extraQuizQuestions = computed<QuizQuestion[]>(() => {
-    const mistakes = Array.from(new Set(this.quizMistakes())); // strings
-    if (!mistakes.length) return [];
-
-    const desc2lemma = this.descToLemma();
-    const docs = this.words();
-
-    const mistakeDocs = mistakes
-      .map(d => desc2lemma[d])
-      .filter((lem): lem is string => !!lem)
-      .map(lem => docs.find(w => w.lemma === lem))
-      .filter((d): d is WordDoc => !!d);
-
-    if (!mistakeDocs.length) return [];
-
-    return mistakeDocs.map((doc, idx) => {
-      const correct = this.getDisplayWord(doc);
-      const pool = docs;
-      const wrongDoc = pool.find(w => w.lemma !== doc.lemma) || doc;
-      const wrong = this.getDisplayWord(wrongDoc);
-
-      const id = `l1p1-extra-${doc.lemma}-${idx}`;
-      const rawOptions: QuizOption[] = [
-        { label: correct, isCorrect: true },
-        { label: wrong,   isCorrect: false },
-      ];
-
-      return {
-        id,
-        shortDescription: this.descByLemma()[doc.lemma] ?? '',
-        options: this.shuffleOptions(id, rawOptions),
-      };
-    });
-  });
-
-  // ---------- total slide count helper ----------
-
-  totalSlides = computed(() => {
-    const intro = 1;
-    const firstWords = this.lesson1Part1SlidesFirst().length;
-    const firstQuiz = this.quizQuestionsFirst().length;
-    const restWords = this.lesson1Part1SlidesRest().length;
-    const restQuiz = this.quizQuestionsRest().length;
-    return intro + firstWords + firstQuiz + restWords + restQuiz;
-  });
+  // trackBy
+  trackSeg = (_: number, s: Segment) =>
+    s.type === 'text'
+      ? `t:${s.text}`
+      : `k:${s.ref.lemma}:${s.ref.pos}:${s.ref.senseId}:${s.label}`;
 }

@@ -10,5 +10,15 @@ import { Router, RouterLink } from '@angular/router';
   imports: [IonicModule, RouterLink],
 })
 export class HomePage {
-  constructor() {}
+  constructor(private router:Router) {}
+
+lemmadetail(){
+  this.router.navigate(['/lemma-detail'], {
+  queryParams: {
+    lemma: 'restore',
+    level: 'B1',
+    r2PublicBase: 'https://audio.lingoapp.io/'
+  }
+});
+}
 }

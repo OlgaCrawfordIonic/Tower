@@ -1,0 +1,6 @@
+/* src/app/pages/lemma-detail/lemma-detail.page.scss */
+.row { display:flex; align-items:center; gap:8px; }
+.ipa { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; opacity:.85; }
+.sense { margin-bottom: 12px; }
+.def-text, .ex-text { line-height: 1.45; }
+.topic { margin: 8px 0 14px; }

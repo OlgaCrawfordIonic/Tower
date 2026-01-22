@@ -1,0 +1,87 @@
+<ion-content class="ion-padding" *ngIf="doc as w">
+<ion-segment
+  [value]="locale()"
+  (ionChange)="onLocaleChange($event)">
+  <ion-segment-button value="en-GB"><ion-label>UK</ion-label></ion-segment-button>
+  <ion-segment-button value="en-US"><ion-label>US</ion-label></ion-segment-button>
+</ion-segment>
+
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>
+        {{ locale() === 'en-GB' ? (w.english || w.lemma) : (w.american || w.lemma) }}
+        <ion-badge color="medium" style="margin-left:8px">{{ locale() }}</ion-badge>
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ng-container *ngIf="w.variants?.[locale()]?.phonetics as ph">
+        <div class="row">
+          <span class="ipa">{{ ph.ipa }}</span>
+          <ion-button fill="clear" size="small" (click)="play(ph.audioUrl)">
+            <ion-icon [name]="isPlaying(ph.audioUrl) ? 'pause-circle-outline' : 'play-circle-outline'"></ion-icon>
+          </ion-button>
+        </div>
+      </ng-container>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Parts of speech -->
+  <ion-card *ngFor="let pos of (w.partsOfSpeech || [])">
+    <ion-card-header><ion-card-title>{{ pos.partOfSpeech }}</ion-card-title></ion-card-header>
+    <ion-card-content>
+      <ion-list lines="none">
+        <div class="sense" *ngFor="let d of (pos.definitions || []); let i=index">
+          <!-- Optional headword (either at d.headwords[loc] or d.definition[loc].headwords) -->
+          <ng-container *ngIf="(d.headwords?.[locale()] || d.definition?.[locale()]?.headwords) as hw">
+            <div class="row headword">
+              <strong>{{ hw.headword }}</strong>
+              <span class="ipa" *ngIf="hw.ipa">{{ hw.ipa }}</span>
+              <ion-button fill="clear" size="small" (click)="play(hw.audioUrl)">
+                <ion-icon [name]="isPlaying(hw.audioUrl) ? 'pause-circle-outline' : 'play-circle-outline'"></ion-icon>
+              </ion-button>
+            </div>
+          </ng-container>
+
+          <!-- Definition with GB->US text fallback -->
+          <ng-container *ngIf="defFor(locale(), d.definition) as D">
+            <div class="row">
+              <div class="def-text">{{ D.text }}</div>
+              <ion-button fill="clear" size="small" (click)="play(D.audioUrl)">
+                <ion-icon [name]="isPlaying(D.audioUrl) ? 'pause-circle-outline' : 'play-circle-outline'"></ion-icon>
+              </ion-button>
+            </div>
+          </ng-container>
+
+          <!-- Examples with per-index fallback -->
+          <div class="examples">
+            <div class="row ex" *ngFor="let ex of withFallbackExamples(d.examples?.['en-GB'], d.examples?.['en-US'], locale()); let idx=index">
+              <div class="ex-text">{{ ex.text }}</div>
+              <ion-button fill="clear" size="small" (click)="play(ex.audioUrl)">
+                <ion-icon [name]="isPlaying(ex.audioUrl) ? 'pause-circle-outline' : 'play-circle-outline'"></ion-icon>
+              </ion-button>
+            </div>
+          </div>
+        </div>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Topics -->
+  <ion-card *ngIf="w.topics?.length">
+    <ion-card-header><ion-card-title>Topics</ion-card-title></ion-card-header>
+    <ion-card-content>
+      <ion-list lines="none">
+        <div class="topic" *ngFor="let t of w.topics">
+          <ion-badge color="tertiary">{{ t.topicKey }}</ion-badge>
+          <div class="row ex" *ngFor="let ex of withFallbackExamples(t.examples?.['en-GB'], t.examples?.['en-US'], locale()); let i=index">
+            <div class="ex-text">{{ ex.text }}</div>
+            <ion-button fill="clear" size="small" (click)="play(ex.audioUrl)">
+              <ion-icon [name]="isPlaying(ex.audioUrl) ? 'pause-circle-outline' : 'play-circle-outline'"></ion-icon>
+            </ion-button>
+          </div>
+        </div>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

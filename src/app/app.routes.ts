@@ -104,7 +104,45 @@ export const routes: Routes = [
     path: 'importfirebaseold',
     loadComponent: () => import('./importlemmas/importfirebaseold/importfirebaseold.page').then( m => m.ImportfirebaseoldPage)
   },
-
+  {
+    path: 'lemma-detail',
+    loadComponent: () => import('./contentoutput/lemma-detail/lemma-detail.page').then( m => m.LemmaDetailPage)
+  },
+  {
+    path: 'lemma-detail/:lemma',
+    loadComponent: () => import('./contentoutput/lemma-detail/lemma-detail.page').then( m => m.LemmaDetailPage)
+  },
+  
+  {
+    path: 'lemma-output',
+    loadComponent: () => import('./contentoutput/lemma-output/lemma-output.page').then( m => m.LemmaOutputPage)
+  },
+ 
+ {
+    path: 'lesson-text',
+    loadComponent: () => import('./LessonsOutput/lesson-text/lesson-text.page').then( m => m.LessonTextPage)
+  },
+  {
+    path: 'importlessonsfirebase',
+    loadComponent: () => import('./LessonsOutput/importlessonsfirebase/importlessonsfirebase.page').then( m => m.ImportLessonsFirebasePage)
+  },
+  {
+    path: 'lesson-firebase-output',
+    loadComponent: () => import('./LessonsOutput/lesson-firebase-output/lesson-firebase-output.page').then( m => m.LessonFirebaseOutputPage)
+  },
+  {
+    path: 'lesson-firebase-output/:lesson',
+    loadComponent: () => import('./LessonsOutput/lesson-firebase-output/lesson-firebase-output.page').then( m => m.LessonFirebaseOutputPage)
+  },
+  {
+    path: 'lessons-kv-output',
+    loadComponent: () => import('./kvoutput/lessons-kv-output/lessons-kv-output.page').then( m => m.LessonsKvOutputPage)
+  },
+  {
+    path: 'wordslessons-kv-output',
+    loadComponent: () => import('./kvoutput/wordslessons-kv-output/wordslessons-kv-output.page').then( m => m.WordslessonsKvOutputPage)
+  },
+  
 
   
 ];
